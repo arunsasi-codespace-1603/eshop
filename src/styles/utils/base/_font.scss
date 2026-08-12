@@ -1,0 +1,22 @@
+// ==========================================
+// FONT FACES
+// ==========================================
+@font-face {
+    font-family: 'LV Medium';
+    src: url('../../../assets/font/LouisVuitton-Medium.woff2') format('woff2'),
+        url('../../../assets/font/LouisVuitton-Medium.woff') format('woff'),
+        url('../../../assets/font/LouisVuitton-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LV Regular';
+    src: url('../../../assets/font/LouisVuitton-Regular.woff2') format('woff2'),
+        url('../../../assets/font/LouisVuitton-Regular.woff') format('woff'),
+        url('../../../assets/font/LouisVuitton-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

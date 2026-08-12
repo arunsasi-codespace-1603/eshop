@@ -1,0 +1,563 @@
+{
+    "products": [
+        {
+            "id": 201,
+            "slug": "aurelia-leather-tote",
+            "name": "Aurelia Leather Tote",
+            "brand": "Nova Studio",
+            "categoryId": 2,
+            "price": 420,
+            "discountPrice": 379,
+            "currency": "GBP",
+            "rating": 4.8,
+            "reviewCount": 186,
+            "badge": "Best Seller",
+            "stockStatus": "In Stock",
+            "sku": "NS-ALT-201",
+            "shortDescription": "Luxury leather tote handcrafted for modern everyday elegance.",
+            "description": {
+                "title": "Description",
+                "text": "Crafted from premium full-grain Italian leather, the Aurelia Tote combines timeless elegance with everyday functionality. Spacious enough for work and travel while maintaining a refined silhouette."
+            },
+            "sizes": [
+                {
+                    "id": 1,
+                    "label": "Extra Small",
+                    "value": "xs"
+                },
+                {
+                    "id": 2,
+                    "label": "Small",
+                    "value": "sm"
+                },
+                {
+                    "id": 3,
+                    "label": "Medium",
+                    "value": "m"
+                },
+                {
+                    "id": 4,
+                    "label": "Large",
+                    "value": "lg"
+                },
+                {
+                    "id": 5,
+                    "label": "Extra Large",
+                    "value": "xl"
+                },
+                {
+                    "id": 6,
+                    "label": "Double XL",
+                    "value": "xxl"
+                }
+            ],
+            "defaultVariant": 2,
+            "variants": [
+                {
+                    "id": 1,
+                    "color": "Midnight Black",
+                    "colorFilter": "midnight-black",
+                    "thumbnail": "https://dummyimage.com/600x600/1a1a1a/ffffff&text=Black",
+                    "images": [
+                        "https://dummyimage.com/1000x900/1a1a1a/ffffff&text=Black+01",
+                        "https://dummyimage.com/1000x900/1a1a1a/ffffff&text=Black+02",
+                        "https://dummyimage.com/1000x900/1a1a1a/ffffff&text=Black+03",
+                        "https://dummyimage.com/1000x900/1a1a1a/ffffff&text=Black+04"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "color": "Ivory Cream",
+                    "colorFilter": "ivory-cream",
+                    "thumbnail": "https://dummyimage.com/600x600/e8dccb/333333&text=Ivory",
+                    "images": [
+                        "https://dummyimage.com/1000x900/e8dccb/333333&text=Ivory+01",
+                        "https://dummyimage.com/1000x900/e8dccb/333333&text=Ivory+02",
+                        "https://dummyimage.com/1000x900/e8dccb/333333&text=Ivory+03",
+                        "https://dummyimage.com/1000x900/e8dccb/333333&text=Ivory+04"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "color": "Burgundy",
+                    "colorFilter": "burgundy",
+                    "thumbnail": "https://dummyimage.com/600x600/5c1f2b/ffffff&text=Burgundy",
+                    "images": [
+                        "https://dummyimage.com/1000x900/5c1f2b/ffffff&text=Burgundy+01",
+                        "https://dummyimage.com/1000x900/5c1f2b/ffffff&text=Burgundy+02",
+                        "https://dummyimage.com/1000x900/5c1f2b/ffffff&text=Burgundy+03",
+                        "https://dummyimage.com/1000x900/5c1f2b/ffffff&text=Burgundy+04"
+                    ]
+                }
+            ],
+            "specifications": [
+                {
+                    "label": "Material",
+                    "value": "Full-Grain Italian Leather"
+                },
+                {
+                    "label": "Lining",
+                    "value": "Premium Microfiber"
+                },
+                {
+                    "label": "Hardware",
+                    "value": "Gold Tone"
+                },
+                {
+                    "label": "Dimensions",
+                    "value": "32 × 24 × 14 cm"
+                }
+            ],
+            "deliveryAndReturns": {
+                "title": "Delivery & Returns",
+                "shipping": "Free Express Delivery",
+                "deliveryTime": "2–4 Business Days",
+                "returns": "30-Day Free Returns"
+            },
+            "reviews": [
+                {
+                    "id": 1,
+                    "name": "Emily Carter",
+                    "rating": 5,
+                    "comment": "Beautiful craftsmanship and premium quality."
+                }
+            ],
+            "relatedProducts": [
+                202,
+                203
+            ]
+        },
+        {
+            "id": 202,
+            "slug": "celeste-structured-shoulder-bag",
+            "name": "Celeste Structured Shoulder Bag",
+            "brand": "Nova Studio",
+            "categoryId": 1,
+            "price": 295,
+            "discountPrice": 259,
+            "currency": "GBP",
+            "rating": 4.7,
+            "reviewCount": 124,
+            "badge": "New",
+            "stockStatus": "In Stock",
+            "sku": "NS-CSS-202",
+            "shortDescription": "A refined structured shoulder bag designed for effortless day-to-evening style.",
+            "description": {
+                "title": "Description",
+                "text": "The Celeste Shoulder Bag features a clean architectural silhouette, smooth leather construction and a versatile strap designed for comfortable everyday wear."
+            },
+            "sizes": [
+                {
+                    "id": 1,
+                    "label": "Small",
+                    "value": "sm"
+                },
+                {
+                    "id": 2,
+                    "label": "Medium",
+                    "value": "m"
+                },
+                {
+                    "id": 3,
+                    "label": "Large",
+                    "value": "lg"
+                }
+            ],
+            "defaultVariant": 1,
+            "variants": [
+                {
+                    "id": 1,
+                    "color": "Classic Black",
+                    "colorFilter": "classic-black",
+                    "thumbnail": "https://dummyimage.com/600x600/111111/ffffff&text=Black",
+                    "images": [
+                        "https://dummyimage.com/1000x900/111111/ffffff&text=Black+01",
+                        "https://dummyimage.com/1000x900/111111/ffffff&text=Black+02",
+                        "https://dummyimage.com/1000x900/111111/ffffff&text=Black+03",
+                        "https://dummyimage.com/1000x900/111111/ffffff&text=Black+04"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "color": "Soft Beige",
+                    "colorFilter": "soft-beige",
+                    "thumbnail": "https://dummyimage.com/600x600/cbb99d/ffffff&text=Beige",
+                    "images": [
+                        "https://dummyimage.com/1000x900/cbb99d/ffffff&text=Beige+01",
+                        "https://dummyimage.com/1000x900/cbb99d/ffffff&text=Beige+02",
+                        "https://dummyimage.com/1000x900/cbb99d/ffffff&text=Beige+03",
+                        "https://dummyimage.com/1000x900/cbb99d/ffffff&text=Beige+04"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "color": "Dusty Rose",
+                    "colorFilter": "dusty-rose",
+                    "thumbnail": "https://dummyimage.com/600x600/bb8588/ffffff&text=Rose",
+                    "images": [
+                        "https://dummyimage.com/1000x900/bb8588/ffffff&text=Rose+01",
+                        "https://dummyimage.com/1000x900/bb8588/ffffff&text=Rose+02",
+                        "https://dummyimage.com/1000x900/bb8588/ffffff&text=Rose+03",
+                        "https://dummyimage.com/1000x900/bb8588/ffffff&text=Rose+04"
+                    ]
+                }
+            ],
+            "specifications": [
+                {
+                    "label": "Material",
+                    "value": "Top-Grain Leather"
+                },
+                {
+                    "label": "Lining",
+                    "value": "Cotton Twill"
+                },
+                {
+                    "label": "Hardware",
+                    "value": "Brushed Gold"
+                },
+                {
+                    "label": "Dimensions",
+                    "value": "26 × 18 × 9 cm"
+                }
+            ],
+            "deliveryAndReturns": {
+                "title": "Delivery & Returns",
+                "shipping": "Free Standard Delivery",
+                "deliveryTime": "3–5 Business Days",
+                "returns": "30-Day Free Returns"
+            },
+            "reviews": [
+                {
+                    "id": 1,
+                    "name": "Olivia Martin",
+                    "rating": 5,
+                    "comment": "Elegant and beautifully structured. Perfect for evenings."
+                }
+            ],
+            "relatedProducts": [
+                201,
+                204
+            ]
+        },
+        {
+            "id": 203,
+            "slug": "marcelle-mini-crossbody",
+            "name": "Marcelle Mini Crossbody Duo",
+            "brand": "Nova Studio",
+            "categoryId": 1,
+            "price": 225,
+            "discountPrice": 199,
+            "currency": "GBP",
+            "rating": 4.6,
+            "reviewCount": 98,
+            "badge": "Trending",
+            "stockStatus": "In Stock",
+            "sku": "NS-MMC-203",
+            "shortDescription": "Compact leather crossbody designed for effortless everyday essentials.",
+            "description": {
+                "title": "Description",
+                "text": "The Marcelle Mini Crossbody combines a compact silhouette with a surprisingly spacious interior, making it ideal for city days, evenings and travel."
+            },
+            "sizes": [
+                {
+                    "id": 1,
+                    "label": "Small",
+                    "value": "sm"
+                },
+                {
+                    "id": 2,
+                    "label": "Medium",
+                    "value": "m"
+                }
+            ],
+            "defaultVariant": 2,
+            "variants": [
+                {
+                    "id": 1,
+                    "color": "Chocolate Brown",
+                    "colorFilter": "chocolate-brown",
+                    "thumbnail": "https://dummyimage.com/600x600/5a3825/ffffff&text=Brown",
+                    "images": [
+                        "https://dummyimage.com/1000x900/5a3825/ffffff&text=Brown+01",
+                        "https://dummyimage.com/1000x900/5a3825/ffffff&text=Brown+02",
+                        "https://dummyimage.com/1000x900/5a3825/ffffff&text=Brown+03",
+                        "https://dummyimage.com/1000x900/5a3825/ffffff&text=Brown+04"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "color": "Sage Green",
+                    "colorFilter": "sage-green",
+                    "thumbnail": "https://dummyimage.com/600x600/71806c/ffffff&text=Sage",
+                    "images": [
+                        "https://dummyimage.com/1000x900/71806c/ffffff&text=Sage+01",
+                        "https://dummyimage.com/1000x900/71806c/ffffff&text=Sage+02",
+                        "https://dummyimage.com/1000x900/71806c/ffffff&text=Sage+03",
+                        "https://dummyimage.com/1000x900/71806c/ffffff&text=Sage+04"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "color": "Ivory",
+                    "colorFilter": "ivory",
+                    "thumbnail": "https://dummyimage.com/600x600/e5ded2/333333&text=Ivory",
+                    "images": [
+                        "https://dummyimage.com/1000x900/e5ded2/333333&text=Ivory+01",
+                        "https://dummyimage.com/1000x900/e5ded2/333333&text=Ivory+02",
+                        "https://dummyimage.com/1000x900/e5ded2/333333&text=Ivory+03",
+                        "https://dummyimage.com/1000x900/e5ded2/333333&text=Ivory+04"
+                    ]
+                }
+            ],
+            "specifications": [
+                {
+                    "label": "Material",
+                    "value": "Italian Calf Leather"
+                },
+                {
+                    "label": "Lining",
+                    "value": "Microfiber"
+                },
+                {
+                    "label": "Hardware",
+                    "value": "Antique Gold"
+                },
+                {
+                    "label": "Dimensions",
+                    "value": "20 × 14 × 7 cm"
+                }
+            ],
+            "deliveryAndReturns": {
+                "title": "Delivery & Returns",
+                "shipping": "Free Standard Delivery",
+                "deliveryTime": "3–5 Business Days",
+                "returns": "30-Day Free Returns"
+            },
+            "reviews": [
+                {
+                    "id": 1,
+                    "name": "Amelia Brown",
+                    "rating": 5,
+                    "comment": "Small but surprisingly practical. The leather is gorgeous."
+                }
+            ],
+            "relatedProducts": [
+                204
+            ]
+        },
+        {
+            "id": 204,
+            "slug": "elara-soft-hobo",
+            "name": "Elara Soft Hobo",
+            "brand": "Nova Studio",
+            "categoryId": 1,
+            "price": 340,
+            "discountPrice": 299,
+            "currency": "GBP",
+            "rating": 4.9,
+            "reviewCount": 211,
+            "badge": "Best Seller",
+            "stockStatus": "In Stock",
+            "sku": "NS-ESH-204",
+            "shortDescription": "Softly sculpted leather hobo with a relaxed luxury silhouette.",
+            "description": {
+                "title": "Description",
+                "text": "Designed with a relaxed curved silhouette, the Elara Hobo brings understated luxury to everyday dressing with supple leather and a spacious interior."
+            },
+            "sizes": [
+                {
+                    "id": 1,
+                    "label": "Small",
+                    "value": "sm"
+                },
+                {
+                    "id": 2,
+                    "label": "Medium",
+                    "value": "m"
+                },
+                {
+                    "id": 3,
+                    "label": "Large",
+                    "value": "lg"
+                }
+            ],
+            "defaultVariant": 1,
+            "variants": [
+                {
+                    "id": 1,
+                    "color": "Warm Camel",
+                    "colorFilter": "warm-camel",
+                    "thumbnail": "https://dummyimage.com/600x600/b58b62/ffffff&text=Camel",
+                    "images": [
+                        "https://dummyimage.com/1000x900/b58b62/ffffff&text=Camel+01",
+                        "https://dummyimage.com/1000x900/b58b62/ffffff&text=Camel+02",
+                        "https://dummyimage.com/1000x900/b58b62/ffffff&text=Camel+03",
+                        "https://dummyimage.com/1000x900/b58b62/ffffff&text=Camel+04"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "color": "Forest Green",
+                    "colorFilter": "forest-green",
+                    "thumbnail": "https://dummyimage.com/600x600/274b3f/ffffff&text=Green",
+                    "images": [
+                        "https://dummyimage.com/1000x900/274b3f/ffffff&text=Green+01",
+                        "https://dummyimage.com/1000x900/274b3f/ffffff&text=Green+02",
+                        "https://dummyimage.com/1000x900/274b3f/ffffff&text=Green+03",
+                        "https://dummyimage.com/1000x900/274b3f/ffffff&text=Green+04"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "color": "Deep Navy",
+                    "colorFilter": "deep-navy",
+                    "thumbnail": "https://dummyimage.com/600x600/24344a/ffffff&text=Navy",
+                    "images": [
+                        "https://dummyimage.com/1000x900/24344a/ffffff&text=Navy+01",
+                        "https://dummyimage.com/1000x900/24344a/ffffff&text=Navy+02",
+                        "https://dummyimage.com/1000x900/24344a/ffffff&text=Navy+03",
+                        "https://dummyimage.com/1000x900/24344a/ffffff&text=Navy+04"
+                    ]
+                }
+            ],
+            "specifications": [
+                {
+                    "label": "Material",
+                    "value": "Supple Italian Leather"
+                },
+                {
+                    "label": "Lining",
+                    "value": "Suede Touch Fabric"
+                },
+                {
+                    "label": "Hardware",
+                    "value": "Polished Brass"
+                },
+                {
+                    "label": "Dimensions",
+                    "value": "34 × 27 × 12 cm"
+                }
+            ],
+            "deliveryAndReturns": {
+                "title": "Delivery & Returns",
+                "shipping": "Free Express Delivery",
+                "deliveryTime": "2–4 Business Days",
+                "returns": "30-Day Free Returns"
+            },
+            "reviews": [
+                {
+                    "id": 1,
+                    "name": "Charlotte Davis",
+                    "rating": 5,
+                    "comment": "The shape is beautiful and it holds everything I need."
+                }
+            ],
+            "relatedProducts": [
+                202,
+                205
+            ]
+        },
+        {
+            "id": 205,
+            "slug": "serena-chain-wallet",
+            "name": "Serena Chain Wallet",
+            "brand": "Nova Studio",
+            "categoryId": 1,
+            "price": 185,
+            "discountPrice": 159,
+            "currency": "GBP",
+            "rating": 4.5,
+            "reviewCount": 76,
+            "badge": "New",
+            "stockStatus": "In Stock",
+            "sku": "NS-SCW-205",
+            "shortDescription": "Elegant compact wallet with a refined chain strap for evening styling.",
+            "description": {
+                "title": "Description",
+                "text": "The Serena Chain Wallet is crafted for elegant occasions, featuring multiple card slots, a secure compartment and a delicate detachable chain."
+            },
+            "sizes": [
+                {
+                    "id": 1,
+                    "label": "Extra Small",
+                    "value": "xs"
+                }
+            ],
+            "defaultVariant": 1,
+            "variants": [
+                {
+                    "id": 1,
+                    "color": "Black",
+                    "colorFilter": "black",
+                    "thumbnail": "https://dummyimage.com/600x600/171717/ffffff&text=Black",
+                    "images": [
+                        "https://dummyimage.com/1000x900/171717/ffffff&text=Black+01",
+                        "https://dummyimage.com/1000x900/171717/ffffff&text=Black+02",
+                        "https://dummyimage.com/1000x900/171717/ffffff&text=Black+03",
+                        "https://dummyimage.com/1000x900/171717/ffffff&text=Black+04"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "color": "Champagne",
+                    "colorFilter": "champagne",
+                    "thumbnail": "https://dummyimage.com/600x600/c9b58c/ffffff&text=Champagne",
+                    "images": [
+                        "https://dummyimage.com/1000x900/c9b58c/ffffff&text=Champagne+01",
+                        "https://dummyimage.com/1000x900/c9b58c/ffffff&text=Champagne+02",
+                        "https://dummyimage.com/1000x900/c9b58c/ffffff&text=Champagne+03",
+                        "https://dummyimage.com/1000x900/c9b58c/ffffff&text=Champagne+04"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "color": "Burgundy",
+                    "colorFilter": "burgundy",
+                    "thumbnail": "https://dummyimage.com/600x600/652735/ffffff&text=Burgundy",
+                    "images": [
+                        "https://dummyimage.com/1000x900/652735/ffffff&text=Burgundy+01",
+                        "https://dummyimage.com/1000x900/652735/ffffff&text=Burgundy+02",
+                        "https://dummyimage.com/1000x900/652735/ffffff&text=Burgundy+03",
+                        "https://dummyimage.com/1000x900/652735/ffffff&text=Burgundy+04"
+                    ]
+                }
+            ],
+            "specifications": [
+                {
+                    "label": "Material",
+                    "value": "Smooth Calf Leather"
+                },
+                {
+                    "label": "Lining",
+                    "value": "Leather Lining"
+                },
+                {
+                    "label": "Hardware",
+                    "value": "Gold Tone"
+                },
+                {
+                    "label": "Dimensions",
+                    "value": "21 × 12 × 4 cm"
+                }
+            ],
+            "deliveryAndReturns": {
+                "title": "Delivery & Returns",
+                "shipping": "Free Express Delivery",
+                "deliveryTime": "2–4 Business Days",
+                "returns": "30-Day Free Returns"
+            },
+            "reviews": [
+                {
+                    "id": 1,
+                    "name": "Grace Wilson",
+                    "rating": 5,
+                    "comment": "Perfect for evenings and the chain feels very premium."
+                }
+            ],
+            "relatedProducts": [
+                201,
+                203
+            ]
+        }
+    ]
+}

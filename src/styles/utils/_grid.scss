@@ -1,0 +1,20 @@
+.container,
+.container-fluid {
+    width: 100%;
+    padding-left: calc(var(--gutter-gap) * 2);
+    padding-right: calc(var(--gutter-gap) * 2);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: calc(var(--gutter-gap) * -1);
+    margin-right: calc(var(--gutter-gap) * -1);
+}
+
+.row>* {
+    padding-left: var(--gutter-gap);
+    padding-right: var(--gutter-gap);
+
+}

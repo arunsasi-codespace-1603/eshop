@@ -1,0 +1,23 @@
+@use "../../../styles/utils/abstract/variable" as var;
+@use "../../../styles/utils/abstract/mixins" as mix;
+
+.section-category {
+    position: relative;
+}
+
+.product-quantity-block {
+    font-size: 0.875rem;
+    color: var.$gray-600;
+    display: block;
+    text-align: center;
+}
+
+.cta-filter {
+    background-color: red;
+    position: sticky;
+    z-index: 999;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.8rem 2rem;
+}

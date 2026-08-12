@@ -1,0 +1,12 @@
+@use "../../../styles/utils/abstract/mixins" as mix;
+@use "../../../styles/utils/abstract/variable" as var;
+
+.hero-banner {
+    background-color: var.$gray-100;
+    height: 100%;
+
+    &__image {
+        display: var.$display-block;
+        width: 100%;
+    }
+}

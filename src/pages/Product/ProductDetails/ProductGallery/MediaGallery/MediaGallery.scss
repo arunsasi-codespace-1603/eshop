@@ -1,0 +1,15 @@
+.media-gallery {
+    background-color: pink;
+
+    &__container {
+        width: 100%;
+        height: 100%;
+        background-color: tan;
+        display: block;
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+    }
+}

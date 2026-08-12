@@ -1,0 +1,52 @@
+@use "../../../styles/utils/abstract/mixins" as mix;
+@use "../../../styles/utils/abstract/variable" as var;
+
+.accordion-block {
+    position: relative;
+
+    &__header {
+        padding: 0.578rem 0;
+    }
+
+    &__body {
+        // visibility: hidden;
+        display: grid;
+        grid-template-rows: 0fr;
+        transition: grid-template-rows 0.3s ease-in-out;
+    }
+
+    &__body-inner {
+        overflow: hidden;
+    }
+
+
+    &.open-accordion {
+        .accordion-block__body {
+            grid-template-rows: 1fr;
+            // height: fit-content;
+            // overflow: unset;
+        }
+    }
+}
+
+.button-expandable {
+    width: 100%;
+    display: flex;
+    text-align: left;
+    padding: var.$spacing-sm 0;
+    border-radius: 0;
+    position: relative;
+    background-color: transparent;
+
+    &__icon {
+        width: var.$spacing-lg;
+        position: absolute;
+        right: 0;
+        height: 100%;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease-in-out;
+    }
+}

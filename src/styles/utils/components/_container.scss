@@ -1,0 +1,35 @@
+@use "../abstract/mixins" as mix;
+@use "../abstract/variable" as var;
+
+.container,
+.container-fluid {
+    width: 100%;
+    margin-inline: auto;
+    padding-left: var.$gutter-base;
+    padding-right: var.$gutter-base;
+}
+
+.container-fluid {
+    @include mix.respond(lg) {
+        padding-left: calc(2 * var.$gutter-base);
+        padding-right: calc(2 * var.$gutter-base);
+    }
+}
+
+@each $breakpoint, $width in var.$container-widths {
+    @media (min-width: map-get(var.$breakpoints, $breakpoint)) {
+        .container {
+            max-width: $width;
+        }
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-inline: calc(var.$gutter-base * -0.5);
+
+    >* {
+        padding-inline: 8px;
+    }
+}

@@ -1,0 +1,48 @@
+@use "../utils/abstract/mixins" as mix;
+@use "../utils/abstract/variable" as var;
+
+.section-content {
+    padding-top: calc(var.$spacing-md * 4);
+    padding-bottom: calc(var.$spacing-md * 4);
+
+    &__header {
+        width: 100%;
+        max-width: 32.5rem;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: var.$spacing-lg;
+    }
+
+    &__sub-title {
+        font-size: var.$font-size-md;
+        margin-bottom: var.$spacing-md;
+        font-weight: var.$font-weight-normal;
+    }
+
+    &__title {
+        font-size: var.$font-size-xl;
+        font-weight: var.$font-weight-medium;
+    }
+
+    &__cta {
+        text-align: center;
+        margin-top: var.$spacing-xl;
+    }
+
+    @include mix.respond(md) {
+        &__title {
+            font-size: var.$font-size-3xl
+        }
+    }
+}
+
+// ==========================================
+// for Products Listing
+// ==========================================
+.grid-column {
+    width: 50%;
+
+    @include mix.respond(md) {
+        width: calc(100% / 4);
+    }
+}

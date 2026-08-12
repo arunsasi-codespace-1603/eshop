@@ -1,0 +1,41 @@
+@use "../../../styles/utils/abstract/mixins" as mix;
+@use "../../../styles//utils/abstract/variable" as var;
+
+.product-card {
+    width: 100%;
+
+    &__image {
+        width: 100%;
+        display: var.$display-block;
+        aspect-ratio: 1/1;
+        position: relative;
+    }
+
+    &__content {
+        padding: 0.625rem 0
+    }
+
+    .product-name {
+        margin-bottom: var.$spacing-sm;
+    }
+
+    .product-price {
+        font-size: 0.875rem;
+        color: var.$color-primary;
+    }
+}
+
+.button-wishlist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var.$spacing-xl;
+    height: var.$spacing-xl;
+    padding: var.$spacing-sm;
+    font-size: var.$font-size-md;
+    background-color: var.$white;
+    position: absolute;
+    top: var.$spacing-md;
+    right: var.$spacing-md;
+    border-radius: var.$radius-xs;
+}

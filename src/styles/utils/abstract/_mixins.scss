@@ -1,0 +1,36 @@
+@use "sass:map";
+@use "../abstract/variable" as var;
+
+@mixin button-style {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: var.$radius-md;
+    cursor: pointer;
+    font-family: inherit;
+    transition: 0.2s ease;
+}
+
+@mixin button-no-border {
+    display: inline;
+    background-color: transparent;
+    border: none;
+    outline: 0;
+    padding: 0;
+    position: relative;
+    cursor: pointer;
+    font-family: inherit;
+
+}
+
+@mixin respond($size) {
+    @media (min-width: map.get(var.$breakpoints, $size)) {
+        @content;
+    }
+}
+
+@mixin respond-max($size) {
+    @media (max-width: map.get(var.$breakpoints, $size)) {
+        @content;
+    }
+}

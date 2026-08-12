@@ -1,0 +1,126 @@
+{
+    "filters": [
+        {
+            "id": 1,
+            "title": "Sort By",
+            "type": "radio",
+            "key": "sortBy",
+            "options": [
+                {
+                    "id": 1,
+                    "label": "Newest",
+                    "value": "newest"
+                },
+                {
+                    "id": 2,
+                    "label": "Price: Low to High",
+                    "value": "price-asc"
+                },
+                {
+                    "id": 3,
+                    "label": "Price: High to Low",
+                    "value": "price-desc"
+                },
+                {
+                    "id": 4,
+                    "label": "Best Rated",
+                    "value": "rating"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Colour",
+            "type": "checkbox",
+            "key": "colors",
+            "options": [
+                {
+                    "id": 1,
+                    "label": "Black",
+                    "value": "black"
+                },
+                {
+                    "id": 2,
+                    "label": "Burgundy",
+                    "value": "burgundy"
+                },
+                {
+                    "id": 3,
+                    "label": "Forest Green",
+                    "value": "forest-green"
+                },
+                {
+                    "id": 4,
+                    "label": "Warm Camel",
+                    "value": "warm-camel"
+                },
+                {
+                    "id": 5,
+                    "label": "Blue",
+                    "value": "blue"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Size",
+            "type": "checkbox",
+            "key": "sizes",
+            "options": [
+                {
+                    "id": 1,
+                    "label": "XS",
+                    "value": "xs"
+                },
+                {
+                    "id": 2,
+                    "label": "S",
+                    "value": "s"
+                },
+                {
+                    "id": 3,
+                    "label": "M",
+                    "value": "m"
+                },
+                {
+                    "id": 4,
+                    "label": "L",
+                    "value": "l"
+                },
+                {
+                    "id": 5,
+                    "label": "XL",
+                    "value": "xl"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "title": "Price",
+            "key": "price",
+            "type": "radio",
+            "options": [
+                {
+                    "id": 1,
+                    "label": "Under £500",
+                    "value": "0-500"
+                },
+                {
+                    "id": 2,
+                    "label": "£500 - £1,000",
+                    "value": "500-1000"
+                },
+                {
+                    "id": 3,
+                    "label": "£1,000 - £2,000",
+                    "value": "1000-2000"
+                },
+                {
+                    "id": 4,
+                    "label": "Over £2,000",
+                    "value": "2000+"
+                }
+            ]
+        }
+    ]
+}
