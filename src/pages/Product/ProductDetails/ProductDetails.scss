@@ -1,4 +1,6 @@
-@import "../../../styles/utils/abstract/mixins";
+@use "../../../styles/utils/abstract/variable" as var;
+@use "../../../styles/utils/abstract/mixins" as mix;
+
 
 .section-product-details {
     background-color: var(--color-white);
@@ -16,7 +18,7 @@
         width: 100%;
     }
 
-    @include respond(lg) {
+    @include mix.respond(lg) {
         &__wrapper {
             flex-direction: row;
             padding: 0 var(--gutter-gap);
@@ -37,7 +39,7 @@
 }
 
 .media-large {
-    background-color: teal;
+    background-color: var.$gray-100;
     display: block;
     width: 100%;
     transition: all 0.3s ease-in-out;
@@ -65,7 +67,7 @@
     width: 100%;
     padding: 4rem 1rem;
 
-    @include respond(lg) {
+    @include mix.respond(lg) {
         padding: 3rem 0;
         max-width: 600px;
         margin: auto;
@@ -220,6 +222,9 @@
         display: block;
         color: var(--color-gray-600);
         text-align: left;
+        padding: 0.52rem 0;
+        border-radius: 0;
+        background-color: transparent;
 
         .icon {
             position: absolute;

@@ -1,7 +1,7 @@
 
 import "./ProductDetails.scss";
 // React core Files
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom"
 // Library
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -16,6 +16,8 @@ import Footer from "../../../components/ui/Footer/Footer";
 import EmptyState from "../../../components/ui/EmptyState/EmptyState";
 import SideDrawer from "../../../components/ui/SideDrawer/SideDrawer";
 import ProductCard from "../../../components/ui/ProductCard/ProductCard";
+import MediaGallery from "../ProductDetails/ProductGallery/MediaGallery/MediaGallery";
+import useIsMobile from "../../../hooks/useIsMobile";
 
 
 const ProductDetails = () => {
@@ -32,6 +34,11 @@ const ProductDetails = () => {
         text: ""
     });
     const [cart, setCart] = useState([]);
+
+    // ==========================================
+    // Find Device
+    // ==========================================
+    const isMobile = useIsMobile();
 
     // ==========================================
     // Fetch product
@@ -76,7 +83,10 @@ const ProductDetails = () => {
     const [colorVariant, setColorVariant] = useState(
         defaultColorVariant
     );
-
+    useEffect(() => {
+        setColorVariant(defaultColorVariant);
+        setItemSize(null);
+    }, [productId]);
     // ==========================================
     // Update color varient
     // ==========================================
@@ -144,17 +154,24 @@ const ProductDetails = () => {
                 <section className="section-product-details">
                     <div className="section-product-details__wrapper">
                         <div className="section-product-details__left">
-                            <div className="media-large">
-                                {colorVariant.images.map((image, index) => (
-                                    <div
-                                        key={`${colorVariant.color}_${index}`}
-                                        className="media-large__image">
-                                        <img
-                                            src={image}
-                                            alt={`${colorVariant.color}_${index}`} />
-                                    </div>
-                                ))}
-                            </div>
+                            {(isMobile) &&
+                                <div className="media-small">
+                                    <MediaGallery carouselImages={colorVariant.images} />
+                                </div>
+                            }
+                            {(!isMobile) &&
+                                <div className="media-large">
+                                    {colorVariant.images.map((image, index) => (
+                                        <div
+                                            key={`${colorVariant.color}_${index}`}
+                                            className="media-large__image">
+                                            <img
+                                                src={image}
+                                                alt={`${colorVariant.color}_${index}`} />
+                                        </div>
+                                    ))}
+                                </div>
+                            }
                         </div>
 
                         <div className="section-product-details__right">
@@ -269,22 +286,22 @@ const ProductDetails = () => {
                                 </h3>
                             </div>
 
-                            <div className="container-fluid">
-                                <div className="row">
-                                    {relatedProducts.map((product) => (
-                                        <ProductCard key={product.id} productData={product}></ProductCard>
-                                    ))}
-                                </div>
-                            </div>
 
                             <div className="container-fluid">
-
                                 <Swiper
                                     spaceBetween={10}
-                                    slidesPerView={4}
-                                    onSlideChange={() => console.log('slide change')}
-                                    onSwiper={(swiper) => console.log(swiper)}
-                                >
+                                    slidesPerView={2}
+                                    breakpoints={{
+                                        576: {
+                                            slidesPerView: 2,
+                                        },
+                                        768: {
+                                            slidesPerView: 4,
+                                        },
+                                        992: {
+                                            slidesPerView: 4,
+                                        }
+                                    }} >
                                     {relatedProducts.map((product) => (
                                         <SwiperSlide key={product.id}>
                                             <ProductCard productData={product}></ProductCard>

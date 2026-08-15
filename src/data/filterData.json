@@ -8,8 +8,8 @@
             "options": [
                 {
                     "id": 1,
-                    "label": "Newest",
-                    "value": "newest"
+                    "label": "New Arrivals",
+                    "value": "default"
                 },
                 {
                     "id": 2,
@@ -20,11 +20,6 @@
                     "id": 3,
                     "label": "Price: High to Low",
                     "value": "price-desc"
-                },
-                {
-                    "id": 4,
-                    "label": "Best Rated",
-                    "value": "rating"
                 }
             ]
         },

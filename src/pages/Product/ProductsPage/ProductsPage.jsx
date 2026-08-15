@@ -18,7 +18,7 @@ const ProductsPage = () => {
     const { categId } = useParams();
     const categoryId = Number(categId);
     const [isFilterOpen, setIsFilterOpen] = useState(false);
-    const [sortBy, setSortBy] = useState("");
+    const [sortBy, setSortBy] = useState("default");
     const [filterBy, setFilterBy] = useState({
         colors: [],
         sizes: [],
@@ -29,6 +29,14 @@ const ProductsPage = () => {
         sizes: [],
         price: ""
     });
+    const hasActiveFilterOrSort = () => {
+        return (
+            filterBy.colors.length > 0 ||
+            filterBy.sizes.length > 0 ||
+            filterBy.price !== "" ||
+            sortBy !== "default"
+        );
+    };
 
     // ==========================================
     // Get Category
@@ -46,7 +54,6 @@ const ProductsPage = () => {
     let filteredProducts = ProductItems.products.filter((product) => {
         return product.categoryId === categoryId;
     });
-    console.log(filteredProducts)
 
     // ==========================================
     // Open Filter Drawer
@@ -72,10 +79,9 @@ const ProductsPage = () => {
             price: ""
         };
 
-        setSortBy("");
+        setSortBy("default");
         setFilterBy(emptyFilters);
         setAppliedFilters(emptyFilters);
-        closeFilterDrawer();
     }
 
     // ==========================================
@@ -150,14 +156,13 @@ const ProductsPage = () => {
     // Product Pipeline
     // ==========================================
     // Filter Color
-    console.log(filteredProducts)
     filteredProducts = filterProducts(
         filteredProducts,
         appliedFilters.colors,
         "variants",
         "colorFilter"
     );
-    console.log("after color", filteredProducts)
+
     // Filter Size
     filteredProducts = filterProducts(
         filteredProducts,
@@ -165,7 +170,6 @@ const ProductsPage = () => {
         "sizes",
         "value"
     );
-    console.log("sfter size", filteredProducts)
 
     // Filter Price
     filteredProducts = filterPrice(
@@ -253,6 +257,7 @@ const ProductsPage = () => {
                     onFilterChange={setFilterBy}
                     actionReset={resetFilter}
                     onApply={applyFilter}
+                    hasActiveFilterOrSort={hasActiveFilterOrSort}
                 />
             </main>
         </div>

@@ -27,6 +27,13 @@
         background: var.$color-danger;
         color: var.$white;
     }
+
+    &--transparent {
+        background-color: transparent;
+        outline: 0;
+        box-shadow: none;
+        padding: 0 0;
+    }
 }
 
 .btn-borderless {

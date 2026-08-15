@@ -45,6 +45,14 @@
 
     &__footer {
         border-top: 1px solid var.$gray-200;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
+        .left {
+            margin-right: 1rem;
+        }
     }
 
     &.active {
@@ -91,12 +99,22 @@
     }
 }
 
+.button-apply-filter {
+    width: 100%;
+}
+
+.button-reset-filter {
+    flex: none;
+    align-self: center;
+}
+
 .filter-options {
     list-style: none;
     padding: 0;
 
     &__list {
         padding: 0.5rem 0rem;
+        color: var.$gray-600;
 
     }
 }

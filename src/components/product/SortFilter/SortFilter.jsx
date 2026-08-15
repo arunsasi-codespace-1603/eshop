@@ -17,13 +17,13 @@ const SortFilter = ({
     onFilterChange,
     onApply,
     actionReset,
+    hasActiveFilterOrSort
 }) => {
     const [activeAccordion, setActiveAccordion] = useState(null);
     const filters = filterData.filters;
     const toggleAccordion = (id) => {
         setActiveAccordion(prev => prev === id ? null : id);
     }
-
     const handleInputChanges = (key, value) => {
         if (key === "sortBy") {
             onSortChange(value);
@@ -119,12 +119,18 @@ const SortFilter = ({
                 </div>
 
                 <div className="filter-panel__footer">
-                    <button
-                        onClick={actionReset} Ÿ
-                        className="btn">Reset</button>
+                    {hasActiveFilterOrSort() && (
+                        <button
+                            onClick={actionReset}
+                            className="btn-borderless button-reset-filter left">
+                            Reset all filters
+                        </button>
+                    )}
                     <button
                         onClick={onApply}
-                        className="btn btn--primary">Apply</button>
+                        className="btn btn--primary button-apply-filter">
+                        Show products
+                    </button>
                 </div>
             </aside >
             <div className={`filter-panel-backdrop ${isFilterOpen ? "active" : ""}`} onClick={onClose}></div>
