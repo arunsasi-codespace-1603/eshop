@@ -1,0 +1,82 @@
+@use "../abstract/mixins" as mix;
+@use "../abstract/variable" as var;
+$primary: #0d6efd;
+$border-color: #ced4da;
+$disabled-bg: #e9ecef;
+
+.filter-input-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    min-height: 1.5rem;
+    margin-bottom: 0.5rem;
+
+    &__input {
+        width: 1rem;
+        height: 1rem;
+        flex: none;
+        margin: 0 0.25rem;
+        appearance: none;
+        background-color: var.$white;
+        border: 1px solid var.$gray-400;
+        cursor: pointer;
+        transition: all 0.15s ease-in-out;
+
+        // Checkbox
+        &[type="checkbox"] {
+            border-radius: 0.125rem;
+
+            &:checked {
+                background-color: var.$color-primary;
+                border-color: var.$color-primary;
+
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 0.3rem;
+                    height: 0.55rem;
+                    margin: 0.12rem auto 0;
+                    border: solid var.$white;
+                    border-width: 0 2px 2px 0;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+
+        // Radio
+        &[type="radio"] {
+            border-radius: 50%;
+
+            &:checked {
+                background-color: var.$white;
+                border: 5px solid var.$color-primary;
+            }
+        }
+
+        &:hover {
+            border-color: var.$color-primary;
+        }
+
+        &:focus {
+            outline: 0;
+            border-color: lighten(var.$color-primary, 15%);
+            box-shadow: 0 0 0 0.2rem rgba(var.$color-primary, 0.25);
+        }
+
+        &:disabled {
+            background-color: $disabled-bg;
+            cursor: not-allowed;
+            opacity: 0.65;
+        }
+    }
+
+    &__label {
+        cursor: pointer;
+        user-select: none;
+
+        &:has(+ .form-check-input:disabled) {
+            cursor: not-allowed;
+            opacity: 0.65;
+        }
+    }
+}

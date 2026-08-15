@@ -21,7 +21,7 @@
     @include mix.respond(lg) {
         &__wrapper {
             flex-direction: row;
-            padding: 0 var(--gutter-gap);
+            //padding: 0 var(--gutter-gap);
         }
 
         &__left,

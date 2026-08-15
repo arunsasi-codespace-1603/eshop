@@ -78,7 +78,9 @@ const SortFilter = ({
             <aside className={`filter-panel ${isFilterOpen ? "active" : ""}`}>
                 <div className="filter-panel__header">
                     <div className="title">Filter and Sort</div>
-                    <button onClick={onClose} className="btn button-filter-close">
+                    <button
+                        onClick={onClose}
+                        className="btn button-filter-close">
                         <span className="label">Close</span>
                         <span className="icon"><XLg /></span>
                     </button>
@@ -102,6 +104,7 @@ const SortFilter = ({
                                                 {option.label}
                                             </label>
                                             <input
+                                            className="filter-input-group__input"
                                                 type={type}
                                                 value={option.value}
                                                 id={`${key}-${option.id}`}
@@ -133,7 +136,9 @@ const SortFilter = ({
                     </button>
                 </div>
             </aside >
-            <div className={`filter-panel-backdrop ${isFilterOpen ? "active" : ""}`} onClick={onClose}></div>
+            <div
+                className={`filter-panel-backdrop ${isFilterOpen ? "active" : ""}`}
+                onClick={onClose}></div>
         </>
     )
 }

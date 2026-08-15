@@ -2,8 +2,8 @@
 @use "../utils/abstract/variable" as var;
 
 .section-content {
-    padding-top: calc(var.$spacing-md * 4);
-    padding-bottom: calc(var.$spacing-md * 4);
+    padding-top: calc(var.$spacing-md * 3);
+    padding-bottom: calc(var.$spacing-md * 3);
 
     &__header {
         width: 100%;
@@ -11,16 +11,18 @@
         margin: 0 auto;
         text-align: center;
         padding-bottom: var.$spacing-lg;
+        line-height: normal;
     }
 
     &__sub-title {
-        font-size: var.$font-size-md;
-        margin-bottom: var.$spacing-md;
+        font-size: var.$font-size-sm;
+        margin-bottom: var.$spacing-sm;
         font-weight: var.$font-weight-normal;
+        color: var.$gray-600;
     }
 
     &__title {
-        font-size: var.$font-size-xl;
+        font-size: var.$font-size-2xl;
         font-weight: var.$font-weight-medium;
     }
 
@@ -30,6 +32,10 @@
     }
 
     @include mix.respond(md) {
+        &__sub-title {
+            font-size: var.$font-size-md;
+        }
+
         &__title {
             font-size: var.$font-size-3xl
         }
@@ -45,4 +51,8 @@
     @include mix.respond(md) {
         width: calc(100% / 4);
     }
+
+    //  @include mix.respond(xl) {
+    //     width: calc(100% / 5);
+    // }
 }

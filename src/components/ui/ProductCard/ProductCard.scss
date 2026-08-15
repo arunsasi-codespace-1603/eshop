@@ -3,10 +3,11 @@
 
 .product-card {
     width: 100%;
+    margin-bottom: var.$spacing-md;
 
     &__image {
         width: 100%;
-        display: var.$display-block;
+        display: block;
         aspect-ratio: 1/1;
         position: relative;
     }
@@ -17,11 +18,18 @@
 
     .product-name {
         margin-bottom: var.$spacing-sm;
+        font-size: 0.875rem;
     }
 
     .product-price {
         font-size: 0.875rem;
         color: var.$color-primary;
+    }
+
+    @include mix.respond(lg) {
+        .product-name {
+            font-size: 1rem;
+        }
     }
 }
 

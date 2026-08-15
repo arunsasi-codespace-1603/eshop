@@ -9,10 +9,12 @@ const SideDrawer = ({
     closeSideDrawer }) => {
     return (
         <>
-            <aside className={`side-drawer-panel ${isOpen ? "active" : ""}`}>
+            <aside
+                className={`side-drawer-panel ${isOpen ? "active" : ""}`}>
                 <div className="side-drawer-panel__header">
-                    <button onClick={closeSideDrawer}
-                        className="button-filter-close">
+                    <button
+                        onClick={closeSideDrawer}
+                        className="btn btn--transparent button-filter-close">
                         <span className="label">Close</span>
                         <span className="icon"><XLg /></span>
                     </button>

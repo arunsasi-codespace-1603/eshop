@@ -242,9 +242,11 @@ const ProductsPage = () => {
                         </div>
                     </div>
 
-                    <button className="btn cta-filter" onClick={openFilterDrawer}>
-                        <span>FIlter and Sort</span>
-                    </button>
+                    {(filteredProducts.length !== 0) &&
+                        <button className="btn btn--primary cta-filter" onClick={openFilterDrawer}>
+                            <span>FIlter and Sort</span>
+                        </button>
+                    }
                 </section>
 
 
@@ -260,6 +262,8 @@ const ProductsPage = () => {
                     hasActiveFilterOrSort={hasActiveFilterOrSort}
                 />
             </main>
+
+           <Footer/>
         </div>
     )
 }
