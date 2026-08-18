@@ -15,8 +15,9 @@ import CategoryBanner from "../../../components/product/CategoryBanner/CategoryB
 import SortFilter from "../../../components/product/SortFilter/SortFilter";
 
 const ProductsPage = () => {
-    const { categId } = useParams();
-    const categoryId = Number(categId);
+    const { categName } = useParams();
+    console.log(categName)
+    const categoryId = 1;
     const [isFilterOpen, setIsFilterOpen] = useState(false);
     const [sortBy, setSortBy] = useState("default");
     const [filterBy, setFilterBy] = useState({
@@ -208,6 +209,9 @@ const ProductsPage = () => {
         <div>
             <Navbar />
             <main>
+
+                <CategoryNavigation />
+
                 <section className="section-category">
                     <CategoryBanner
                         imageSource={categoryData.image}
@@ -263,7 +267,7 @@ const ProductsPage = () => {
                 />
             </main>
 
-           <Footer/>
+            <Footer />
         </div>
     )
 }

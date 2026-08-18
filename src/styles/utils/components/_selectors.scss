@@ -25,6 +25,7 @@ $disabled-bg: #e9ecef;
         // Checkbox
         &[type="checkbox"] {
             border-radius: 0.125rem;
+            margin: 0 0.25rem;
 
             &:checked {
                 background-color: var.$color-primary;
@@ -46,6 +47,7 @@ $disabled-bg: #e9ecef;
         // Radio
         &[type="radio"] {
             border-radius: 50%;
+            margin: 0 0.25rem;
 
             &:checked {
                 background-color: var.$white;

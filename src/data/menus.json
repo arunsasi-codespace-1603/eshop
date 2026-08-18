@@ -1,0 +1,66 @@
+{
+    "navigation": [
+        {
+            "id": "women",
+            "name": "Women",
+            "slug": "women",
+            "children": [
+                {
+                    "id": "women-view-all",
+                    "name": "View All",
+                    "slug": "view-all",
+                    "path": "/product/women"
+                },
+                {
+                    "id": "women-bags",
+                    "name": "Bags",
+                    "slug": "bags",
+                    "children": [
+                        {
+                            "id": "women-bags-view-all",
+                            "name": "View All",
+                            "slug": "view-all",
+                            "path": "/product/women/bags"
+                        },
+                        {
+                            "id": "women-bags-handbags",
+                            "name": "Handbags",
+                            "slug": "handbags",
+                            "path": "/product/women/bags/handbags"
+                        },
+                        {
+                            "id": "women-bags-crossbody",
+                            "name": "Crossbody Bags",
+                            "slug": "crossbody-bags",
+                            "path": "/product/women/bags/crossbody-bags"
+                        }
+                    ]
+                },
+                {
+                    "id": "women-accessories",
+                    "name": "Accessories",
+                    "slug": "accessories",
+                    "path": "/product/women/accessories"
+                },
+                {
+                    "id": "women-clothes",
+                    "name": "Clothes",
+                    "slug": "clothes",
+                    "path": "/product/women/clothes"
+                },
+                {
+                    "id": "women-perfume",
+                    "name": "Perfume",
+                    "slug": "perfume",
+                    "path": "/product/women/perfume"
+                }
+            ]
+        },
+        {
+            "id": "collections",
+            "name": "Collections",
+            "slug": "collections",
+            "path": "/product/collections"
+        }
+    ]
+}

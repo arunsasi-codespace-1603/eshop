@@ -1,7 +1,13 @@
+@use "../../../styles/utils/abstract/mixins" as mix;
+@use "../../../styles/utils/abstract/variable" as var;
+
 .navbar-category {
-    background-color: var(--color-white);
+    background-color: var.$white;
     padding: 1rem 0;
-    border-top: 1px solid var(--color-gray-200);
+    border-bottom: 1px solid var(--color-gray-200);
+    position: sticky;
+    top: 0;
+   // z-index: var.$z-index-backdrop;
 
     &__container {
         display: flex;
@@ -11,4 +17,5 @@
 
 .category-nav-link {
     font-size: 0.975rem;
+    color: var.$gray-500;
 }

@@ -2,228 +2,56 @@
     "products": [
         {
             "id": 201,
-            "slug": "aurelia-leather-tote",
-            "name": "Aurelia Leather Tote",
-            "brand": "Nova Studio",
+            "slug": "aurora-sculptural-clutch",
+            "name": "Aurora Sculptural Evening Clutch",
+            "brand": "Maison Aura",
             "categoryId": 1,
-            "price": 420,
-            "discountPrice": 379,
+            "subcategory": "handbags",
+            "price": 850,
+            "discountPrice": null,
             "currency": "GBP",
-            "rating": 4.8,
-            "reviewCount": 186,
-            "badge": "Best Seller",
+            "rating": 4.9,
+            "reviewCount": 18,
+            "badge": "Limited Edition",
             "stockStatus": "In Stock",
-            "sku": "NS-ALT-201",
-            "shortDescription": "Luxury leather tote handcrafted for modern everyday elegance.",
+            "sku": "MA-ASC-201",
+            "shortDescription": "Hand-molded metallic frame clutch with silk satin interior.",
             "description": {
                 "title": "Description",
-                "text": "Crafted from premium full-grain Italian leather, the Aurelia Tote combines timeless elegance with everyday functionality. Spacious enough for work and travel while maintaining a refined silhouette."
+                "text": "Designed for evening elegance, the Aurora Clutch features a seamless brass shell hand-polished to a mirror finish, lined with pure Italian silk satin."
             },
             "sizes": [
                 {
                     "id": 1,
-                    "label": "Extra Small",
-                    "value": "xs"
-                },
-                {
-                    "id": 2,
-                    "label": "Small",
-                    "value": "sm"
-                },
-                {
-                    "id": 3,
-                    "label": "Medium",
-                    "value": "m"
-                },
-                {
-                    "id": 4,
-                    "label": "Large",
-                    "value": "lg"
-                },
-                {
-                    "id": 5,
-                    "label": "Extra Large",
-                    "value": "xl"
-                },
-                {
-                    "id": 6,
-                    "label": "Double XL",
-                    "value": "xxl"
-                }
-            ],
-            "defaultVariant": 2,
-            "variants": [
-                {
-                    "id": 1,
-                    "color": "Midnight Black",
-                    "colorFilter": "midnight-black",
-                    "thumbnail": "https://dummyimage.com/800x800/1a1a1a/ffffff&text=Black",
-                    "images": [
-                        "https://dummyimage.com/1000x900/1a1a1a/ffffff&text=Black+01",
-                        "https://dummyimage.com/1000x900/1a1a1a/ffffff&text=Black+02",
-                        "https://dummyimage.com/1000x900/1a1a1a/ffffff&text=Black+03",
-                        "https://dummyimage.com/1000x900/1a1a1a/ffffff&text=Black+04"
-                    ]
-                },
-                {
-                    "id": 2,
-                    "color": "Ivory Cream",
-                    "colorFilter": "ivory-cream",
-                    "thumbnail": "https://dummyimage.com/800x800/e8dccb/333333&text=Ivory",
-                    "images": [
-                        "https://dummyimage.com/1000x900/e8dccb/333333&text=Ivory+01",
-                        "https://dummyimage.com/1000x900/e8dccb/333333&text=Ivory+02",
-                        "https://dummyimage.com/1000x900/e8dccb/333333&text=Ivory+03",
-                        "https://dummyimage.com/1000x900/e8dccb/333333&text=Ivory+04"
-                    ]
-                },
-                {
-                    "id": 3,
-                    "color": "Burgundy",
-                    "colorFilter": "burgundy",
-                    "thumbnail": "https://dummyimage.com/800x800/5c1f2b/ffffff&text=Burgundy",
-                    "images": [
-                        "https://dummyimage.com/1000x900/5c1f2b/ffffff&text=Burgundy+01",
-                        "https://dummyimage.com/1000x900/5c1f2b/ffffff&text=Burgundy+02",
-                        "https://dummyimage.com/1000x900/5c1f2b/ffffff&text=Burgundy+03",
-                        "https://dummyimage.com/1000x900/5c1f2b/ffffff&text=Burgundy+04"
-                    ]
-                }
-            ],
-            "specifications": [
-                {
-                    "label": "Material",
-                    "value": "Full-Grain Italian Leather"
-                },
-                {
-                    "label": "Lining",
-                    "value": "Premium Microfiber"
-                },
-                {
-                    "label": "Hardware",
-                    "value": "Gold Tone"
-                },
-                {
-                    "label": "Dimensions",
-                    "value": "32 × 24 × 14 cm"
-                }
-            ],
-            "deliveryAndReturns": {
-                "title": "Delivery & Returns",
-                "shipping": "Free Express Delivery",
-                "deliveryTime": "2–4 Business Days",
-                "returns": "30-Day Free Returns"
-            },
-            "reviews": [
-                {
-                    "id": 1,
-                    "name": "Emily Carter",
-                    "rating": 5,
-                    "comment": "Beautiful craftsmanship and premium quality."
-                }
-            ],
-            "relatedProducts": [
-                202,
-                203
-            ]
-        },
-        {
-            "id": 202,
-            "slug": "celeste-structured-shoulder-bag",
-            "name": "Celeste Structured Shoulder Bag",
-            "brand": "Nova Studio",
-            "categoryId": 2,
-            "price": 295,
-            "discountPrice": 259,
-            "currency": "GBP",
-            "rating": 4.7,
-            "reviewCount": 124,
-            "badge": "New",
-            "stockStatus": "In Stock",
-            "sku": "NS-CSS-202",
-            "shortDescription": "A refined structured shoulder bag designed for effortless day-to-evening style.",
-            "description": {
-                "title": "Description",
-                "text": "The Celeste Shoulder Bag features a clean architectural silhouette, smooth leather construction and a versatile strap designed for comfortable everyday wear."
-            },
-            "sizes": [
-                {
-                    "id": 1,
-                    "label": "Small",
-                    "value": "sm"
-                },
-                {
-                    "id": 2,
-                    "label": "Medium",
-                    "value": "m"
-                },
-                {
-                    "id": 3,
-                    "label": "Large",
-                    "value": "lg"
+                    "label": "One Size",
+                    "value": "os"
                 }
             ],
             "defaultVariant": 1,
             "variants": [
                 {
                     "id": 1,
-                    "color": "Classic Black",
-                    "colorFilter": "classic-black",
-                    "thumbnail": "https://dummyimage.com/800x800/111111/ffffff&text=Black",
+                    "color": "Polished Gold",
+                    "thumbnail": "https://dummyimage.com/600x600/d4af37/ffffff&text=Gold+Clutch",
                     "images": [
-                        "https://dummyimage.com/1000x900/111111/ffffff&text=Black+01",
-                        "https://dummyimage.com/1000x900/111111/ffffff&text=Black+02",
-                        "https://dummyimage.com/1000x900/111111/ffffff&text=Black+03",
-                        "https://dummyimage.com/1000x900/111111/ffffff&text=Black+04"
+                        "https://dummyimage.com/1000x900/d4af37/ffffff&text=Gold+01",
+                        "https://dummyimage.com/1000x900/d4af37/ffffff&text=Gold+02",
+                        "https://dummyimage.com/1000x900/d4af37/ffffff&text=Gold+03"
                     ]
                 },
                 {
                     "id": 2,
-                    "color": "Soft Beige",
-                    "colorFilter": "soft-beige",
-                    "thumbnail": "https://dummyimage.com/800x800/cbb99d/ffffff&text=Beige",
+                    "color": "Liquid Silver",
+                    "thumbnail": "https://dummyimage.com/600x600/c0c0c0/ffffff&text=Silver+Clutch",
                     "images": [
-                        "https://dummyimage.com/1000x900/cbb99d/ffffff&text=Beige+01",
-                        "https://dummyimage.com/1000x900/cbb99d/ffffff&text=Beige+02",
-                        "https://dummyimage.com/1000x900/cbb99d/ffffff&text=Beige+03",
-                        "https://dummyimage.com/1000x900/cbb99d/ffffff&text=Beige+04"
-                    ]
-                },
-                {
-                    "id": 3,
-                    "color": "Dusty Rose",
-                    "colorFilter": "dusty-rose",
-                    "thumbnail": "https://dummyimage.com/800x800/bb8588/ffffff&text=Rose",
-                    "images": [
-                        "https://dummyimage.com/1000x900/bb8588/ffffff&text=Rose+01",
-                        "https://dummyimage.com/1000x900/bb8588/ffffff&text=Rose+02",
-                        "https://dummyimage.com/1000x900/bb8588/ffffff&text=Rose+03",
-                        "https://dummyimage.com/1000x900/bb8588/ffffff&text=Rose+04"
+                        "https://dummyimage.com/1000x900/c0c0c0/ffffff&text=Silver+01",
+                        "https://dummyimage.com/1000x900/c0c0c0/ffffff&text=Silver+02",
+                        "https://dummyimage.com/1000x900/c0c0c0/ffffff&text=Silver+03"
                     ]
                 }
             ],
-            "specifications": [
-                {
-                    "label": "Material",
-                    "value": "Top-Grain Leather"
-                },
-                {
-                    "label": "Lining",
-                    "value": "Cotton Twill"
-                },
-                {
-                    "label": "Hardware",
-                    "value": "Brushed Gold"
-                },
-                {
-                    "label": "Dimensions",
-                    "value": "26 × 18 × 9 cm"
-                }
-            ],
-            "deliveryAndReturns": {
-                "title": "Delivery & Returns",
-                "shipping": "Free Standard Delivery",
-                "deliveryTime": "3–5 Business Days",
+            "shipping": {
+                "deliveryTime": "1–2 Business Days",
                 "returns": "30-Day Free Returns"
             },
             "reviews": [
@@ -235,16 +63,73 @@
                 }
             ],
             "relatedProducts": [
-                201,
+                202,
                 204
+            ]
+        },
+        {
+            "id": 202,
+            "slug": "heritage-monogram-duffle",
+            "name": "Heritage Monogram Travel Duffle",
+            "brand": "Aura Atelier",
+            "categoryId": 1,
+            "subcategory": "handbags",
+            "price": 1850,
+            "discountPrice": null,
+            "currency": "GBP",
+            "rating": 4.8,
+            "reviewCount": 34,
+            "badge": "Iconic",
+            "stockStatus": "In Stock",
+            "sku": "AA-HMD-202",
+            "shortDescription": "Coated canvas carry-on weekender with Vachetta leather trim.",
+            "description": {
+                "title": "Description",
+                "text": "The quintessential travel companion. Crafted from durable coated monogram canvas with untreated leather handles that develop a rich patina over time."
+            },
+            "sizes": [
+                {
+                    "id": 1,
+                    "label": "50 cm",
+                    "value": "50"
+                }
+            ],
+            "defaultVariant": 1,
+            "variants": [
+                {
+                    "id": 1,
+                    "color": "Classic Monogram",
+                    "thumbnail": "https://dummyimage.com/600x600/4a3525/ffffff&text=Monogram",
+                    "images": [
+                        "https://dummyimage.com/1000x900/4a3525/ffffff&text=Duffle+01",
+                        "https://dummyimage.com/1000x900/4a3525/ffffff&text=Duffle+02"
+                    ]
+                }
+            ],
+            "shipping": {
+                "deliveryTime": "Complimentary Express Delivery",
+                "returns": "30-Day Free Returns"
+            },
+            "reviews": [
+                {
+                    "id": 2,
+                    "name": "David K.",
+                    "rating": 5,
+                    "comment": "Sturdy, spacious, and gets compliments on every flight."
+                }
+            ],
+            "relatedProducts": [
+                201,
+                203
             ]
         },
         {
             "id": 203,
             "slug": "marcelle-mini-crossbody",
-            "name": "Marcelle Mini Crossbody Duo",
+            "name": "Marcelle Mini Crossbody",
             "brand": "Nova Studio",
             "categoryId": 1,
+            "subcategory": "handbags",
             "price": 225,
             "discountPrice": 199,
             "currency": "GBP",
@@ -256,7 +141,7 @@
             "shortDescription": "Compact leather crossbody designed for effortless everyday essentials.",
             "description": {
                 "title": "Description",
-                "text": "The Marcelle Mini Crossbody combines a compact silhouette with a surprisingly spacious interior, making it ideal for city days, evenings and travel."
+                "text": "The Marcelle Mini Crossbody combines a compact silhouette with a surprisingly spacious interior, making it ideal for city days, evenings, and travel."
             },
             "sizes": [
                 {
@@ -275,288 +160,1155 @@
                 {
                     "id": 1,
                     "color": "Chocolate Brown",
-                    "colorFilter": "chocolate-brown",
-                    "thumbnail": "https://dummyimage.com/800x800/5a3825/ffffff&text=Brown",
+                    "thumbnail": "https://dummyimage.com/600x600/5a3825/ffffff&text=Brown",
                     "images": [
                         "https://dummyimage.com/1000x900/5a3825/ffffff&text=Brown+01",
-                        "https://dummyimage.com/1000x900/5a3825/ffffff&text=Brown+02",
-                        "https://dummyimage.com/1000x900/5a3825/ffffff&text=Brown+03",
-                        "https://dummyimage.com/1000x900/5a3825/ffffff&text=Brown+04"
+                        "https://dummyimage.com/1000x900/5a3825/ffffff&text=Brown+02"
                     ]
                 },
                 {
                     "id": 2,
                     "color": "Sage Green",
-                    "colorFilter": "sage-green",
-                    "thumbnail": "https://dummyimage.com/800x800/71806c/ffffff&text=Sage",
+                    "thumbnail": "https://dummyimage.com/600x600/71806c/ffffff&text=Sage",
                     "images": [
                         "https://dummyimage.com/1000x900/71806c/ffffff&text=Sage+01",
-                        "https://dummyimage.com/1000x900/71806c/ffffff&text=Sage+02",
-                        "https://dummyimage.com/1000x900/71806c/ffffff&text=Sage+03",
-                        "https://dummyimage.com/1000x900/71806c/ffffff&text=Sage+04"
-                    ]
-                },
-                {
-                    "id": 3,
-                    "color": "Ivory",
-                    "colorFilter": "ivory",
-                    "thumbnail": "https://dummyimage.com/800x800/e5ded2/333333&text=Ivory",
-                    "images": [
-                        "https://dummyimage.com/1000x900/e5ded2/333333&text=Ivory+01",
-                        "https://dummyimage.com/1000x900/e5ded2/333333&text=Ivory+02",
-                        "https://dummyimage.com/1000x900/e5ded2/333333&text=Ivory+03",
-                        "https://dummyimage.com/1000x900/e5ded2/333333&text=Ivory+04"
+                        "https://dummyimage.com/1000x900/71806c/ffffff&text=Sage+02"
                     ]
                 }
             ],
-            "specifications": [
-                {
-                    "label": "Material",
-                    "value": "Italian Calf Leather"
-                },
-                {
-                    "label": "Lining",
-                    "value": "Microfiber"
-                },
-                {
-                    "label": "Hardware",
-                    "value": "Antique Gold"
-                },
-                {
-                    "label": "Dimensions",
-                    "value": "20 × 14 × 7 cm"
-                }
-            ],
-            "deliveryAndReturns": {
-                "title": "Delivery & Returns",
-                "shipping": "Free Standard Delivery",
+            "shipping": {
                 "deliveryTime": "3–5 Business Days",
                 "returns": "30-Day Free Returns"
             },
             "reviews": [
                 {
-                    "id": 1,
-                    "name": "Amelia Brown",
-                    "rating": 5,
-                    "comment": "Small but surprisingly practical. The leather is gorgeous."
+                    "id": 3,
+                    "name": "Claire B.",
+                    "rating": 4,
+                    "comment": "Super cute and fits my phone, cards, and lipstick easily."
                 }
             ],
             "relatedProducts": [
+                201,
                 204
             ]
         },
         {
             "id": 204,
-            "slug": "elara-soft-hobo",
-            "name": "Elara Soft Hobo",
-            "brand": "Nova Studio",
+            "slug": "valerie-structured-tote",
+            "name": "Valerie Structured Leather Tote",
+            "brand": "Maison Aura",
             "categoryId": 1,
-            "price": 340,
-            "discountPrice": 299,
+            "subcategory": "crossbody-bags",
+            "price": 1450,
+            "discountPrice": null,
             "currency": "GBP",
             "rating": 4.9,
-            "reviewCount": 211,
-            "badge": "Best Seller",
+            "reviewCount": 42,
+            "badge": "Bestseller",
             "stockStatus": "In Stock",
-            "sku": "NS-ESH-204",
-            "shortDescription": "Softly sculpted leather hobo with a relaxed luxury silhouette.",
+            "sku": "MA-VST-204",
+            "shortDescription": "Architectural tote bag in smooth calfskin leather with polished gold-tone hardware.",
             "description": {
                 "title": "Description",
-                "text": "Designed with a relaxed curved silhouette, the Elara Hobo brings understated luxury to everyday dressing with supple leather and a spacious interior."
+                "text": "Handcrafted in Florence from full-grain calfskin, the Valerie Structured Tote balances precise architectural lines with an unlined, supple interior."
             },
             "sizes": [
                 {
                     "id": 1,
-                    "label": "Small",
-                    "value": "sm"
-                },
-                {
-                    "id": 2,
                     "label": "Medium",
                     "value": "m"
                 },
                 {
-                    "id": 3,
+                    "id": 2,
                     "label": "Large",
-                    "value": "lg"
+                    "value": "l"
                 }
             ],
             "defaultVariant": 1,
             "variants": [
                 {
                     "id": 1,
-                    "color": "Warm Camel",
-                    "colorFilter": "warm-camel",
-                    "thumbnail": "https://dummyimage.com/800x800/b58b62/ffffff&text=Camel",
+                    "color": "Onyx Black",
+                    "thumbnail": "https://dummyimage.com/600x600/111111/ffffff&text=Onyx+Black",
                     "images": [
-                        "https://dummyimage.com/1000x900/b58b62/ffffff&text=Camel+01",
-                        "https://dummyimage.com/1000x900/b58b62/ffffff&text=Camel+02",
-                        "https://dummyimage.com/1000x900/b58b62/ffffff&text=Camel+03",
-                        "https://dummyimage.com/1000x900/b58b62/ffffff&text=Camel+04"
+                        "https://dummyimage.com/1000x900/111111/ffffff&text=Onyx+01",
+                        "https://dummyimage.com/1000x900/111111/ffffff&text=Onyx+02"
                     ]
                 },
                 {
                     "id": 2,
-                    "color": "Forest Green",
-                    "colorFilter": "forest-green",
-                    "thumbnail": "https://dummyimage.com/800x800/274b3f/ffffff&text=Green",
+                    "color": "Warm Sand",
+                    "thumbnail": "https://dummyimage.com/600x600/c5b39b/ffffff&text=Warm+Sand",
                     "images": [
-                        "https://dummyimage.com/1000x900/274b3f/ffffff&text=Green+01",
-                        "https://dummyimage.com/1000x900/274b3f/ffffff&text=Green+02",
-                        "https://dummyimage.com/1000x900/274b3f/ffffff&text=Green+03",
-                        "https://dummyimage.com/1000x900/274b3f/ffffff&text=Green+04"
-                    ]
-                },
-                {
-                    "id": 3,
-                    "color": "Deep Navy",
-                    "colorFilter": "deep-navy",
-                    "thumbnail": "https://dummyimage.com/800x800/24344a/ffffff&text=Navy",
-                    "images": [
-                        "https://dummyimage.com/1000x900/24344a/ffffff&text=Navy+01",
-                        "https://dummyimage.com/1000x900/24344a/ffffff&text=Navy+02",
-                        "https://dummyimage.com/1000x900/24344a/ffffff&text=Navy+03",
-                        "https://dummyimage.com/1000x900/24344a/ffffff&text=Navy+04"
+                        "https://dummyimage.com/1000x900/c5b39b/ffffff&text=Sand+01",
+                        "https://dummyimage.com/1000x900/c5b39b/ffffff&text=Sand+02"
                     ]
                 }
             ],
-            "specifications": [
-                {
-                    "label": "Material",
-                    "value": "Supple Italian Leather"
-                },
-                {
-                    "label": "Lining",
-                    "value": "Suede Touch Fabric"
-                },
-                {
-                    "label": "Hardware",
-                    "value": "Polished Brass"
-                },
-                {
-                    "label": "Dimensions",
-                    "value": "34 × 27 × 12 cm"
-                }
-            ],
-            "deliveryAndReturns": {
-                "title": "Delivery & Returns",
-                "shipping": "Free Express Delivery",
-                "deliveryTime": "2–4 Business Days",
+            "shipping": {
+                "deliveryTime": "Complimentary Next-Day Delivery",
                 "returns": "30-Day Free Returns"
             },
             "reviews": [
                 {
-                    "id": 1,
-                    "name": "Charlotte Davis",
+                    "id": 101,
+                    "name": "Sophia Chen",
                     "rating": 5,
-                    "comment": "The shape is beautiful and it holds everything I need."
+                    "comment": "Exceptional leather quality and stitching. The structure holds up perfectly."
                 }
             ],
             "relatedProducts": [
-                202,
+                203,
                 205
             ]
         },
         {
             "id": 205,
-            "slug": "serena-chain-wallet",
-            "name": "Serena Chain Wallet",
-            "brand": "Nova Studio",
-            "categoryId": 4,
-            "price": 185,
-            "discountPrice": 159,
+            "slug": "celeste-cashmere-wrap-coat",
+            "name": "Céleste Cashmere Wrap Coat",
+            "brand": "Aura Atelier",
+            "categoryId": 2,
+            "subcategory": "crossbody-bags",
+            "price": 2890,
+            "discountPrice": 2500,
             "currency": "GBP",
-            "rating": 4.5,
-            "reviewCount": 76,
-            "badge": "New",
-            "stockStatus": "In Stock",
-            "sku": "NS-SCW-205",
-            "shortDescription": "Elegant compact wallet with a refined chain strap for evening styling.",
+            "rating": 4.8,
+            "reviewCount": 19,
+            "badge": "New Season",
+            "stockStatus": "Low Stock",
+            "sku": "AA-CCW-205",
+            "shortDescription": "Double-faced virgin cashmere wrap coat with exaggerated lapels and a self-tie belt.",
             "description": {
                 "title": "Description",
-                "text": "The Serena Chain Wallet is crafted for elegant occasions, featuring multiple card slots, a secure compartment and a delicate detachable chain."
+                "text": "An exercise in effortless tailoring, the Céleste coat is hand-stitched from double-faced virgin cashmere. Features an unlined fluid drape."
             },
             "sizes": [
                 {
                     "id": 1,
-                    "label": "Extra Small",
-                    "value": "xs"
+                    "label": "UK 8",
+                    "value": "uk-8"
+                },
+                {
+                    "id": 2,
+                    "label": "UK 10",
+                    "value": "uk-10"
+                },
+                {
+                    "id": 3,
+                    "label": "UK 12",
+                    "value": "uk-12"
                 }
             ],
             "defaultVariant": 1,
             "variants": [
                 {
                     "id": 1,
-                    "color": "Black",
-                    "colorFilter": "black",
-                    "thumbnail": "https://dummyimage.com/800x800/171717/ffffff&text=Black",
+                    "color": "Camel",
+                    "thumbnail": "https://dummyimage.com/600x600/b08d57/ffffff&text=Camel",
                     "images": [
-                        "https://dummyimage.com/1000x900/171717/ffffff&text=Black+01",
-                        "https://dummyimage.com/1000x900/171717/ffffff&text=Black+02",
-                        "https://dummyimage.com/1000x900/171717/ffffff&text=Black+03",
-                        "https://dummyimage.com/1000x900/171717/ffffff&text=Black+04"
+                        "https://dummyimage.com/1000x900/b08d57/ffffff&text=Camel+01",
+                        "https://dummyimage.com/1000x900/b08d57/ffffff&text=Camel+02"
                     ]
                 },
                 {
                     "id": 2,
-                    "color": "Champagne",
-                    "colorFilter": "champagne",
-                    "thumbnail": "https://dummyimage.com/800x800/c9b58c/ffffff&text=Champagne",
+                    "color": "Charcoal Grey",
+                    "thumbnail": "https://dummyimage.com/600x600/363636/ffffff&text=Charcoal",
                     "images": [
-                        "https://dummyimage.com/1000x900/c9b58c/ffffff&text=Champagne+01",
-                        "https://dummyimage.com/1000x900/c9b58c/ffffff&text=Champagne+02",
-                        "https://dummyimage.com/1000x900/c9b58c/ffffff&text=Champagne+03",
-                        "https://dummyimage.com/1000x900/c9b58c/ffffff&text=Champagne+04"
-                    ]
-                },
-                {
-                    "id": 3,
-                    "color": "Burgundy",
-                    "colorFilter": "burgundy",
-                    "thumbnail": "https://dummyimage.com/800x800/652735/ffffff&text=Burgundy",
-                    "images": [
-                        "https://dummyimage.com/1000x900/652735/ffffff&text=Burgundy+01",
-                        "https://dummyimage.com/1000x900/652735/ffffff&text=Burgundy+02",
-                        "https://dummyimage.com/1000x900/652735/ffffff&text=Burgundy+03",
-                        "https://dummyimage.com/1000x900/652735/ffffff&text=Burgundy+04"
+                        "https://dummyimage.com/1000x900/363636/ffffff&text=Charcoal+01",
+                        "https://dummyimage.com/1000x900/363636/ffffff&text=Charcoal+02"
                     ]
                 }
             ],
-            "specifications": [
-                {
-                    "label": "Material",
-                    "value": "Smooth Calf Leather"
-                },
-                {
-                    "label": "Lining",
-                    "value": "Leather Lining"
-                },
-                {
-                    "label": "Hardware",
-                    "value": "Gold Tone"
-                },
-                {
-                    "label": "Dimensions",
-                    "value": "21 × 12 × 4 cm"
-                }
-            ],
-            "deliveryAndReturns": {
-                "title": "Delivery & Returns",
-                "shipping": "Free Express Delivery",
+            "shipping": {
                 "deliveryTime": "2–4 Business Days",
                 "returns": "30-Day Free Returns"
             },
             "reviews": [
                 {
-                    "id": 1,
-                    "name": "Grace Wilson",
+                    "id": 103,
+                    "name": "Emma Watson",
                     "rating": 5,
-                    "comment": "Perfect for evenings and the chain feels very premium."
+                    "comment": "Unbelievably soft and lightweight yet incredibly warm."
+                }
+            ],
+            "relatedProducts": [
+                204,
+                206
+            ]
+        },
+        {
+            "id": 206,
+            "slug": "solaris-monolith-derby-shoes",
+            "name": "Solaris Monolith Leather Derbies",
+            "brand": "Nova Studio",
+            "categoryId": 3,
+            "subcategory": "crossbody-bags",
+            "price": 680,
+            "discountPrice": null,
+            "currency": "GBP",
+            "rating": 4.7,
+            "reviewCount": 31,
+            "badge": "Iconic",
+            "stockStatus": "In Stock",
+            "sku": "NS-SMD-206",
+            "shortDescription": "Chunky lug-sole derbies crafted from brushed spazzolato leather.",
+            "description": {
+                "title": "Description",
+                "text": "The Solaris Monolith Derbies combine utility with high-fashion tailoring. Crafted from high-shine spazzolato leather with an exaggerated lug sole."
+            },
+            "sizes": [
+                {
+                    "id": 1,
+                    "label": "EU 40",
+                    "value": "eu-40"
+                },
+                {
+                    "id": 2,
+                    "label": "EU 41",
+                    "value": "eu-41"
+                },
+                {
+                    "id": 3,
+                    "label": "EU 42",
+                    "value": "eu-42"
+                }
+            ],
+            "defaultVariant": 1,
+            "variants": [
+                {
+                    "id": 1,
+                    "color": "Polished Black",
+                    "thumbnail": "https://dummyimage.com/600x600/181818/ffffff&text=Polished+Black",
+                    "images": [
+                        "https://dummyimage.com/1000x900/181818/ffffff&text=Black+01",
+                        "https://dummyimage.com/1000x900/181818/ffffff&text=Black+02"
+                    ]
+                }
+            ],
+            "shipping": {
+                "deliveryTime": "3–5 Business Days",
+                "returns": "30-Day Free Returns"
+            },
+            "reviews": [
+                {
+                    "id": 104,
+                    "name": "Liam G.",
+                    "rating": 5,
+                    "comment": "Surprisingly comfortable given the bold lug sole."
+                }
+            ],
+            "relatedProducts": [
+                203,
+                205
+            ]
+        },
+        {
+            "id": 207,
+            "slug": "sovereign-silk-shirt",
+            "name": "Sovereign Silk Jacquard Shirt",
+            "brand": "Maison Aura",
+            "categoryId": 2,
+            "subcategory": "crossbody-bags",
+            "price": 890,
+            "discountPrice": null,
+            "currency": "GBP",
+            "rating": 4.8,
+            "reviewCount": 14,
+            "badge": "New Season",
+            "stockStatus": "In Stock",
+            "sku": "MA-SSS-207",
+            "shortDescription": "Fluid silk twill button-down featuring tonal monogram jacquard weaving.",
+            "description": {
+                "title": "Description",
+                "text": "Woven in Lyon, France from 100% pure silk twill. Features mother-of-pearl buttons, sharp pointed collar, and mother-of-pearl cuff links."
+            },
+            "sizes": [
+                {
+                    "id": 1,
+                    "label": "IT 38",
+                    "value": "it-38"
+                },
+                {
+                    "id": 2,
+                    "label": "IT 40",
+                    "value": "it-40"
+                },
+                {
+                    "id": 3,
+                    "label": "IT 42",
+                    "value": "it-42"
+                }
+            ],
+            "defaultVariant": 1,
+            "variants": [
+                {
+                    "id": 1,
+                    "color": "Ivory White",
+                    "thumbnail": "https://dummyimage.com/600x600/f5f5f0/111111&text=Ivory+Silk",
+                    "images": [
+                        "https://dummyimage.com/1000x900/f5f5f0/111111&text=Ivory+01",
+                        "https://dummyimage.com/1000x900/f5f5f0/111111&text=Ivory+02"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "color": "Midnight Noir",
+                    "thumbnail": "https://dummyimage.com/600x600/0d0d0d/ffffff&text=Noir+Silk",
+                    "images": [
+                        "https://dummyimage.com/1000x900/0d0d0d/ffffff&text=Noir+01",
+                        "https://dummyimage.com/1000x900/0d0d0d/ffffff&text=Noir+02"
+                    ]
+                }
+            ],
+            "shipping": {
+                "deliveryTime": "2–3 Business Days",
+                "returns": "30-Day Free Returns"
+            },
+            "reviews": [
+                {
+                    "id": 105,
+                    "name": "Isabelle R.",
+                    "rating": 5,
+                    "comment": "The fabric drape is pure luxury. Fits true to size."
+                }
+            ],
+            "relatedProducts": [
+                205,
+                208
+            ]
+        },
+        {
+            "id": 208,
+            "slug": "eclipse-cat-eye-sunglasses",
+            "name": "Éclipse Acetate Cat-Eye Sunglasses",
+            "brand": "Nova Studio",
+            "categoryId": 4,
+            "subcategory": "crossbody-bags",
+            "price": 340,
+            "discountPrice": 290,
+            "currency": "GBP",
+            "rating": 4.5,
+            "reviewCount": 53,
+            "badge": "Trending",
+            "stockStatus": "In Stock",
+            "sku": "NS-ECS-208",
+            "shortDescription": "Bold bevelled acetate sunglasses with 100% UV protection tinted lenses.",
+            "description": {
+                "title": "Description",
+                "text": "Hand-cut Japanese acetate frames featuring angular cat-eye proportions and engraved gold metal wirecore along the temples."
+            },
+            "sizes": [
+                {
+                    "id": 1,
+                    "label": "Standard",
+                    "value": "std"
+                }
+            ],
+            "defaultVariant": 1,
+            "variants": [
+                {
+                    "id": 1,
+                    "color": "Tortoiseshell",
+                    "thumbnail": "https://dummyimage.com/600x600/3d2314/ffffff&text=Tortoise",
+                    "images": [
+                        "https://dummyimage.com/1000x900/3d2314/ffffff&text=Tortoise+01",
+                        "https://dummyimage.com/1000x900/3d2314/ffffff&text=Tortoise+02"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "color": "Jet Black",
+                    "thumbnail": "https://dummyimage.com/600x600/050505/ffffff&text=Black+Frame",
+                    "images": [
+                        "https://dummyimage.com/1000x900/050505/ffffff&text=Black+01",
+                        "https://dummyimage.com/1000x900/050505/ffffff&text=Black+02"
+                    ]
+                }
+            ],
+            "shipping": {
+                "deliveryTime": "2–4 Business Days",
+                "returns": "30-Day Free Returns"
+            },
+            "reviews": [
+                {
+                    "id": 106,
+                    "name": "Hannah L.",
+                    "rating": 5,
+                    "comment": "Chic frame geometry. Came in a gorgeous hard leather case."
+                }
+            ],
+            "relatedProducts": [
+                203,
+                207
+            ]
+        },
+        {
+            "id": 209,
+            "slug": "royal-oak-leather-loafer",
+            "name": "Royal Horsebit Leather Loafers",
+            "brand": "Aura Atelier",
+            "categoryId": 3,
+            "subcategory": "crossbody-bags",
+            "price": 720,
+            "discountPrice": null,
+            "currency": "GBP",
+            "rating": 4.9,
+            "reviewCount": 27,
+            "badge": "Bestseller",
+            "stockStatus": "In Stock",
+            "sku": "AA-RLL-209",
+            "shortDescription": "Blake-stitched calfskin loafers finished with aged brass horsebit hardware.",
+            "description": {
+                "title": "Description",
+                "text": "Crafted in Tuscany using traditional Blake construction, offering extreme lightness and flexibility. Finished with hand-burnished toe caps."
+            },
+            "sizes": [
+                {
+                    "id": 1,
+                    "label": "UK 7",
+                    "value": "uk-7"
+                },
+                {
+                    "id": 2,
+                    "label": "UK 8",
+                    "value": "uk-8"
+                },
+                {
+                    "id": 3,
+                    "label": "UK 9",
+                    "value": "uk-9"
+                },
+                {
+                    "id": 4,
+                    "label": "UK 10",
+                    "value": "uk-10"
+                }
+            ],
+            "defaultVariant": 1,
+            "variants": [
+                {
+                    "id": 1,
+                    "color": "Espresso Brown",
+                    "thumbnail": "https://dummyimage.com/600x600/2b1a0e/ffffff&text=Espresso",
+                    "images": [
+                        "https://dummyimage.com/1000x900/2b1a0e/ffffff&text=Espresso+01",
+                        "https://dummyimage.com/1000x900/2b1a0e/ffffff&text=Espresso+02"
+                    ]
+                }
+            ],
+            "shipping": {
+                "deliveryTime": "Complimentary Next-Day Delivery",
+                "returns": "30-Day Free Returns"
+            },
+            "reviews": [
+                {
+                    "id": 107,
+                    "name": "Julian P.",
+                    "rating": 5,
+                    "comment": "Zero break-in time needed. True Italian craftsmanship."
+                }
+            ],
+            "relatedProducts": [
+                206,
+                210
+            ]
+        },
+        {
+            "id": 210,
+            "slug": "serpent-diamond-pendant-necklace",
+            "name": "Souverain Diamond Pendant Necklace",
+            "brand": "Maison Aura",
+            "categoryId": 5,
+            "subcategory": "crossbody-bags",
+            "price": 4200,
+            "discountPrice": null,
+            "currency": "GBP",
+            "rating": 5.0,
+            "reviewCount": 8,
+            "badge": "Fine Jewelry",
+            "stockStatus": "Low Stock",
+            "sku": "MA-SDP-210",
+            "shortDescription": "18k yellow gold pendant set with brilliant-cut pavé diamonds.",
+            "description": {
+                "title": "Description",
+                "text": "Handcrafted by master goldsmiths in Place Vendôme. Features 0.85 carats of VVS1 clarity, E-color diamonds set into 18k solid yellow gold."
+            },
+            "sizes": [
+                {
+                    "id": 1,
+                    "label": "45 cm Chain",
+                    "value": "45cm"
+                }
+            ],
+            "defaultVariant": 1,
+            "variants": [
+                {
+                    "id": 1,
+                    "color": "18k Yellow Gold",
+                    "thumbnail": "https://dummyimage.com/600x600/e6ca65/ffffff&text=Gold+Necklace",
+                    "images": [
+                        "https://dummyimage.com/1000x900/e6ca65/ffffff&text=Gold+01",
+                        "https://dummyimage.com/1000x900/e6ca65/ffffff&text=Gold+02"
+                    ]
+                }
+            ],
+            "shipping": {
+                "deliveryTime": "Insured Express Courier",
+                "returns": "30-Day Free Returns"
+            },
+            "reviews": [
+                {
+                    "id": 108,
+                    "name": "Charlotte H.",
+                    "rating": 5,
+                    "comment": "Catches the light breathtakingly well. Pure elegance."
                 }
             ],
             "relatedProducts": [
                 201,
-                203
+                211
+            ]
+        },
+        {
+            "id": 211,
+            "slug": "monolith-tailored-wool-trousers",
+            "name": "Monolith Pleated Wool Trousers",
+            "brand": "Nova Studio",
+            "categoryId": 2,
+            "subcategory": "crossbody-bags",
+            "price": 540,
+            "discountPrice": null,
+            "currency": "GBP",
+            "rating": 4.6,
+            "reviewCount": 22,
+            "badge": "New Season",
+            "stockStatus": "In Stock",
+            "sku": "NS-MPT-211",
+            "shortDescription": "High-waisted double-pleated trousers in Italian virgin wool grain de poudre.",
+            "description": {
+                "title": "Description",
+                "text": "Cut with an exaggerated wide leg and sharp front creases. Fully lined with cupro, featuring tab waist adjusters."
+            },
+            "sizes": [
+                {
+                    "id": 1,
+                    "label": "IT 46",
+                    "value": "it-46"
+                },
+                {
+                    "id": 2,
+                    "label": "IT 48",
+                    "value": "it-48"
+                },
+                {
+                    "id": 3,
+                    "label": "IT 50",
+                    "value": "it-50"
+                }
+            ],
+            "defaultVariant": 1,
+            "variants": [
+                {
+                    "id": 1,
+                    "color": "Charcoal Grey",
+                    "thumbnail": "https://dummyimage.com/600x600/2e2e2e/ffffff&text=Charcoal+Trousers",
+                    "images": [
+                        "https://dummyimage.com/1000x900/2e2e2e/ffffff&text=Grey+01",
+                        "https://dummyimage.com/1000x900/2e2e2e/ffffff&text=Grey+02"
+                    ]
+                }
+            ],
+            "shipping": {
+                "deliveryTime": "2–4 Business Days",
+                "returns": "30-Day Free Returns"
+            },
+            "reviews": [
+                {
+                    "id": 109,
+                    "name": "Arthur M.",
+                    "rating": 5,
+                    "comment": "Drapes impeccably over loafers or boots."
+                }
+            ],
+            "relatedProducts": [
+                206,
+                207
+            ]
+        },
+        {
+            "id": 212,
+            "slug": "atelier-leather-biker-jacket",
+            "name": "Atelier Nappa Leather Jacket",
+            "brand": "Aura Atelier",
+            "categoryId": 2,
+            "subcategory": "crossbody-bags",
+            "price": 2400,
+            "discountPrice": 1950,
+            "currency": "GBP",
+            "rating": 4.9,
+            "reviewCount": 16,
+            "badge": "Limited Edition",
+            "stockStatus": "In Stock",
+            "sku": "AA-ANJ-212",
+            "shortDescription": "Ultra-soft lambskin nappa jacket with brushed silver hardware.",
+            "description": {
+                "title": "Description",
+                "text": "Sourced from full-grain Spanish lambskin, washed for a vintage hand-feel. Features an asymmetrical zip and custom engraved pullers."
+            },
+            "sizes": [
+                {
+                    "id": 1,
+                    "label": "EU 48",
+                    "value": "eu-48"
+                },
+                {
+                    "id": 2,
+                    "label": "EU 50",
+                    "value": "eu-50"
+                },
+                {
+                    "id": 3,
+                    "label": "EU 52",
+                    "value": "eu-52"
+                }
+            ],
+            "defaultVariant": 1,
+            "variants": [
+                {
+                    "id": 1,
+                    "color": "Washed Black",
+                    "thumbnail": "https://dummyimage.com/600x600/121212/ffffff&text=Leather+Jacket",
+                    "images": [
+                        "https://dummyimage.com/1000x900/121212/ffffff&text=Jacket+01",
+                        "https://dummyimage.com/1000x900/121212/ffffff&text=Jacket+02"
+                    ]
+                }
+            ],
+            "shipping": {
+                "deliveryTime": "Complimentary Express Delivery",
+                "returns": "30-Day Free Returns"
+            },
+            "reviews": [
+                {
+                    "id": 110,
+                    "name": "Sebastian T.",
+                    "rating": 5,
+                    "comment": "The leather is buttery soft right out of the box."
+                }
+            ],
+            "relatedProducts": [
+                205,
+                206
+            ]
+        },
+        {
+            "id": 213,
+            "slug": "sovereign-card-holder",
+            "name": "Sovereign Calfskin Card Holder",
+            "brand": "Maison Aura",
+            "categoryId": 1,
+            "subcategory": "crossbody-bags",
+            "price": 240,
+            "discountPrice": null,
+            "currency": "GBP",
+            "rating": 4.7,
+            "reviewCount": 61,
+            "badge": "Bestseller",
+            "stockStatus": "In Stock",
+            "sku": "MA-SCC-213",
+            "shortDescription": "Slim leather credit card case with four slots and a central bill pocket.",
+            "description": {
+                "title": "Description",
+                "text": "Compact luxury crafted from grained calfskin leather with hot-stamped gold foil branding."
+            },
+            "sizes": [
+                {
+                    "id": 1,
+                    "label": "One Size",
+                    "value": "os"
+                }
+            ],
+            "defaultVariant": 1,
+            "variants": [
+                {
+                    "id": 1,
+                    "color": "Emerald Green",
+                    "thumbnail": "https://dummyimage.com/600x600/0f3822/ffffff&text=Emerald+Cardholder",
+                    "images": [
+                        "https://dummyimage.com/1000x900/0f3822/ffffff&text=Emerald+01"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "color": "Noir Black",
+                    "thumbnail": "https://dummyimage.com/600x600/080808/ffffff&text=Black+Cardholder",
+                    "images": [
+                        "https://dummyimage.com/1000x900/080808/ffffff&text=Black+01"
+                    ]
+                }
+            ],
+            "shipping": {
+                "deliveryTime": "2–3 Business Days",
+                "returns": "30-Day Free Returns"
+            },
+            "reviews": [
+                {
+                    "id": 111,
+                    "name": "Gemma K.",
+                    "rating": 5,
+                    "comment": "Slim, elegant, and fits easily into clutch bags."
+                }
+            ],
+            "relatedProducts": [
+                201,
+                204
+            ]
+        },
+        {
+            "id": 214,
+            "slug": "luminary-silk-scarf-90",
+            "name": "Luminary Printed Silk Square 90",
+            "brand": "Aura Atelier",
+            "categoryId": 4,
+            "subcategory": "crossbody-bags",
+            "price": 395,
+            "discountPrice": null,
+            "currency": "GBP",
+            "rating": 4.9,
+            "reviewCount": 20,
+            "badge": "Iconic",
+            "stockStatus": "In Stock",
+            "sku": "AA-LSS-214",
+            "shortDescription": "90x90cm silk twill scarf with hand-rolled edges and botanical print.",
+            "description": {
+                "title": "Description",
+                "text": "Screen-printed in Como using 28 individual color screens. Hand-rolled hems stitched by seasoned artisans."
+            },
+            "sizes": [
+                {
+                    "id": 1,
+                    "label": "90 x 90 cm",
+                    "value": "90x90"
+                }
+            ],
+            "defaultVariant": 1,
+            "variants": [
+                {
+                    "id": 1,
+                    "color": "Navy & Gold",
+                    "thumbnail": "https://dummyimage.com/600x600/132238/ffffff&text=Silk+Scarf",
+                    "images": [
+                        "https://dummyimage.com/1000x900/132238/ffffff&text=Scarf+01",
+                        "https://dummyimage.com/1000x900/132238/ffffff&text=Scarf+02"
+                    ]
+                }
+            ],
+            "shipping": {
+                "deliveryTime": "2–4 Business Days",
+                "returns": "30-Day Free Returns"
+            },
+            "reviews": [
+                {
+                    "id": 112,
+                    "name": "Victoria S.",
+                    "rating": 5,
+                    "comment": "Vibrant colors and exquisite hand-rolled edging."
+                }
+            ],
+            "relatedProducts": [
+                207,
+                208
+            ]
+        },
+        {
+            "id": 215,
+            "slug": "chronographe-royal-automatic-watch",
+            "name": "Chronographe Royal 41mm Watch",
+            "brand": "Maison Aura",
+            "categoryId": 5,
+            "subcategory": "crossbody-bags",
+            "price": 12500,
+            "discountPrice": null,
+            "currency": "GBP",
+            "rating": 5.0,
+            "reviewCount": 6,
+            "badge": "Limited Edition",
+            "stockStatus": "Low Stock",
+            "sku": "MA-CRA-215",
+            "shortDescription": "18k Rose Gold automatic chronograph with an onyx dial and alligator strap.",
+            "description": {
+                "title": "Description",
+                "text": "Powered by our in-house calibre AU-808 movement with a 72-hour power reserve. Features a sapphire crystal exhibition caseback."
+            },
+            "sizes": [
+                {
+                    "id": 1,
+                    "label": "41mm Case",
+                    "value": "41mm"
+                }
+            ],
+            "defaultVariant": 1,
+            "variants": [
+                {
+                    "id": 1,
+                    "color": "Rose Gold / Onyx",
+                    "thumbnail": "https://dummyimage.com/600x600/b76e79/ffffff&text=Rose+Gold+Watch",
+                    "images": [
+                        "https://dummyimage.com/1000x900/b76e79/ffffff&text=Watch+01",
+                        "https://dummyimage.com/1000x900/b76e79/ffffff&text=Watch+02"
+                    ]
+                }
+            ],
+            "shipping": {
+                "deliveryTime": "Armed Courier Delivery",
+                "returns": "30-Day Free Returns"
+            },
+            "reviews": [
+                {
+                    "id": 113,
+                    "name": "Edward C.",
+                    "rating": 5,
+                    "comment": "Horological perfection. The onyx dial is deeply mesmerizing."
+                }
+            ],
+            "relatedProducts": [
+                210,
+                216
+            ]
+        },
+        {
+            "id": 216,
+            "slug": "solaris-chelsea-boot",
+            "name": "Solaris Polished Calfskin Chelsea Boots",
+            "brand": "Nova Studio",
+            "categoryId": 3,
+            "subcategory": "crossbody-bags",
+            "price": 750,
+            "discountPrice": null,
+            "currency": "GBP",
+            "rating": 4.8,
+            "reviewCount": 19,
+            "badge": "New Season",
+            "stockStatus": "In Stock",
+            "sku": "NS-SCC-216",
+            "shortDescription": "Sleek Chelsea boots with elastic side gores and a bevelled leather sole.",
+            "description": {
+                "title": "Description",
+                "text": "Minimalist ankle boots sculpted from full-grain French box calf leather. Features leather pull tabs and hand-stained soles."
+            },
+            "sizes": [
+                {
+                    "id": 1,
+                    "label": "EU 41",
+                    "value": "eu-41"
+                },
+                {
+                    "id": 2,
+                    "label": "EU 42",
+                    "value": "eu-42"
+                },
+                {
+                    "id": 3,
+                    "label": "EU 43",
+                    "value": "eu-43"
+                }
+            ],
+            "defaultVariant": 1,
+            "variants": [
+                {
+                    "id": 1,
+                    "color": "Deep Cognac",
+                    "thumbnail": "https://dummyimage.com/600x600/422415/ffffff&text=Cognac+Boot",
+                    "images": [
+                        "https://dummyimage.com/1000x900/422415/ffffff&text=Boot+01",
+                        "https://dummyimage.com/1000x900/422415/ffffff&text=Boot+02"
+                    ]
+                }
+            ],
+            "shipping": {
+                "deliveryTime": "2–4 Business Days",
+                "returns": "30-Day Free Returns"
+            },
+            "reviews": [
+                {
+                    "id": 114,
+                    "name": "Harrison V.",
+                    "rating": 5,
+                    "comment": "Sleek silhouette that pairs effortlessly with tailored trousers."
+                }
+            ],
+            "relatedProducts": [
+                206,
+                209
+            ]
+        },
+        {
+            "id": 217,
+            "slug": "august-cashmere-crewneck-knit",
+            "name": "August Seamless Cashmere Crewneck",
+            "brand": "Aura Atelier",
+            "categoryId": 2,
+            "subcategory": "crossbody-bags",
+            "price": 690,
+            "discountPrice": 580,
+            "currency": "GBP",
+            "rating": 4.7,
+            "reviewCount": 38,
+            "badge": "Bestseller",
+            "stockStatus": "In Stock",
+            "sku": "AA-ASC-217",
+            "shortDescription": "3-ply Mongolian cashmere sweater with ribbed collar and cuffs.",
+            "description": {
+                "title": "Description",
+                "text": "Knit in Hawick, Scotland using whole-garment 3D knitting technology for seamless comfort and supreme durability."
+            },
+            "sizes": [
+                {
+                    "id": 1,
+                    "label": "S",
+                    "value": "s"
+                },
+                {
+                    "id": 2,
+                    "label": "M",
+                    "value": "m"
+                },
+                {
+                    "id": 3,
+                    "label": "L",
+                    "value": "l"
+                },
+                {
+                    "id": 4,
+                    "label": "XL",
+                    "value": "xl"
+                }
+            ],
+            "defaultVariant": 1,
+            "variants": [
+                {
+                    "id": 1,
+                    "color": "Oatmeal Melange",
+                    "thumbnail": "https://dummyimage.com/600x600/d6c8b8/ffffff&text=Oatmeal+Knit",
+                    "images": [
+                        "https://dummyimage.com/1000x900/d6c8b8/ffffff&text=Knit+01",
+                        "https://dummyimage.com/1000x900/d6c8b8/ffffff&text=Knit+02"
+                    ]
+                }
+            ],
+            "shipping": {
+                "deliveryTime": "2–3 Business Days",
+                "returns": "30-Day Free Returns"
+            },
+            "reviews": [
+                {
+                    "id": 115,
+                    "name": "James W.",
+                    "rating": 5,
+                    "comment": "Unbelievable softness and retains its shape wash after wash."
+                }
+            ],
+            "relatedProducts": [
+                205,
+                211
+            ]
+        },
+        {
+            "id": 218,
+            "slug": "sovereign-leather-belt",
+            "name": "Sovereign Reversible Leather Belt 32mm",
+            "brand": "Maison Aura",
+            "categoryId": 4,
+            "subcategory": "crossbody-bags",
+            "price": 380,
+            "discountPrice": null,
+            "currency": "GBP",
+            "rating": 4.6,
+            "reviewCount": 44,
+            "badge": "Iconic",
+            "stockStatus": "In Stock",
+            "sku": "MA-SRB-218",
+            "shortDescription": "Reversible calfskin belt featuring a palladium-finish monogram buckle.",
+            "description": {
+                "title": "Description",
+                "text": "Versatile design offering smooth black leather on one side and textured brown leather on the reverse."
+            },
+            "sizes": [
+                {
+                    "id": 1,
+                    "label": "85 cm",
+                    "value": "85"
+                },
+                {
+                    "id": 2,
+                    "label": "95 cm",
+                    "value": "95"
+                },
+                {
+                    "id": 3,
+                    "label": "105 cm",
+                    "value": "105"
+                }
+            ],
+            "defaultVariant": 1,
+            "variants": [
+                {
+                    "id": 1,
+                    "color": "Black / Brown",
+                    "thumbnail": "https://dummyimage.com/600x600/1a1a1a/ffffff&text=Reversible+Belt",
+                    "images": [
+                        "https://dummyimage.com/1000x900/1a1a1a/ffffff&text=Belt+01"
+                    ]
+                }
+            ],
+            "shipping": {
+                "deliveryTime": "2–3 Business Days",
+                "returns": "30-Day Free Returns"
+            },
+            "reviews": [
+                {
+                    "id": 116,
+                    "name": "Daniel F.",
+                    "rating": 4,
+                    "comment": "Great versatility with two colors in one strap."
+                }
+            ],
+            "relatedProducts": [
+                211,
+                213
+            ]
+        },
+        {
+            "id": 219,
+            "slug": "aether-signet-ring",
+            "name": "Aether Onyx Signet Ring",
+            "brand": "Nova Studio",
+            "categoryId": 5,
+            "subcategory": "crossbody-bags",
+            "price": 1100,
+            "discountPrice": null,
+            "currency": "GBP",
+            "rating": 4.9,
+            "reviewCount": 11,
+            "badge": "Fine Jewelry",
+            "stockStatus": "In Stock",
+            "sku": "NS-AOR-219",
+            "shortDescription": "Heavyweight 18k yellow gold signet ring inlaid with custom-cut natural black onyx.",
+            "description": {
+                "title": "Description",
+                "text": "Solid 18k yellow gold construction with hand-engraved internal logo details and satin polish finishing."
+            },
+            "sizes": [
+                {
+                    "id": 1,
+                    "label": "US 7",
+                    "value": "us-7"
+                },
+                {
+                    "id": 2,
+                    "label": "US 9",
+                    "value": "us-9"
+                },
+                {
+                    "id": 3,
+                    "label": "US 11",
+                    "value": "us-11"
+                }
+            ],
+            "defaultVariant": 1,
+            "variants": [
+                {
+                    "id": 1,
+                    "color": "Gold / Onyx",
+                    "thumbnail": "https://dummyimage.com/600x600/d4af37/000000&text=Onyx+Ring",
+                    "images": [
+                        "https://dummyimage.com/1000x900/d4af37/000000&text=Ring+01"
+                    ]
+                }
+            ],
+            "shipping": {
+                "deliveryTime": "Insured Express Courier",
+                "returns": "30-Day Free Returns"
+            },
+            "reviews": [
+                {
+                    "id": 117,
+                    "name": "Lucas N.",
+                    "rating": 5,
+                    "comment": "Substantial weight and flawless stone setting."
+                }
+            ],
+            "relatedProducts": [
+                210,
+                215
+            ]
+        },
+        {
+            "id": 220,
+            "slug": "savile-double-breasted-blazer",
+            "name": "Savile Double-Breasted Structured Blazer",
+            "brand": "Maison Aura",
+            "categoryId": 2,
+            "subcategory": "crossbody-bags",
+            "price": 1950,
+            "discountPrice": null,
+            "currency": "GBP",
+            "rating": 4.9,
+            "reviewCount": 15,
+            "badge": "New Season",
+            "stockStatus": "In Stock",
+            "sku": "MA-SDB-220",
+            "shortDescription": "Tailored jacket with padded shoulders, peak lapels, and horn buttons.",
+            "description": {
+                "title": "Description",
+                "text": "Cut in London from structured wool gabardine. Features half-canvas chest construction for long-term shape retention."
+            },
+            "sizes": [
+                {
+                    "id": 1,
+                    "label": "UK 38R",
+                    "value": "uk-38r"
+                },
+                {
+                    "id": 2,
+                    "label": "UK 40R",
+                    "value": "uk-40r"
+                },
+                {
+                    "id": 3,
+                    "label": "UK 42R",
+                    "value": "uk-42r"
+                }
+            ],
+            "defaultVariant": 1,
+            "variants": [
+                {
+                    "id": 1,
+                    "color": "Midnight Navy",
+                    "thumbnail": "https://dummyimage.com/600x600/0f192b/ffffff&text=Navy+Blazer",
+                    "images": [
+                        "https://dummyimage.com/1000x900/0f192b/ffffff&text=Blazer+01",
+                        "https://dummyimage.com/1000x900/0f192b/ffffff&text=Blazer+02"
+                    ]
+                }
+            ],
+            "shipping": {
+                "deliveryTime": "Complimentary Next-Day Delivery",
+                "returns": "30-Day Free Returns"
+            },
+            "reviews": [
+                {
+                    "id": 118,
+                    "name": "Charles B.",
+                    "rating": 5,
+                    "comment": "Impeccable shoulder line and waist suppression."
+                }
+            ],
+            "relatedProducts": [
+                207,
+                211
             ]
         }
     ]

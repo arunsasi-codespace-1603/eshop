@@ -9,6 +9,7 @@ import CategoryList from "../../components/home/CategoryList/CategoryList";
 import ProductList from "../../components/home/ProductList/ProductList";
 import Footer from "../../components/ui/Footer/Footer";
 import VideoBanner from "../../components/ui/VideoBanner/VideoBanner";
+import Navigation from "../../components/ui/Navigation/Navigation";
 
 const Home = () => {
     const categoryList = CategoryItems.categories;
@@ -16,7 +17,7 @@ const Home = () => {
 
     return (
         <>
-            <Navbar />
+           <Navigation/>
             <main>
                 <section className="hm-hero-banner">
                     <VideoBanner

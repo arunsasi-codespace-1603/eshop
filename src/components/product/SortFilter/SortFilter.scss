@@ -93,6 +93,9 @@
     }
 
     .icon {
+        width: var.$spacing-md;
+        height: var.$spacing-md;
+
         svg {
             display: block;
         }

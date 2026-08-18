@@ -8,10 +8,13 @@ const AppRoutes = () => {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<Home />}></Route>
-                <Route path="/about" element={<About />}></Route>
-                <Route path="/products/:categId/:slug" element={<ProductsPage />}></Route>
-                <Route path="/product/:pid/:slug" element={<ProductDetails />}></Route>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                {/* <Route path="/product/:pid/:slug" element={<ProductDetails />} /> */}
+                {/* <Route path="/products/:categId/:slug" element={<ProductsPage />} /> */}
+                <Route path="/products/:category" element={<ProductsPage />} />
+                <Route path="/products/:category/:subCategory" element={<ProductsPage />} />
+                <Route path="/products/:category/:subCategory:type" element={<ProductsPage />} />
             </Routes>
         </BrowserRouter>
     )

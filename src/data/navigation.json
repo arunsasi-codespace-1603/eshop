@@ -1,0 +1,191 @@
+{
+    "navigation": [
+        {
+            "id": 2,
+            "title": "Women",
+            "link": "/products/women",
+            "children": [
+                {
+                    "id": 11,
+                    "title": "Handbags",
+                    "link": "/products/handbags",
+                    "children": [
+                        {
+                            "id": 111,
+                            "title": "View All",
+                            "link": "/products/women/handbags/view-all"
+                        },
+                        {
+                            "id": 112,
+                            "title": "Shoulder Bags",
+                            "link": "/products/women/handbags/sholder-bags"
+                        },
+                        {
+                            "id": 113,
+                            "title": "Crossbody Bags",
+                            "link": "/products/women/handbags/crossbody"
+                        },
+                        {
+                            "id": 114,
+                            "title": "Totes",
+                            "link": "/products/women/handbags/totes"
+                        }
+                    ]
+                },
+                {
+                    "id": 12,
+                    "title": "Wallets",
+                    "link": "/products/wallets",
+                    "children": [
+                        {
+                            "id": 121,
+                            "title": "View All",
+                            "link": "/products/wallets"
+                        },
+                        {
+                            "id": 122,
+                            "title": "Long Wallets",
+                            "link": "/products/long-wallets"
+                        },
+                        {
+                            "id": 123,
+                            "title": "Compact Wallets",
+                            "link": "/products/compact-wallets"
+                        }
+                    ]
+                },
+                {
+                    "id": 13,
+                    "title": "Shoes",
+                    "link": "/products/shoes",
+                    "children": [
+                        {
+                            "id": 131,
+                            "title": "View All",
+                            "link": "/products/shoes"
+                        },
+                        {
+                            "id": 132,
+                            "title": "Sneakers",
+                            "link": "/products/sneakers"
+                        },
+                        {
+                            "id": 133,
+                            "title": "Loafers",
+                            "link": "/products/loafers"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Men",
+            "children": [
+                {
+                    "id": 31,
+                    "title": "Bags",
+                    "link": "/products/men-bags",
+                    "children": [
+                        {
+                            "id": 311,
+                            "title": "View All",
+                            "link": "/products/men-bags"
+                        },
+                        {
+                            "id": 312,
+                            "title": "Shoulder Bags",
+                            "link": "/products/men-shoulder-bags"
+                        },
+                        {
+                            "id": 313,
+                            "title": "Crossbody Bags",
+                            "link": "/products/men-crossbody-bags"
+                        },
+                        {
+                            "id": 314,
+                            "title": "Backpacks",
+                            "link": "/products/men-backpacks"
+                        }
+                    ]
+                },
+                {
+                    "id": 32,
+                    "title": "Ready-to-Wear",
+                    "link": "/products/men-ready-to-wear",
+                    "children": [
+                        {
+                            "id": 321,
+                            "title": "View All",
+                            "link": "/products/men-ready-to-wear"
+                        },
+                        {
+                            "id": 322,
+                            "title": "Jackets",
+                            "link": "/products/men-jackets"
+                        },
+                        {
+                            "id": 323,
+                            "title": "Shirts",
+                            "link": "/products/men-shirts"
+                        },
+                        {
+                            "id": 324,
+                            "title": "T-Shirts",
+                            "link": "/products/men-t-shirts"
+                        }
+                    ]
+                },
+                {
+                    "id": 33,
+                    "title": "Shoes",
+                    "link": "/products/men-shoes",
+                    "children": [
+                        {
+                            "id": 331,
+                            "title": "View All",
+                            "link": "/products/men-shoes"
+                        },
+                        {
+                            "id": 332,
+                            "title": "Sneakers",
+                            "link": "/products/men-sneakers"
+                        },
+                        {
+                            "id": 333,
+                            "title": "Loafers",
+                            "link": "/products/men-loafers"
+                        },
+                        {
+                            "id": 334,
+                            "title": "Boots",
+                            "link": "/products/men-boots"
+                        }
+                    ]
+                },
+                {
+                    "id": 34,
+                    "title": "Small Leather Goods",
+                    "link": "/products/men-small-leather-goods",
+                    "children": [
+                        {
+                            "id": 341,
+                            "title": "View All",
+                            "link": "/products/men-small-leather-goods"
+                        },
+                        {
+                            "id": 342,
+                            "title": "Wallets",
+                            "link": "/products/men-wallets"
+                        },
+                        {
+                            "id": 343,
+                            "title": "Card Holders",
+                            "link": "/products/men-card-holders"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

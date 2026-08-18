@@ -18,7 +18,7 @@
     &__content {
         display: var.$display-block;
         text-align: center;
-        padding: var.$spacing-md 0;
+        padding: var.$spacing-sm 0 var.$spacing-md;
         font-weight: 300;
         font-size: var.$font-size-md;
     }

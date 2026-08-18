@@ -1,5 +1,8 @@
 import "./CategoryNavigation.scss";
 import "swiper/css";
+// import Libraray
+import { useParams } from "react-router";
+// import plugins
 import { Swiper, SwiperSlide } from "swiper/react";
 const categories = [
     "View All",
@@ -10,6 +13,8 @@ const categories = [
     "Shoes"
 ]
 const CategoryNavigation = () => {
+    const categNavLink = useParams();
+    console.log(categNavLink)
     return (
         <nav className="navbar-category">
             <div className="container">
@@ -20,7 +25,9 @@ const CategoryNavigation = () => {
                         freeMode={true}>
                         {categories.map((category, index) => (
                             <SwiperSlide key={index} style={{ width: "auto" }}>
-                                <button className="category-nav-link">
+                                <button
+
+                                    className="btn btn--transparent category-nav-link">
                                     {category}
                                 </button>
                             </SwiperSlide>

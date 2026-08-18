@@ -1,62 +1,24 @@
 import "./Navbar.scss";
 import { useState } from "react";
 import useIsMobile from "../../../hooks/useIsMobile";
-import { ChevronRight, ChevronLeft, List, Search, Heart, Bag, Person, XLg } from "react-bootstrap-icons";
+// Library
+import { Link } from "react-router-dom";
+// import data
+import NavigationData from "../../../data/navigation.json";
+
+import {
+    ChevronRight,
+    ChevronLeft,
+    List, Search,
+    Heart,
+    Bag,
+    Person,
+    XLg
+} from "react-bootstrap-icons";
 
 
 // Menu Items
-const menu = [
-    {
-        id: 1,
-        title: "Women",
-        children: [
-            {
-                id: 11,
-                title: "Handbags",
-                children: [
-                    {
-                        id: 111,
-                        title: "Shoulder Bags",
-                        link: "/products/shoulder-bags"
-                    },
-                    {
-                        id: 112,
-                        title: "Crossbody Bags",
-                        link: "/products/crossbody-bags"
-                    }
-                ]
-            },
-            {
-                id: 12,
-                title: "Shoes",
-                link: "/products/women-shoes"
-            }
-        ]
-    },
-
-    {
-        id: 2,
-        title: "Men",
-        children: [
-            {
-                id: 21,
-                title: "Bags",
-                link: "/products/men-bags"
-            },
-            {
-                id: 22,
-                title: "Shoes",
-                link: "/products/men-shoes"
-            }
-        ]
-    },
-
-    {
-        id: 3,
-        title: "Travel",
-        link: "/travel"
-    }
-];
+const menu = NavigationData.navigation;
 
 const Navbar = () => {
     // get screen size
@@ -168,14 +130,21 @@ const Navbar = () => {
                                     )}
                                     {currentMenu.items.map((item) => (
                                         <li key={item.id} className="menu-items__list">
-                                            <a href="#"
+                                            <Link
+                                                to={item.link}
                                                 className="menu-items__link"
-                                                onClick={() => goToChildNode(item)}>
-                                                <span className="label">{item.title}</span>
-                                                {item.children &&
-                                                    <span className="icon"><ChevronRight /></span>
-                                                }
-                                            </a>
+                                                onClick={() => goToChildNode(item)}
+                                            >
+                                                <span className="label">
+                                                    {item.title}
+                                                </span>
+
+                                                {item.children?.length > 0 && (
+                                                    <span className="icon">
+                                                        <ChevronRight />
+                                                    </span>
+                                                )}
+                                            </Link>
                                         </li>))}
                                 </ul>
                             </div>
