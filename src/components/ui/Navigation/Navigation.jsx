@@ -18,14 +18,13 @@ import {
 import useIsMobile from "../../../hooks/useIsMobile";
 
 
-
+// For menu items
+const menus = menubarLinks.navigation;
 const Navigation = () => {
     // Navigation
     const navigate = useNavigate();
     // Find device
     const isMobileDev = useIsMobile();
-    // For menu items
-    const menus = menubarLinks.navigation;
     const [currentMenu, setCurrentMenu] = useState(menus);
     const [prevMenu, setPrevMenu] = useState([]);
     const [menuLabel, setMenuLabel] = useState("");
@@ -58,7 +57,7 @@ const Navigation = () => {
     //------------------------------------------------
     // Submenu list Open
     //------------------------------------------------
-    const nestedMenu = (menuItem) => {
+    const handleMenuClick = (menuItem) => {
         if (menuItem.children?.length > 0) {
             setPrevMenu((prev) => [
                 ...prev,
@@ -72,7 +71,9 @@ const Navigation = () => {
         }
         else {
             navigate(menuItem.path);
+            closeMenu();
         }
+
     }
 
     //------------------------------------------------
@@ -156,7 +157,7 @@ const Navigation = () => {
                                 className="menu-items__list">
                                 {
                                     <button
-                                        onClick={() => nestedMenu(menu)}
+                                        onClick={() => handleMenuClick(menu)}
                                         className="btn menu-items__link">
                                         <span className="label">
                                             {menu.name}

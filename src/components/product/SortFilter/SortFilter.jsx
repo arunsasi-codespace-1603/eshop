@@ -21,6 +21,7 @@ const SortFilter = ({
 }) => {
     const [activeAccordion, setActiveAccordion] = useState(null);
     const filters = filterData.filters;
+    console.log(filters)
     const toggleAccordion = (id) => {
         setActiveAccordion(prev => prev === id ? null : id);
     }
@@ -104,7 +105,7 @@ const SortFilter = ({
                                                 {option.label}
                                             </label>
                                             <input
-                                            className="filter-input-group__input"
+                                                className="filter-input-group__input"
                                                 type={type}
                                                 value={option.value}
                                                 id={`${key}-${option.id}`}

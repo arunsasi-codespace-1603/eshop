@@ -1,52 +1,114 @@
 {
-  "categories": [
-    {
-      "id": 1,
-      "name": "Women's Handbags",
-      "slug": "womens-handbags",
-      "image": "https://dummyimage.com/500x600/000/fff"
-    },
-    {
-      "id": 2,
-      "name": "Women's Accessories",
-      "slug": "womens-accessories",
-      "image": "https://dummyimage.com/500x600/541954/fff"
-    },
-    {
-      "id": 3,
-      "name": "Beauty",
-      "slug": "beauty",
-      "image": "https://dummyimage.com/500x600/171e87/fff"
-    },
-    {
-      "id": 4,
-      "name": "Women's Shoes",
-      "slug": "womens-shoes",
-      "image": "https://dummyimage.com/500x600/090e54/fff"
-    },
-    {
-      "id": 5,
-      "name": "Men's Handbags",
-      "slug": "mens-handbag",
-      "image": "https://dummyimage.com/500x600/1eb08b/fff"
-    },
-    {
-      "id": 6,
-      "name": "Men's Accessories",
-      "slug": "mens-accessories",
-      "image": "https://dummyimage.com/500x600/541954/fff"
-    },
-    {
-      "id": 7,
-      "name": "Men's Shoes",
-      "slug": "mens-shoes",
-      "image": "https://dummyimage.com/500x600/32692a/fff"
-    },
-    {
-      "id": 8,
-      "name": "Perfumes",
-      "slug": "perfumes",
-      "image": "https://dummyimage.com/500x600/472106/fff"
-    }
-  ]
+    "categories": [
+        {
+            "id": "women",
+            "name": "Women",
+            "slug": "women",
+            "pageType": "editorial",
+            "children": [
+                {
+                    "id": "women-bags",
+                    "name": "Bags",
+                    "slug": "bags",
+                    "pageType": "listing",
+                    "bannerImage": "https://dummyimage.com/1320x300/9e4bb3/fff&text=Bags",
+                    "children": [
+                        {
+                            "id": "view-all",
+                            "name": "View All",
+                            "slug": "view-all",
+                            "pageType": "listing"
+                        },
+                        {
+                            "id": "women-bags-handbags",
+                            "name": "Handbags",
+                            "slug": "handbags",
+                            "pageType": "listing"
+                        },
+                        {
+                            "id": "women-bags-crossbody",
+                            "name": "Crossbody Bags",
+                            "slug": "crossbody-bags",
+                            "pageType": "listing"
+                        },
+                        {
+                            "id": "women-bags-shoulder",
+                            "name": "Shoulder Bags",
+                            "slug": "shoulder-bags",
+                            "pageType": "listing"
+                        }
+                    ]
+                },
+                {
+                    "id": "women-clothes",
+                    "name": "Clothes",
+                    "slug": "clothes",
+                    "pageType": "listing",
+                    "bannerImage": "https://dummyimage.com/1320x300/1e0d8f/fff&text=Clothes",
+                    "children": [
+                        {
+                            "id": "women-clothes-dresses",
+                            "name": "Dresses",
+                            "slug": "dresses",
+                            "pageType": "listing"
+                        },
+                        {
+                            "id": "women-clothes-jackets",
+                            "name": "Jackets",
+                            "slug": "jackets",
+                            "pageType": "listing"
+                        }
+                    ]
+                },
+                {
+                    "id": "women-accessories",
+                    "name": "Accessories",
+                    "slug": "accessories",
+                    "bannerImage": "https://dummyimage.com/1320x300/266e0e/fff&text=Accessories",
+                    "pageType": "listing"
+                }
+            ]
+        },
+        {
+            "id": "men",
+            "name": "Men",
+            "slug": "men",
+            "pageType": "editorial",
+            "children": [
+                {
+                    "id": "men-bags",
+                    "name": "Bags",
+                    "slug": "bags",
+                    "pageType": "listing"
+                },
+                {
+                    "id": "men-clothes",
+                    "name": "Clothes",
+                    "slug": "clothes",
+                    "pageType": "listing"
+                }
+            ]
+        },
+        {
+            "id": "gifting",
+            "name": "Gifting",
+            "slug": "gifting",
+            "pageType": "editorial",
+            "bannerImage": "https://dummyimage.com/1320x300/000/fff",
+            "children": [
+                {
+                    "id": "gifting-for-her",
+                    "name": "Gifts for Her",
+                    "slug": "for-her",
+                    "pageType": "listing"
+                },
+                {
+                    "id": "gifting-for-him",
+                    "name": "Gifts for Him",
+                    "slug": "for-him",
+                    "pageType": "listing"
+                }
+            ]
+        }
+    ]
 }

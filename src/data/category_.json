@@ -1,0 +1,52 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Women Accessories",
+      "slug": "accessories",
+      "image": "https://dummyimage.com/500x600/000/fff"
+    },
+    {
+      "id": 2,
+      "name": "Womens Bag",
+      "slug": "women-bags",
+      "image": "https://dummyimage.com/500x600/541954/fff"
+    },
+    {
+      "id": 3,
+      "name": "Handbags",
+      "slug": "women-bags-handbags",
+      "image": "https://dummyimage.com/500x600/171e87/fff"
+    },
+    {
+      "id": 4,
+      "name": "Women's Shoes",
+      "slug": "womens-shoes",
+      "image": "https://dummyimage.com/500x600/090e54/fff"
+    },
+    {
+      "id": 5,
+      "name": "Men's Handbags",
+      "slug": "mens-handbag",
+      "image": "https://dummyimage.com/500x600/1eb08b/fff"
+    },
+    {
+      "id": 6,
+      "name": "Men's Accessories",
+      "slug": "mens-accessories",
+      "image": "https://dummyimage.com/500x600/541954/fff"
+    },
+    {
+      "id": 7,
+      "name": "Men's Shoes",
+      "slug": "mens-shoes",
+      "image": "https://dummyimage.com/500x600/32692a/fff"
+    },
+    {
+      "id": 8,
+      "name": "Perfumes",
+      "slug": "perfumes",
+      "image": "https://dummyimage.com/500x600/472106/fff"
+    }
+  ]
+}

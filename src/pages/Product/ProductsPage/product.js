@@ -2,18 +2,18 @@ import "./ProductsPage.scss";
 // core library
 import { useState } from "react";
 import { useParams } from "react-router"
-// Data
-import productsData from "../../../data/allProducts.json";
-import categoriesData from "../../../data/category.json";
 // components binding
 import Navigation from "../../../components/ui/Navigation/Navigation";
+import CategoryNavigation from "../../../components/product/CategoryNavigation/CategoryNavigation";
 import Footer from "../../../components/ui/Footer/Footer";
-import ProductSubNavigation from "../../../components/product/ProductSubNavigation/ProductSubNavigation";
-import CategoryBanner from "../../../components/product/CategoryBanner/CategoryBanner";
-import EmptyState from "../../../components/ui/EmptyState/EmptyState";
-import PageNotFound from "../../PageNotFound/PageNotFound";
 import ProductCard from "../../../components/ui/ProductCard/ProductCard";
+import ProductItems from "../../../data/product.json";
+import CategoryItems from "../../../data/category.json";
+import PageNotFound from "../../PageNotFound/PageNotFound";
+import EmptyState from "../../../components/ui/EmptyState/EmptyState";
+import CategoryBanner from "../../../components/product/CategoryBanner/CategoryBanner";
 import SortFilter from "../../../components/product/SortFilter/SortFilter";
+
 
 const ProductsPage = () => {
     const {
@@ -21,6 +21,10 @@ const ProductsPage = () => {
         subCategory,
         type
     } = useParams();
+    console.log("category", category);
+    console.log("subcategory", subCategory);
+    console.log("type", type);
+    const categoryId = 1;
     const [isFilterOpen, setIsFilterOpen] = useState(false);
     const [sortBy, setSortBy] = useState("default");
     const [filterBy, setFilterBy] = useState({
@@ -35,48 +39,29 @@ const ProductsPage = () => {
     });
     const hasActiveFilterOrSort = () => {
         return (
-            appliedFilters.colors.length > 0 ||
-            appliedFilters.sizes.length > 0 ||
-            appliedFilters.price !== "" ||
+            filterBy.colors.length > 0 ||
+            filterBy.sizes.length > 0 ||
+            filterBy.price !== "" ||
             sortBy !== "default"
         );
     };
+
     // ==========================================
-    // FInd Category
+    // Get Category
     // ==========================================
-    const categoryList = categoriesData.categories.find((categ) => {
-        return categ.slug === category;
+    const categoryData = CategoryItems.categories.find((category) => {
+        return category.slug === category;
     });
-    if (!categoryList) {
+    console.log(categoryData)
+
+    if (!categoryData) {
         return <PageNotFound message="Sory Invalid Category" />
     }
-
-    // ==========================================
-    // Find Subcategory
-    // ==========================================
-    let subCateg = null;
-    if (categoryList) {
-        subCateg = categoryList.children.find((item) => {
-            return item.slug === subCategory;
-        });
-    }
-    // Get the values of subcategory to make product submenu
-    let categoryNavigation = [];
-    if (!subCateg) {
-        return <PageNotFound message="Sorry, invalid subcategory" />;
-    } else {
-        categoryNavigation = subCateg.children || [];
-    }
-
     // ==========================================
     // Get products by category
     // ==========================================
-    let filteredProducts = productsData.products.filter((product) => {
-        return (
-            product.category === category &&
-            (!subCategory || product.subCategory === subCategory) &&
-            (!type || product.type === type)
-        )
+    let filteredProducts = ProductItems.products.filter((product) => {
+        return product.categoryId === categoryId;
     });
 
     // ==========================================
@@ -232,16 +217,15 @@ const ProductsPage = () => {
         <div>
             <Navigation />
             <main>
-                <ProductSubNavigation
-                    category={category}
-                    subCategory={subCategory}
-                    navigation={categoryNavigation} />
+
+                <CategoryNavigation />
 
                 <section className="section-category">
                     <CategoryBanner
-                        imageSource={subCateg?.bannerImage}
-                        imageTitle={subCateg?.name} />
+                        imageSource={categoryData.image}
+                        imageTitle={categoryData.name} />
                 </section>
+
                 <div className="container-fluid">
                     <div className="product-quantity-block">
                         {

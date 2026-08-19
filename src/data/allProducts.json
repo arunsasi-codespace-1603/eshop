@@ -1,0 +1,204 @@
+{
+    "products": [
+        {
+            "id": 201,
+            "slug": "aurora-sculptural-clutch",
+            "name": "Aurora Sculptural Evening Clutch",
+            "brand": "Maison Aura",
+            "category": "women",
+            "subCategory": "bags",
+            "type": "handbags",
+            "price": 850,
+            "discountPrice": null,
+            "currency": "GBP",
+            "rating": 4.9,
+            "reviewCount": 18,
+            "badge": "Limited Edition",
+            "stockStatus": "In Stock",
+            "sku": "MA-ASC-201",
+            "shortDescription": "Hand-molded metallic frame clutch with silk satin interior.",
+            "description": {
+                "title": "Description",
+                "text": "Designed for evening elegance, the Aurora Clutch features a seamless brass shell hand-polished to a mirror finish, lined with pure Italian silk satin."
+            },
+            "sizes": [
+                {
+                    "id": 1,
+                    "label": "One Size",
+                    "value": "os"
+                }
+            ],
+            "defaultVariant": 1,
+            "variants": [
+                {
+                    "id": 1,
+                    "color": "Polished Gold",
+                    "colorFilter": "polished-gold",
+                    "thumbnail": "https://dummyimage.com/600x600/d4af37/ffffff&text=Gold+Clutch",
+                    "images": [
+                        "https://dummyimage.com/1000x900/d4af37/ffffff&text=Gold+01",
+                        "https://dummyimage.com/1000x900/d4af37/ffffff&text=Gold+02",
+                        "https://dummyimage.com/1000x900/d4af37/ffffff&text=Gold+03"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "color": "Liquid Silver",
+                    "colorFilter": "liquid-silver",
+                    "thumbnail": "https://dummyimage.com/600x600/c0c0c0/ffffff&text=Silver+Clutch",
+                    "images": [
+                        "https://dummyimage.com/1000x900/c0c0c0/ffffff&text=Silver+01",
+                        "https://dummyimage.com/1000x900/c0c0c0/ffffff&text=Silver+02",
+                        "https://dummyimage.com/1000x900/c0c0c0/ffffff&text=Silver+03"
+                    ]
+                }
+            ],
+            "shipping": {
+                "deliveryTime": "1–2 Business Days",
+                "returns": "30-Day Free Returns"
+            },
+            "reviews": [
+                {
+                    "id": 1,
+                    "name": "Olivia Martin",
+                    "rating": 5,
+                    "comment": "Elegant and beautifully structured. Perfect for evenings."
+                }
+            ],
+            "relatedProducts": [
+                202,
+                204
+            ]
+        },
+        {
+            "id": 202,
+            "slug": "heritage-monogram-duffle",
+            "name": "Heritage Monogram Travel Duffle",
+            "brand": "Aura Atelier",
+            "category": "men",
+            "subCategory": "clothes",
+            "price": 1850,
+            "discountPrice": null,
+            "currency": "GBP",
+            "rating": 4.8,
+            "reviewCount": 34,
+            "badge": "Iconic",
+            "stockStatus": "In Stock",
+            "sku": "AA-HMD-202",
+            "shortDescription": "Coated canvas carry-on weekender with Vachetta leather trim.",
+            "description": {
+                "title": "Description",
+                "text": "The quintessential travel companion. Crafted from durable coated monogram canvas with untreated leather handles that develop a rich patina over time."
+            },
+            "sizes": [
+                {
+                    "id": 1,
+                    "label": "50 cm",
+                    "value": "50"
+                }
+            ],
+            "defaultVariant": 1,
+            "variants": [
+                {
+                    "id": 1,
+                    "color": "Classic Monogram",
+                    "colorFilter": "classic-monogram",
+                    "thumbnail": "https://dummyimage.com/600x600/4a3525/ffffff&text=Monogram",
+                    "images": [
+                        "https://dummyimage.com/1000x900/4a3525/ffffff&text=Duffle+01",
+                        "https://dummyimage.com/1000x900/4a3525/ffffff&text=Duffle+02"
+                    ]
+                }
+            ],
+            "shipping": {
+                "deliveryTime": "Complimentary Express Delivery",
+                "returns": "30-Day Free Returns"
+            },
+            "reviews": [
+                {
+                    "id": 2,
+                    "name": "David K.",
+                    "rating": 5,
+                    "comment": "Sturdy, spacious, and gets compliments on every flight."
+                }
+            ],
+            "relatedProducts": [
+                201,
+                203
+            ]
+        },
+        {
+            "id": 203,
+            "slug": "marcelle-mini-crossbody",
+            "name": "Marcelle Mini Crossbody",
+            "brand": "Nova Studio",
+            "category": "women",
+            "subCategory": "bags",
+            "type": "crossbody-bags",
+            "price": 225,
+            "discountPrice": 199,
+            "currency": "GBP",
+            "rating": 4.6,
+            "reviewCount": 98,
+            "badge": "Trending",
+            "stockStatus": "In Stock",
+            "sku": "NS-MMC-203",
+            "shortDescription": "Compact leather crossbody designed for effortless everyday essentials.",
+            "description": {
+                "title": "Description",
+                "text": "The Marcelle Mini Crossbody combines a compact silhouette with a surprisingly spacious interior, making it ideal for city days, evenings, and travel."
+            },
+            "sizes": [
+                {
+                    "id": 1,
+                    "label": "Small",
+                    "value": "sm"
+                },
+                {
+                    "id": 2,
+                    "label": "Medium",
+                    "value": "m"
+                }
+            ],
+            "defaultVariant": 2,
+            "variants": [
+                {
+                    "id": 1,
+                    "color": "Chocolate Brown",
+                    "colorFilter": "chocolate-brown",
+                    "thumbnail": "https://dummyimage.com/600x600/5a3825/ffffff&text=Brown",
+                    "images": [
+                        "https://dummyimage.com/1000x900/5a3825/ffffff&text=Brown+01",
+                        "https://dummyimage.com/1000x900/5a3825/ffffff&text=Brown+02"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "color": "Sage Green",
+                    "colorFilter": "sage-green",
+                    "thumbnail": "https://dummyimage.com/600x600/71806c/ffffff&text=Sage",
+                    "images": [
+                        "https://dummyimage.com/1000x900/71806c/ffffff&text=Sage+01",
+                        "https://dummyimage.com/1000x900/71806c/ffffff&text=Sage+02"
+                    ]
+                }
+            ],
+            "shipping": {
+                "deliveryTime": "3–5 Business Days",
+                "returns": "30-Day Free Returns"
+            },
+            "reviews": [
+                {
+                    "id": 3,
+                    "name": "Claire B.",
+                    "rating": 4,
+                    "comment": "Super cute and fits my phone, cards, and lipstick easily."
+                }
+            ],
+            "relatedProducts": [
+                201,
+                204
+            ]
+        }
+    ]
+}
