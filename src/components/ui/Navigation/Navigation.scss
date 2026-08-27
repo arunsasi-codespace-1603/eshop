@@ -1,16 +1,22 @@
 @use "../../../styles/utils/abstract/mixins" as mix;
 @use "../../../styles/utils/abstract/variable" as var;
 
+header {
+    position: sticky;
+    top: 0;
+    z-index: var.$z-index-fixed;
+}
 
 .navbar {
     background-color: var.$white;
     padding: var.$spacing-md 0;
-    //position: var.$position-fixed;
-    // top: 0;
-    // left: 0;
     width: 100%;
     border-bottom: 1px solid var.$gray-200;
-    z-index: var.$z-index-fixed;
+    height: var(--navbar-height);
+
+    .container {
+        height: 100%;
+    }
 
     &__container {
         position: relative;
@@ -141,7 +147,7 @@
         width: 100%;
         border-radius: 0;
         font-size: var.$font-size-lg;
-        padding: var.$spacing-md var.$spacing-xl;
+        padding: var.$spacing-sm 0;
         background-color: transparent;
 
         .label {

@@ -1,6 +1,6 @@
 import "./ProductsPage.scss";
 // core library
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useParams } from "react-router"
 // Data
 import productsData from "../../../data/allProducts.json";
@@ -14,6 +14,7 @@ import EmptyState from "../../../components/ui/EmptyState/EmptyState";
 import PageNotFound from "../../PageNotFound/PageNotFound";
 import ProductCard from "../../../components/ui/ProductCard/ProductCard";
 import SortFilter from "../../../components/product/SortFilter/SortFilter";
+import Breadcrumb from "../../../components/ui/Breadcrumb/Breadcrumb";
 
 const ProductsPage = () => {
     const {
@@ -23,6 +24,7 @@ const ProductsPage = () => {
     } = useParams();
     const [isFilterOpen, setIsFilterOpen] = useState(false);
     const [sortBy, setSortBy] = useState("default");
+    const [appliedSortBy, setAppliedSortBy] = useState("default");
     const [filterBy, setFilterBy] = useState({
         colors: [],
         sizes: [],
@@ -33,6 +35,21 @@ const ProductsPage = () => {
         sizes: [],
         price: ""
     });
+
+    useEffect(() => {
+        const emptyFilters = {
+            colors: [],
+            sizes: [],
+            price: ""
+        };
+
+        setFilterBy(emptyFilters);
+        setAppliedFilters(emptyFilters);
+        setSortBy("default");
+        setAppliedSortBy("default");
+    }, [category, subCategory, type]);
+
+
     const hasActiveFilterOrSort = () => {
         return (
             appliedFilters.colors.length > 0 ||
@@ -204,7 +221,7 @@ const ProductsPage = () => {
     // ==========================================
     // Sorting
     // ==========================================
-    switch (sortBy) {
+    switch (appliedSortBy) {
         case "newest":
             filteredProducts.sort((a, b) => b.id - a.id);
             break;
@@ -226,16 +243,19 @@ const ProductsPage = () => {
     // ==========================================
     const applyFilter = () => {
         setAppliedFilters(filterBy);
+        setAppliedSortBy(sortBy);
         closeFilterDrawer();
     };
     return (
         <div>
             <Navigation />
             <main>
-                <ProductSubNavigation
-                    category={category}
-                    subCategory={subCategory}
-                    navigation={categoryNavigation} />
+                {(categoryNavigation.length > 0) &&
+                    <ProductSubNavigation
+                        category={category}
+                        subCategory={subCategory}
+                        navigation={categoryNavigation} />
+                }
 
                 <section className="section-category">
                     <CategoryBanner
@@ -289,6 +309,9 @@ const ProductsPage = () => {
                     onApply={applyFilter}
                     hasActiveFilterOrSort={hasActiveFilterOrSort}
                 />
+
+
+
             </main>
 
             <Footer />

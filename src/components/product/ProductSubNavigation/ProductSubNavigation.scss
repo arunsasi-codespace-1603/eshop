@@ -5,7 +5,8 @@
     background-color: var.$white;
     border-bottom: 1px solid var(--color-gray-200);
     position: sticky;
-    top: 0;
+    top: var(--navbar-height);
+    z-index: var.$z-index-sticky;
 
     &__container {
         display: flex;
@@ -16,7 +17,7 @@
 .category-nav-link {
     font-size: 0.975rem;
     color: var.$gray-600;
-    margin: 0 var.$spacing-md;
+    margin: 0 var.$spacing-sm;
     position: relative;
     padding: 0.875rem 0;
 

@@ -1,0 +1,19 @@
+@use "../../../styles/utils/abstract/mixins" as mix;
+@use "../../../styles/utils/abstract/variable" as var;
+
+.search-result-card {
+    background-color: var.$white;
+
+    &__image {
+        width: 100%;
+        display: block;
+    }
+
+    &__content {
+        padding: var.$spacing-sm 0;
+    }
+
+    &__title {
+        font-size: var.$font-size-md;
+    }
+}

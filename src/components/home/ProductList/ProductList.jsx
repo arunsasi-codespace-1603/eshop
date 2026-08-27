@@ -1,52 +1,52 @@
 import "./ProductList.scss";
 
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 import ProductCard from "../../ui/ProductCard/ProductCard"
+import EmptyState from "../../ui/EmptyState/EmptyState";
 
 const ProductList = ({
     title,
-    categoryId,
-    categories,
-    products,
-    className }) => {
+    categoryName,
+    subCategoryName,
+    products = [],
+    discoverLink
+}) => {
+    console.log(subCategoryName)
 
-    // Find slug for url
-    const productCategory = categories.find((category) => category.id === categoryId);
-
-    // find the the products with same category Id and display 4 items in a row
-    const featuredProducts = products.filter((product) =>
-        product.categoryId === categoryId).slice(0, 4);
-    if (featuredProducts.length === 0) {
-        return null;
+    if (products.length === 0) {
+        return <EmptyState />
     }
+    const featuredProducts = products.slice(0, 4);
+
     return (
         <div className="section-content">
             <div className="container-fluid">
                 <div className="section-content__header">
                     <div className="section-content__sub-title">
-                        {productCategory.name}
+                        {categoryName}
                     </div>
                     <h3 className="section-content__title">
                         {title}
                     </h3>
                 </div>
+            </div>
+
+            <div className="container-fluid">
                 <div className="row">
-                    {
-                        featuredProducts.length > 0 &&
-                        featuredProducts.map((product) => (
-                            <div
-                                key={product.id}
-                                className="grid-column">
-                                <ProductCard
-                                    productData={product} />
-                            </div>
-                        ))}
+                    {featuredProducts.map((product) => (
+                        <div
+                            key={product.slug}
+                            className="grid-column">
+                            <ProductCard
+                                productData={product} />
+                        </div>
+                    ))}
                 </div>
 
                 <div className="section-content__cta">
                     <Link
                         className="btn-borderless"
-                        to={`/products/${categoryId}/${productCategory.slug}`}>
+                        to={discoverLink}>
                         Discover All
                     </Link>
                 </div>

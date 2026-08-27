@@ -1,9 +1,8 @@
 import "./Home.scss";
-
+// Data
 import CategoryItems from "../../data/category.json";
-import ProductItems from "../../data/product.json";
-
-import Navbar from "../../components/ui/Navbar/Navbar";
+import ProductItems from "../../data/allProducts.json";
+// Component Binding
 import HeroBanner from "../../components/home/HeroBanner/HeroBanner";
 import CategoryList from "../../components/home/CategoryList/CategoryList";
 import ProductList from "../../components/home/ProductList/ProductList";
@@ -15,15 +14,30 @@ const Home = () => {
     const categoryList = CategoryItems.categories;
     const productList = ProductItems.products;
 
+    // Filter products by category and subcategory
+    const filterProductsByCategory = (products, category, subCategory) => {
+        return products.filter((product) => {
+            return (
+                product.category === category &&
+                product.subCategory === subCategory
+            );
+        });
+    };
+
+    const mensBags = filterProductsByCategory(productList, "men", "bags");
+    const womensBags = filterProductsByCategory(productList, "women", "bags");
+
     return (
         <>
-           <Navigation/>
+            <Navigation />
             <main>
                 <section className="hm-hero-banner">
                     <VideoBanner
                         sourceFile="https://lorem.video/720p"
                         videoSubTitle="Women"
-                        videoTitle="Fall-Winter 2026" />
+                        videoTitle="Fall-Winter 2026"
+                        linkTo="/products/women"
+                    />
                 </section>
                 <section className="hm-categories">
                     <CategoryList
@@ -37,9 +51,10 @@ const Home = () => {
                 <section className="hm-products">
                     <ProductList
                         title="Fall-Winter 2026"
-                        categoryId={1}
-                        categories={categoryList}
-                        products={productList}
+                        categoryName="Women"
+                        subCategoryName="bags"
+                        products={womensBags}
+                        discoverLink="/products/women/bags"
                     />
                 </section>
                 <section className="hm-banner">
@@ -48,10 +63,11 @@ const Home = () => {
                 </section>
                 <section className="hm-products">
                     <ProductList
-                        title="The latest"
-                        categoryId={8}
-                        categories={categoryList}
-                        products={productList}
+                        title="Discover autumn 2026"
+                        categoryName="Men"
+                        subCategoryName="bags"
+                        products={mensBags}
+                        discoverLink="/products/men/bags"
                     />
                 </section>
             </main>

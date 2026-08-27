@@ -1,6 +1,16 @@
 @use "../utils/abstract/mixins" as mix;
 @use "../utils/abstract/variable" as var;
 
+// ==========================================
+// Main
+// ==========================================
+main {
+    //padding-top: var(--navbar-height);
+}
+
+// ==========================================
+// Section
+// ==========================================
 .section-content {
     padding-top: calc(var.$spacing-md * 3);
     padding-bottom: calc(var.$spacing-md * 3);

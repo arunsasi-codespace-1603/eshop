@@ -2,24 +2,24 @@
     "products": [
         {
             "id": 201,
-            "slug": "aurora-sculptural-clutch",
-            "name": "Aurora Sculptural Evening Clutch",
+            "slug": "luna-structured-tote",
+            "name": "Luna Structured Tote",
             "brand": "Maison Aura",
             "category": "women",
             "subCategory": "bags",
             "type": "handbags",
-            "price": 850,
+            "price": 420,
             "discountPrice": null,
             "currency": "GBP",
-            "rating": 4.9,
-            "reviewCount": 18,
-            "badge": "Limited Edition",
+            "rating": 4.4,
+            "reviewCount": 80,
+            "badge": "Trending",
             "stockStatus": "In Stock",
-            "sku": "MA-ASC-201",
-            "shortDescription": "Hand-molded metallic frame clutch with silk satin interior.",
+            "sku": "MA-TEST-201",
+            "shortDescription": "Contemporary bags design crafted for everyday luxury.",
             "description": {
                 "title": "Description",
-                "text": "Designed for evening elegance, the Aurora Clutch features a seamless brass shell hand-polished to a mirror finish, lined with pure Italian silk satin."
+                "text": "The Luna Structured Tote combines refined materials, practical details, and a contemporary silhouette."
             },
             "sizes": [
                 {
@@ -32,37 +32,35 @@
             "variants": [
                 {
                     "id": 1,
-                    "color": "Polished Gold",
-                    "colorFilter": "polished-gold",
-                    "thumbnail": "https://dummyimage.com/600x600/d4af37/ffffff&text=Gold+Clutch",
+                    "color": "Obsidian Black",
+                    "colorFilter": "obsidian-black",
+                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=201+01",
                     "images": [
-                        "https://dummyimage.com/1000x900/d4af37/ffffff&text=Gold+01",
-                        "https://dummyimage.com/1000x900/d4af37/ffffff&text=Gold+02",
-                        "https://dummyimage.com/1000x900/d4af37/ffffff&text=Gold+03"
+                        "https://dummyimage.com/1000x900/555/fff&text=201+01",
+                        "https://dummyimage.com/1000x900/555/fff&text=201+02"
                     ]
                 },
                 {
                     "id": 2,
-                    "color": "Liquid Silver",
-                    "colorFilter": "liquid-silver",
-                    "thumbnail": "https://dummyimage.com/600x600/c0c0c0/ffffff&text=Silver+Clutch",
+                    "color": "Ivory",
+                    "colorFilter": "ivory",
+                    "thumbnail": "https://dummyimage.com/440x600/888/fff&text=201+02",
                     "images": [
-                        "https://dummyimage.com/1000x900/c0c0c0/ffffff&text=Silver+01",
-                        "https://dummyimage.com/1000x900/c0c0c0/ffffff&text=Silver+02",
-                        "https://dummyimage.com/1000x900/c0c0c0/ffffff&text=Silver+03"
+                        "https://dummyimage.com/1000x900/888/fff&text=201+03",
+                        "https://dummyimage.com/1000x900/888/fff&text=201+04"
                     ]
                 }
             ],
             "shipping": {
-                "deliveryTime": "1–2 Business Days",
+                "deliveryTime": "1\u20132 Business Days",
                 "returns": "30-Day Free Returns"
             },
             "reviews": [
                 {
                     "id": 1,
-                    "name": "Olivia Martin",
+                    "name": "Daniel Smith",
                     "rating": 5,
-                    "comment": "Elegant and beautifully structured. Perfect for evenings."
+                    "comment": "Beautiful quality and very practical for everyday use."
                 }
             ],
             "relatedProducts": [
@@ -72,41 +70,120 @@
         },
         {
             "id": 202,
-            "slug": "heritage-monogram-duffle",
-            "name": "Heritage Monogram Travel Duffle",
-            "brand": "Aura Atelier",
-            "category": "men",
-            "subCategory": "clothes",
-            "price": 1850,
-            "discountPrice": null,
+            "slug": "celeste-mini-handbag",
+            "name": "Celeste Mini Handbag",
+            "brand": "Nova Studio",
+            "category": "women",
+            "subCategory": "bags",
+            "type": "handbags",
+            "price": 680,
+            "discountPrice": 580,
             "currency": "GBP",
-            "rating": 4.8,
-            "reviewCount": 34,
+            "rating": 4.2,
+            "reviewCount": 93,
             "badge": "Iconic",
             "stockStatus": "In Stock",
-            "sku": "AA-HMD-202",
-            "shortDescription": "Coated canvas carry-on weekender with Vachetta leather trim.",
+            "sku": "MA-TEST-202",
+            "shortDescription": "Contemporary bags design crafted for everyday luxury.",
             "description": {
                 "title": "Description",
-                "text": "The quintessential travel companion. Crafted from durable coated monogram canvas with untreated leather handles that develop a rich patina over time."
+                "text": "The Celeste Mini Handbag combines refined materials, practical details, and a contemporary silhouette."
             },
             "sizes": [
                 {
                     "id": 1,
-                    "label": "50 cm",
-                    "value": "50"
+                    "label": "One Size",
+                    "value": "os"
                 }
             ],
             "defaultVariant": 1,
             "variants": [
                 {
                     "id": 1,
-                    "color": "Classic Monogram",
-                    "colorFilter": "classic-monogram",
-                    "thumbnail": "https://dummyimage.com/600x600/4a3525/ffffff&text=Monogram",
+                    "color": "Ivory",
+                    "colorFilter": "ivory",
+                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=202+01",
                     "images": [
-                        "https://dummyimage.com/1000x900/4a3525/ffffff&text=Duffle+01",
-                        "https://dummyimage.com/1000x900/4a3525/ffffff&text=Duffle+02"
+                        "https://dummyimage.com/1000x900/555/fff&text=202+01",
+                        "https://dummyimage.com/1000x900/555/fff&text=202+02"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "color": "Chocolate Brown",
+                    "colorFilter": "chocolate-brown",
+                    "thumbnail": "https://dummyimage.com/440x600/888/fff&text=202+02",
+                    "images": [
+                        "https://dummyimage.com/1000x900/888/fff&text=202+03",
+                        "https://dummyimage.com/1000x900/888/fff&text=202+04"
+                    ]
+                }
+            ],
+            "shipping": {
+                "deliveryTime": "3\u20135 Business Days",
+                "returns": "30-Day Free Returns"
+            },
+            "reviews": [
+                {
+                    "id": 1,
+                    "name": "Sophie Brown",
+                    "rating": 4,
+                    "comment": "Beautiful quality and very practical for everyday use."
+                }
+            ],
+            "relatedProducts": [
+                203,
+                205
+            ]
+        },
+        {
+            "id": 203,
+            "slug": "aria-leather-shoulder-bag",
+            "name": "Aria Leather Shoulder Bag",
+            "brand": "Aura Atelier",
+            "category": "women",
+            "subCategory": "bags",
+            "type": "shoulder-bags",
+            "price": 925,
+            "discountPrice": 800,
+            "currency": "GBP",
+            "rating": 4.9,
+            "reviewCount": 106,
+            "badge": "Limited Edition",
+            "stockStatus": "Low Stock",
+            "sku": "MA-TEST-203",
+            "shortDescription": "Contemporary bags design crafted for everyday luxury.",
+            "description": {
+                "title": "Description",
+                "text": "The Aria Leather Shoulder Bag combines refined materials, practical details, and a contemporary silhouette."
+            },
+            "sizes": [
+                {
+                    "id": 1,
+                    "label": "One Size",
+                    "value": "os"
+                }
+            ],
+            "defaultVariant": 1,
+            "variants": [
+                {
+                    "id": 1,
+                    "color": "Chocolate Brown",
+                    "colorFilter": "chocolate-brown",
+                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=203+01",
+                    "images": [
+                        "https://dummyimage.com/1000x900/555/fff&text=203+01",
+                        "https://dummyimage.com/1000x900/555/fff&text=203+02"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "color": "Sage Green",
+                    "colorFilter": "sage-green",
+                    "thumbnail": "https://dummyimage.com/440x600/888/fff&text=203+02",
+                    "images": [
+                        "https://dummyimage.com/1000x900/888/fff&text=203+03",
+                        "https://dummyimage.com/1000x900/888/fff&text=203+04"
                     ]
                 }
             ],
@@ -116,37 +193,377 @@
             },
             "reviews": [
                 {
-                    "id": 2,
-                    "name": "David K.",
+                    "id": 1,
+                    "name": "James Wilson",
                     "rating": 5,
-                    "comment": "Sturdy, spacious, and gets compliments on every flight."
+                    "comment": "Beautiful quality and very practical for everyday use."
                 }
             ],
             "relatedProducts": [
-                201,
-                203
+                204,
+                206
             ]
         },
         {
-            "id": 203,
-            "slug": "marcelle-mini-crossbody",
-            "name": "Marcelle Mini Crossbody",
+            "id": 204,
+            "slug": "sienna-crossbody",
+            "name": "Sienna Crossbody",
+            "brand": "Maison Aura",
+            "category": "women",
+            "subCategory": "bags",
+            "type": "crossbody-bags",
+            "price": 275,
+            "discountPrice": null,
+            "currency": "GBP",
+            "rating": 4.7,
+            "reviewCount": 119,
+            "badge": null,
+            "stockStatus": "In Stock",
+            "sku": "MA-TEST-204",
+            "shortDescription": "Contemporary bags design crafted for everyday luxury.",
+            "description": {
+                "title": "Description",
+                "text": "The Sienna Crossbody combines refined materials, practical details, and a contemporary silhouette."
+            },
+            "sizes": [
+                {
+                    "id": 1,
+                    "label": "One Size",
+                    "value": "os"
+                }
+            ],
+            "defaultVariant": 1,
+            "variants": [
+                {
+                    "id": 1,
+                    "color": "Sage Green",
+                    "colorFilter": "sage-green",
+                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=204+01",
+                    "images": [
+                        "https://dummyimage.com/1000x900/555/fff&text=204+01",
+                        "https://dummyimage.com/1000x900/555/fff&text=204+02"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "color": "Burgundy",
+                    "colorFilter": "burgundy",
+                    "thumbnail": "https://dummyimage.com/440x600/888/fff&text=204+02",
+                    "images": [
+                        "https://dummyimage.com/1000x900/888/fff&text=204+03",
+                        "https://dummyimage.com/1000x900/888/fff&text=204+04"
+                    ]
+                }
+            ],
+            "shipping": {
+                "deliveryTime": "1\u20132 Business Days",
+                "returns": "30-Day Free Returns"
+            },
+            "reviews": [
+                {
+                    "id": 1,
+                    "name": "Olivia Martin",
+                    "rating": 4,
+                    "comment": "Beautiful quality and very practical for everyday use."
+                }
+            ],
+            "relatedProducts": [
+                205,
+                207
+            ]
+        },
+        {
+            "id": 205,
+            "slug": "elara-evening-bag",
+            "name": "Elara Evening Bag",
+            "brand": "Nova Studio",
+            "category": "women",
+            "subCategory": "bags",
+            "type": "handbags",
+            "price": 1150,
+            "discountPrice": 1075,
+            "currency": "GBP",
+            "rating": 4.5,
+            "reviewCount": 11,
+            "badge": "New",
+            "stockStatus": "In Stock",
+            "sku": "MA-TEST-205",
+            "shortDescription": "Contemporary bags design crafted for everyday luxury.",
+            "description": {
+                "title": "Description",
+                "text": "The Elara Evening Bag combines refined materials, practical details, and a contemporary silhouette."
+            },
+            "sizes": [
+                {
+                    "id": 1,
+                    "label": "One Size",
+                    "value": "os"
+                }
+            ],
+            "defaultVariant": 1,
+            "variants": [
+                {
+                    "id": 1,
+                    "color": "Burgundy",
+                    "colorFilter": "burgundy",
+                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=205+01",
+                    "images": [
+                        "https://dummyimage.com/1000x900/555/fff&text=205+01",
+                        "https://dummyimage.com/1000x900/555/fff&text=205+02"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "color": "Midnight Blue",
+                    "colorFilter": "midnight-blue",
+                    "thumbnail": "https://dummyimage.com/440x600/888/fff&text=205+02",
+                    "images": [
+                        "https://dummyimage.com/1000x900/888/fff&text=205+03",
+                        "https://dummyimage.com/1000x900/888/fff&text=205+04"
+                    ]
+                }
+            ],
+            "shipping": {
+                "deliveryTime": "3\u20135 Business Days",
+                "returns": "30-Day Free Returns"
+            },
+            "reviews": [
+                {
+                    "id": 1,
+                    "name": "Daniel Smith",
+                    "rating": 5,
+                    "comment": "Beautiful quality and very practical for everyday use."
+                }
+            ],
+            "relatedProducts": [
+                206,
+                208
+            ]
+        },
+        {
+            "id": 206,
+            "slug": "mila-soft-shoulder-bag",
+            "name": "Mila Soft Shoulder Bag",
+            "brand": "Aura Atelier",
+            "category": "women",
+            "subCategory": "bags",
+            "type": "shoulder-bags",
+            "price": 540,
+            "discountPrice": 440,
+            "currency": "GBP",
+            "rating": 4.3,
+            "reviewCount": 24,
+            "badge": "Trending",
+            "stockStatus": "Low Stock",
+            "sku": "MA-TEST-206",
+            "shortDescription": "Contemporary bags design crafted for everyday luxury.",
+            "description": {
+                "title": "Description",
+                "text": "The Mila Soft Shoulder Bag combines refined materials, practical details, and a contemporary silhouette."
+            },
+            "sizes": [
+                {
+                    "id": 1,
+                    "label": "One Size",
+                    "value": "os"
+                }
+            ],
+            "defaultVariant": 1,
+            "variants": [
+                {
+                    "id": 1,
+                    "color": "Midnight Blue",
+                    "colorFilter": "midnight-blue",
+                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=206+01",
+                    "images": [
+                        "https://dummyimage.com/1000x900/555/fff&text=206+01",
+                        "https://dummyimage.com/1000x900/555/fff&text=206+02"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "color": "Stone",
+                    "colorFilter": "stone",
+                    "thumbnail": "https://dummyimage.com/440x600/888/fff&text=206+02",
+                    "images": [
+                        "https://dummyimage.com/1000x900/888/fff&text=206+03",
+                        "https://dummyimage.com/1000x900/888/fff&text=206+04"
+                    ]
+                }
+            ],
+            "shipping": {
+                "deliveryTime": "Complimentary Express Delivery",
+                "returns": "30-Day Free Returns"
+            },
+            "reviews": [
+                {
+                    "id": 1,
+                    "name": "Sophie Brown",
+                    "rating": 4,
+                    "comment": "Beautiful quality and very practical for everyday use."
+                }
+            ],
+            "relatedProducts": [
+                207,
+                209
+            ]
+        },
+        {
+            "id": 207,
+            "slug": "iris-quilted-handbag",
+            "name": "Iris Quilted Handbag",
+            "brand": "Maison Aura",
+            "category": "women",
+            "subCategory": "bags",
+            "type": "handbags",
+            "price": 780,
+            "discountPrice": null,
+            "currency": "GBP",
+            "rating": 4.1,
+            "reviewCount": 37,
+            "badge": "Iconic",
+            "stockStatus": "In Stock",
+            "sku": "MA-TEST-207",
+            "shortDescription": "Contemporary bags design crafted for everyday luxury.",
+            "description": {
+                "title": "Description",
+                "text": "The Iris Quilted Handbag combines refined materials, practical details, and a contemporary silhouette."
+            },
+            "sizes": [
+                {
+                    "id": 1,
+                    "label": "One Size",
+                    "value": "os"
+                }
+            ],
+            "defaultVariant": 1,
+            "variants": [
+                {
+                    "id": 1,
+                    "color": "Stone",
+                    "colorFilter": "stone",
+                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=207+01",
+                    "images": [
+                        "https://dummyimage.com/1000x900/555/fff&text=207+01",
+                        "https://dummyimage.com/1000x900/555/fff&text=207+02"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "color": "Soft Pink",
+                    "colorFilter": "soft-pink",
+                    "thumbnail": "https://dummyimage.com/440x600/888/fff&text=207+02",
+                    "images": [
+                        "https://dummyimage.com/1000x900/888/fff&text=207+03",
+                        "https://dummyimage.com/1000x900/888/fff&text=207+04"
+                    ]
+                }
+            ],
+            "shipping": {
+                "deliveryTime": "1\u20132 Business Days",
+                "returns": "30-Day Free Returns"
+            },
+            "reviews": [
+                {
+                    "id": 1,
+                    "name": "James Wilson",
+                    "rating": 5,
+                    "comment": "Beautiful quality and very practical for everyday use."
+                }
+            ],
+            "relatedProducts": [
+                208,
+                210
+            ]
+        },
+        {
+            "id": 208,
+            "slug": "noa-everyday-crossbody",
+            "name": "Noa Everyday Crossbody",
             "brand": "Nova Studio",
             "category": "women",
             "subCategory": "bags",
             "type": "crossbody-bags",
-            "price": 225,
-            "discountPrice": 199,
+            "price": 190,
+            "discountPrice": 140,
             "currency": "GBP",
-            "rating": 4.6,
-            "reviewCount": 98,
-            "badge": "Trending",
+            "rating": 4.8,
+            "reviewCount": 50,
+            "badge": "Limited Edition",
             "stockStatus": "In Stock",
-            "sku": "NS-MMC-203",
-            "shortDescription": "Compact leather crossbody designed for effortless everyday essentials.",
+            "sku": "MA-TEST-208",
+            "shortDescription": "Contemporary bags design crafted for everyday luxury.",
             "description": {
                 "title": "Description",
-                "text": "The Marcelle Mini Crossbody combines a compact silhouette with a surprisingly spacious interior, making it ideal for city days, evenings, and travel."
+                "text": "The Noa Everyday Crossbody combines refined materials, practical details, and a contemporary silhouette."
+            },
+            "sizes": [
+                {
+                    "id": 1,
+                    "label": "One Size",
+                    "value": "os"
+                }
+            ],
+            "defaultVariant": 1,
+            "variants": [
+                {
+                    "id": 1,
+                    "color": "Soft Pink",
+                    "colorFilter": "soft-pink",
+                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=208+01",
+                    "images": [
+                        "https://dummyimage.com/1000x900/555/fff&text=208+01",
+                        "https://dummyimage.com/1000x900/555/fff&text=208+02"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "color": "Obsidian Black",
+                    "colorFilter": "obsidian-black",
+                    "thumbnail": "https://dummyimage.com/440x600/888/fff&text=208+02",
+                    "images": [
+                        "https://dummyimage.com/1000x900/888/fff&text=208+03",
+                        "https://dummyimage.com/1000x900/888/fff&text=208+04"
+                    ]
+                }
+            ],
+            "shipping": {
+                "deliveryTime": "3\u20135 Business Days",
+                "returns": "30-Day Free Returns"
+            },
+            "reviews": [
+                {
+                    "id": 1,
+                    "name": "Olivia Martin",
+                    "rating": 4,
+                    "comment": "Beautiful quality and very practical for everyday use."
+                }
+            ],
+            "relatedProducts": [
+                209,
+                211
+            ]
+        },
+        {
+            "id": 209,
+            "slug": "avery-draped-dress",
+            "name": "Avery Draped Dress",
+            "brand": "Aura Atelier",
+            "category": "women",
+            "subCategory": "clothes",
+            "type": "dresses",
+            "price": 395,
+            "discountPrice": 320,
+            "currency": "GBP",
+            "rating": 4.6,
+            "reviewCount": 63,
+            "badge": null,
+            "stockStatus": "Low Stock",
+            "sku": "MA-TEST-209",
+            "shortDescription": "Contemporary clothes design crafted for everyday luxury.",
+            "description": {
+                "title": "Description",
+                "text": "The Avery Draped Dress combines refined materials, practical details, and a contemporary silhouette."
             },
             "sizes": [
                 {
@@ -158,46 +575,1239 @@
                     "id": 2,
                     "label": "Medium",
                     "value": "m"
+                },
+                {
+                    "id": 3,
+                    "label": "Large",
+                    "value": "l"
                 }
             ],
-            "defaultVariant": 2,
+            "defaultVariant": 1,
+            "variants": [
+                {
+                    "id": 1,
+                    "color": "Obsidian Black",
+                    "colorFilter": "obsidian-black",
+                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=209+01",
+                    "images": [
+                        "https://dummyimage.com/1000x900/555/fff&text=209+01",
+                        "https://dummyimage.com/1000x900/555/fff&text=209+02"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "color": "Ivory",
+                    "colorFilter": "ivory",
+                    "thumbnail": "https://dummyimage.com/440x600/888/fff&text=209+02",
+                    "images": [
+                        "https://dummyimage.com/1000x900/888/fff&text=209+03",
+                        "https://dummyimage.com/1000x900/888/fff&text=209+04"
+                    ]
+                }
+            ],
+            "shipping": {
+                "deliveryTime": "Complimentary Express Delivery",
+                "returns": "30-Day Free Returns"
+            },
+            "reviews": [
+                {
+                    "id": 1,
+                    "name": "Daniel Smith",
+                    "rating": 5,
+                    "comment": "Beautiful quality and very practical for everyday use."
+                }
+            ],
+            "relatedProducts": [
+                210,
+                212
+            ]
+        },
+        {
+            "id": 210,
+            "slug": "sofia-silk-midi-dress",
+            "name": "Sofia Silk Midi Dress",
+            "brand": "Maison Aura",
+            "category": "women",
+            "subCategory": "clothes",
+            "type": "dresses",
+            "price": 720,
+            "discountPrice": null,
+            "currency": "GBP",
+            "rating": 4.4,
+            "reviewCount": 76,
+            "badge": "New",
+            "stockStatus": "In Stock",
+            "sku": "MA-TEST-210",
+            "shortDescription": "Contemporary clothes design crafted for everyday luxury.",
+            "description": {
+                "title": "Description",
+                "text": "The Sofia Silk Midi Dress combines refined materials, practical details, and a contemporary silhouette."
+            },
+            "sizes": [
+                {
+                    "id": 1,
+                    "label": "Small",
+                    "value": "sm"
+                },
+                {
+                    "id": 2,
+                    "label": "Medium",
+                    "value": "m"
+                },
+                {
+                    "id": 3,
+                    "label": "Large",
+                    "value": "l"
+                }
+            ],
+            "defaultVariant": 1,
+            "variants": [
+                {
+                    "id": 1,
+                    "color": "Ivory",
+                    "colorFilter": "ivory",
+                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=210+01",
+                    "images": [
+                        "https://dummyimage.com/1000x900/555/fff&text=210+01",
+                        "https://dummyimage.com/1000x900/555/fff&text=210+02"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "color": "Chocolate Brown",
+                    "colorFilter": "chocolate-brown",
+                    "thumbnail": "https://dummyimage.com/440x600/888/fff&text=210+02",
+                    "images": [
+                        "https://dummyimage.com/1000x900/888/fff&text=210+03",
+                        "https://dummyimage.com/1000x900/888/fff&text=210+04"
+                    ]
+                }
+            ],
+            "shipping": {
+                "deliveryTime": "1\u20132 Business Days",
+                "returns": "30-Day Free Returns"
+            },
+            "reviews": [
+                {
+                    "id": 1,
+                    "name": "Sophie Brown",
+                    "rating": 4,
+                    "comment": "Beautiful quality and very practical for everyday use."
+                }
+            ],
+            "relatedProducts": [
+                211,
+                213
+            ]
+        },
+        {
+            "id": 211,
+            "slug": "clara-tailored-dress",
+            "name": "Clara Tailored Dress",
+            "brand": "Nova Studio",
+            "category": "women",
+            "subCategory": "clothes",
+            "type": "dresses",
+            "price": 310,
+            "discountPrice": 185,
+            "currency": "GBP",
+            "rating": 4.2,
+            "reviewCount": 89,
+            "badge": "Trending",
+            "stockStatus": "In Stock",
+            "sku": "MA-TEST-211",
+            "shortDescription": "Contemporary clothes design crafted for everyday luxury.",
+            "description": {
+                "title": "Description",
+                "text": "The Clara Tailored Dress combines refined materials, practical details, and a contemporary silhouette."
+            },
+            "sizes": [
+                {
+                    "id": 1,
+                    "label": "Small",
+                    "value": "sm"
+                },
+                {
+                    "id": 2,
+                    "label": "Medium",
+                    "value": "m"
+                },
+                {
+                    "id": 3,
+                    "label": "Large",
+                    "value": "l"
+                }
+            ],
+            "defaultVariant": 1,
             "variants": [
                 {
                     "id": 1,
                     "color": "Chocolate Brown",
                     "colorFilter": "chocolate-brown",
-                    "thumbnail": "https://dummyimage.com/600x600/5a3825/ffffff&text=Brown",
+                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=211+01",
                     "images": [
-                        "https://dummyimage.com/1000x900/5a3825/ffffff&text=Brown+01",
-                        "https://dummyimage.com/1000x900/5a3825/ffffff&text=Brown+02"
+                        "https://dummyimage.com/1000x900/555/fff&text=211+01",
+                        "https://dummyimage.com/1000x900/555/fff&text=211+02"
                     ]
                 },
                 {
                     "id": 2,
                     "color": "Sage Green",
                     "colorFilter": "sage-green",
-                    "thumbnail": "https://dummyimage.com/600x600/71806c/ffffff&text=Sage",
+                    "thumbnail": "https://dummyimage.com/440x600/888/fff&text=211+02",
                     "images": [
-                        "https://dummyimage.com/1000x900/71806c/ffffff&text=Sage+01",
-                        "https://dummyimage.com/1000x900/71806c/ffffff&text=Sage+02"
+                        "https://dummyimage.com/1000x900/888/fff&text=211+03",
+                        "https://dummyimage.com/1000x900/888/fff&text=211+04"
                     ]
                 }
             ],
             "shipping": {
-                "deliveryTime": "3–5 Business Days",
+                "deliveryTime": "3\u20135 Business Days",
                 "returns": "30-Day Free Returns"
             },
             "reviews": [
                 {
+                    "id": 1,
+                    "name": "James Wilson",
+                    "rating": 5,
+                    "comment": "Beautiful quality and very practical for everyday use."
+                }
+            ],
+            "relatedProducts": [
+                212,
+                214
+            ]
+        },
+        {
+            "id": 212,
+            "slug": "amelia-leather-jacket",
+            "name": "Amelia Leather Jacket",
+            "brand": "Aura Atelier",
+            "category": "women",
+            "subCategory": "clothes",
+            "type": "jackets",
+            "price": 890,
+            "discountPrice": 840,
+            "currency": "GBP",
+            "rating": 4.9,
+            "reviewCount": 102,
+            "badge": "Iconic",
+            "stockStatus": "Low Stock",
+            "sku": "MA-TEST-212",
+            "shortDescription": "Contemporary clothes design crafted for everyday luxury.",
+            "description": {
+                "title": "Description",
+                "text": "The Amelia Leather Jacket combines refined materials, practical details, and a contemporary silhouette."
+            },
+            "sizes": [
+                {
+                    "id": 1,
+                    "label": "Small",
+                    "value": "sm"
+                },
+                {
+                    "id": 2,
+                    "label": "Medium",
+                    "value": "m"
+                },
+                {
                     "id": 3,
-                    "name": "Claire B.",
+                    "label": "Large",
+                    "value": "l"
+                }
+            ],
+            "defaultVariant": 1,
+            "variants": [
+                {
+                    "id": 1,
+                    "color": "Sage Green",
+                    "colorFilter": "sage-green",
+                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=212+01",
+                    "images": [
+                        "https://dummyimage.com/1000x900/555/fff&text=212+01",
+                        "https://dummyimage.com/1000x900/555/fff&text=212+02"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "color": "Burgundy",
+                    "colorFilter": "burgundy",
+                    "thumbnail": "https://dummyimage.com/440x600/888/fff&text=212+02",
+                    "images": [
+                        "https://dummyimage.com/1000x900/888/fff&text=212+03",
+                        "https://dummyimage.com/1000x900/888/fff&text=212+04"
+                    ]
+                }
+            ],
+            "shipping": {
+                "deliveryTime": "Complimentary Express Delivery",
+                "returns": "30-Day Free Returns"
+            },
+            "reviews": [
+                {
+                    "id": 1,
+                    "name": "Olivia Martin",
                     "rating": 4,
-                    "comment": "Super cute and fits my phone, cards, and lipstick easily."
+                    "comment": "Beautiful quality and very practical for everyday use."
+                }
+            ],
+            "relatedProducts": [
+                213,
+                215
+            ]
+        },
+        {
+            "id": 213,
+            "slug": "vera-cropped-jacket",
+            "name": "Vera Cropped Jacket",
+            "brand": "Maison Aura",
+            "category": "women",
+            "subCategory": "clothes",
+            "type": "jackets",
+            "price": 560,
+            "discountPrice": null,
+            "currency": "GBP",
+            "rating": 4.7,
+            "reviewCount": 115,
+            "badge": "Limited Edition",
+            "stockStatus": "In Stock",
+            "sku": "MA-TEST-213",
+            "shortDescription": "Contemporary clothes design crafted for everyday luxury.",
+            "description": {
+                "title": "Description",
+                "text": "The Vera Cropped Jacket combines refined materials, practical details, and a contemporary silhouette."
+            },
+            "sizes": [
+                {
+                    "id": 1,
+                    "label": "Small",
+                    "value": "sm"
+                },
+                {
+                    "id": 2,
+                    "label": "Medium",
+                    "value": "m"
+                },
+                {
+                    "id": 3,
+                    "label": "Large",
+                    "value": "l"
+                }
+            ],
+            "defaultVariant": 1,
+            "variants": [
+                {
+                    "id": 1,
+                    "color": "Burgundy",
+                    "colorFilter": "burgundy",
+                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=213+01",
+                    "images": [
+                        "https://dummyimage.com/1000x900/555/fff&text=213+01",
+                        "https://dummyimage.com/1000x900/555/fff&text=213+02"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "color": "Midnight Blue",
+                    "colorFilter": "midnight-blue",
+                    "thumbnail": "https://dummyimage.com/440x600/888/fff&text=213+02",
+                    "images": [
+                        "https://dummyimage.com/1000x900/888/fff&text=213+03",
+                        "https://dummyimage.com/1000x900/888/fff&text=213+04"
+                    ]
+                }
+            ],
+            "shipping": {
+                "deliveryTime": "1\u20132 Business Days",
+                "returns": "30-Day Free Returns"
+            },
+            "reviews": [
+                {
+                    "id": 1,
+                    "name": "Daniel Smith",
+                    "rating": 5,
+                    "comment": "Beautiful quality and very practical for everyday use."
+                }
+            ],
+            "relatedProducts": [
+                214,
+                216
+            ]
+        },
+        {
+            "id": 214,
+            "slug": "nora-oversized-jacket",
+            "name": "Nora Oversized Jacket",
+            "brand": "Nova Studio",
+            "category": "women",
+            "subCategory": "clothes",
+            "type": "jackets",
+            "price": 430,
+            "discountPrice": 330,
+            "currency": "GBP",
+            "rating": 4.5,
+            "reviewCount": 128,
+            "badge": null,
+            "stockStatus": "In Stock",
+            "sku": "MA-TEST-214",
+            "shortDescription": "Contemporary clothes design crafted for everyday luxury.",
+            "description": {
+                "title": "Description",
+                "text": "The Nora Oversized Jacket combines refined materials, practical details, and a contemporary silhouette."
+            },
+            "sizes": [
+                {
+                    "id": 1,
+                    "label": "Small",
+                    "value": "sm"
+                },
+                {
+                    "id": 2,
+                    "label": "Medium",
+                    "value": "m"
+                },
+                {
+                    "id": 3,
+                    "label": "Large",
+                    "value": "l"
+                }
+            ],
+            "defaultVariant": 1,
+            "variants": [
+                {
+                    "id": 1,
+                    "color": "Midnight Blue",
+                    "colorFilter": "midnight-blue",
+                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=214+01",
+                    "images": [
+                        "https://dummyimage.com/1000x900/555/fff&text=214+01",
+                        "https://dummyimage.com/1000x900/555/fff&text=214+02"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "color": "Stone",
+                    "colorFilter": "stone",
+                    "thumbnail": "https://dummyimage.com/440x600/888/fff&text=214+02",
+                    "images": [
+                        "https://dummyimage.com/1000x900/888/fff&text=214+03",
+                        "https://dummyimage.com/1000x900/888/fff&text=214+04"
+                    ]
+                }
+            ],
+            "shipping": {
+                "deliveryTime": "3\u20135 Business Days",
+                "returns": "30-Day Free Returns"
+            },
+            "reviews": [
+                {
+                    "id": 1,
+                    "name": "Sophie Brown",
+                    "rating": 4,
+                    "comment": "Beautiful quality and very practical for everyday use."
+                }
+            ],
+            "relatedProducts": [
+                215,
+                217
+            ]
+        },
+        {
+            "id": 215,
+            "slug": "thea-sculptural-belt",
+            "name": "Thea Sculptural Belt",
+            "brand": "Maison Aura",
+            "category": "women",
+            "subCategory": "accessories",
+            "type": null,
+            "price": 180,
+            "discountPrice": 99,
+            "currency": "GBP",
+            "rating": 4.3,
+            "reviewCount": 20,
+            "badge": "New",
+            "stockStatus": "Low Stock",
+            "sku": "MA-TEST-215",
+            "shortDescription": "Contemporary accessories design crafted for everyday luxury.",
+            "description": {
+                "title": "Description",
+                "text": "The Thea Sculptural Belt combines refined materials, practical details, and a contemporary silhouette."
+            },
+            "sizes": [
+                {
+                    "id": 1,
+                    "label": "One Size",
+                    "value": "os"
+                }
+            ],
+            "defaultVariant": 1,
+            "variants": [
+                {
+                    "id": 1,
+                    "color": "Stone",
+                    "colorFilter": "stone",
+                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=215+01",
+                    "images": [
+                        "https://dummyimage.com/1000x900/555/fff&text=215+01",
+                        "https://dummyimage.com/1000x900/555/fff&text=215+02"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "color": "Soft Pink",
+                    "colorFilter": "soft-pink",
+                    "thumbnail": "https://dummyimage.com/440x600/888/fff&text=215+02",
+                    "images": [
+                        "https://dummyimage.com/1000x900/888/fff&text=215+03",
+                        "https://dummyimage.com/1000x900/888/fff&text=215+04"
+                    ]
+                }
+            ],
+            "shipping": {
+                "deliveryTime": "Complimentary Express Delivery",
+                "returns": "30-Day Free Returns"
+            },
+            "reviews": [
+                {
+                    "id": 1,
+                    "name": "James Wilson",
+                    "rating": 5,
+                    "comment": "Beautiful quality and very practical for everyday use."
+                }
+            ],
+            "relatedProducts": [
+                216,
+                218
+            ]
+        },
+        {
+            "id": 216,
+            "slug": "maya-chain-bracelet",
+            "name": "Maya Chain Bracelet",
+            "brand": "Aura Atelier",
+            "category": "women",
+            "subCategory": "accessories",
+            "type": null,
+            "price": 250,
+            "discountPrice": null,
+            "currency": "GBP",
+            "rating": 4.1,
+            "reviewCount": 33,
+            "badge": "Trending",
+            "stockStatus": "In Stock",
+            "sku": "MA-TEST-216",
+            "shortDescription": "Contemporary accessories design crafted for everyday luxury.",
+            "description": {
+                "title": "Description",
+                "text": "The Maya Chain Bracelet combines refined materials, practical details, and a contemporary silhouette."
+            },
+            "sizes": [
+                {
+                    "id": 1,
+                    "label": "One Size",
+                    "value": "os"
+                }
+            ],
+            "defaultVariant": 1,
+            "variants": [
+                {
+                    "id": 1,
+                    "color": "Soft Pink",
+                    "colorFilter": "soft-pink",
+                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=216+01",
+                    "images": [
+                        "https://dummyimage.com/1000x900/555/fff&text=216+01",
+                        "https://dummyimage.com/1000x900/555/fff&text=216+02"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "color": "Obsidian Black",
+                    "colorFilter": "obsidian-black",
+                    "thumbnail": "https://dummyimage.com/440x600/888/fff&text=216+02",
+                    "images": [
+                        "https://dummyimage.com/1000x900/888/fff&text=216+03",
+                        "https://dummyimage.com/1000x900/888/fff&text=216+04"
+                    ]
+                }
+            ],
+            "shipping": {
+                "deliveryTime": "1\u20132 Business Days",
+                "returns": "30-Day Free Returns"
+            },
+            "reviews": [
+                {
+                    "id": 1,
+                    "name": "Olivia Martin",
+                    "rating": 4,
+                    "comment": "Beautiful quality and very practical for everyday use."
+                }
+            ],
+            "relatedProducts": [
+                217,
+                219
+            ]
+        },
+        {
+            "id": 217,
+            "slug": "elise-silk-scarf",
+            "name": "Elise Silk Scarf",
+            "brand": "Nova Studio",
+            "category": "women",
+            "subCategory": "accessories",
+            "type": null,
+            "price": 145,
+            "discountPrice": 99,
+            "currency": "GBP",
+            "rating": 4.8,
+            "reviewCount": 46,
+            "badge": "Iconic",
+            "stockStatus": "In Stock",
+            "sku": "MA-TEST-217",
+            "shortDescription": "Contemporary accessories design crafted for everyday luxury.",
+            "description": {
+                "title": "Description",
+                "text": "The Elise Silk Scarf combines refined materials, practical details, and a contemporary silhouette."
+            },
+            "sizes": [
+                {
+                    "id": 1,
+                    "label": "One Size",
+                    "value": "os"
+                }
+            ],
+            "defaultVariant": 1,
+            "variants": [
+                {
+                    "id": 1,
+                    "color": "Obsidian Black",
+                    "colorFilter": "obsidian-black",
+                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=217+01",
+                    "images": [
+                        "https://dummyimage.com/1000x900/555/fff&text=217+01",
+                        "https://dummyimage.com/1000x900/555/fff&text=217+02"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "color": "Ivory",
+                    "colorFilter": "ivory",
+                    "thumbnail": "https://dummyimage.com/440x600/888/fff&text=217+02",
+                    "images": [
+                        "https://dummyimage.com/1000x900/888/fff&text=217+03",
+                        "https://dummyimage.com/1000x900/888/fff&text=217+04"
+                    ]
+                }
+            ],
+            "shipping": {
+                "deliveryTime": "3\u20135 Business Days",
+                "returns": "30-Day Free Returns"
+            },
+            "reviews": [
+                {
+                    "id": 1,
+                    "name": "Daniel Smith",
+                    "rating": 5,
+                    "comment": "Beautiful quality and very practical for everyday use."
+                }
+            ],
+            "relatedProducts": [
+                218,
+                220
+            ]
+        },
+        {
+            "id": 218,
+            "slug": "atlas-travel-bag",
+            "name": "Atlas Travel Bag",
+            "brand": "Aura Atelier",
+            "category": "men",
+            "subCategory": "bags",
+            "type": null,
+            "price": 980,
+            "discountPrice": 880,
+            "currency": "GBP",
+            "rating": 4.6,
+            "reviewCount": 59,
+            "badge": "Limited Edition",
+            "stockStatus": "Low Stock",
+            "sku": "MA-TEST-218",
+            "shortDescription": "Contemporary bags design crafted for everyday luxury.",
+            "description": {
+                "title": "Description",
+                "text": "The Atlas Travel Bag combines refined materials, practical details, and a contemporary silhouette."
+            },
+            "sizes": [
+                {
+                    "id": 1,
+                    "label": "One Size",
+                    "value": "os"
+                }
+            ],
+            "defaultVariant": 1,
+            "variants": [
+                {
+                    "id": 1,
+                    "color": "Ivory",
+                    "colorFilter": "ivory",
+                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=218+01",
+                    "images": [
+                        "https://dummyimage.com/1000x900/555/fff&text=218+01",
+                        "https://dummyimage.com/1000x900/555/fff&text=218+02"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "color": "Chocolate Brown",
+                    "colorFilter": "chocolate-brown",
+                    "thumbnail": "https://dummyimage.com/440x600/888/fff&text=218+02",
+                    "images": [
+                        "https://dummyimage.com/1000x900/888/fff&text=218+03",
+                        "https://dummyimage.com/1000x900/888/fff&text=218+04"
+                    ]
+                }
+            ],
+            "shipping": {
+                "deliveryTime": "Complimentary Express Delivery",
+                "returns": "30-Day Free Returns"
+            },
+            "reviews": [
+                {
+                    "id": 1,
+                    "name": "Sophie Brown",
+                    "rating": 4,
+                    "comment": "Beautiful quality and very practical for everyday use."
+                }
+            ],
+            "relatedProducts": [
+                219,
+                221
+            ]
+        },
+        {
+            "id": 219,
+            "slug": "leo-canvas-duffle",
+            "name": "Leo Canvas Duffle",
+            "brand": "Maison Aura",
+            "category": "men",
+            "subCategory": "bags",
+            "type": null,
+            "price": 620,
+            "discountPrice": null,
+            "currency": "GBP",
+            "rating": 4.4,
+            "reviewCount": 72,
+            "badge": null,
+            "stockStatus": "In Stock",
+            "sku": "MA-TEST-219",
+            "shortDescription": "Contemporary bags design crafted for everyday luxury.",
+            "description": {
+                "title": "Description",
+                "text": "The Leo Canvas Duffle combines refined materials, practical details, and a contemporary silhouette."
+            },
+            "sizes": [
+                {
+                    "id": 1,
+                    "label": "One Size",
+                    "value": "os"
+                }
+            ],
+            "defaultVariant": 1,
+            "variants": [
+                {
+                    "id": 1,
+                    "color": "Chocolate Brown",
+                    "colorFilter": "chocolate-brown",
+                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=219+01",
+                    "images": [
+                        "https://dummyimage.com/1000x900/555/fff&text=219+01",
+                        "https://dummyimage.com/1000x900/555/fff&text=219+02"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "color": "Sage Green",
+                    "colorFilter": "sage-green",
+                    "thumbnail": "https://dummyimage.com/440x600/888/fff&text=219+02",
+                    "images": [
+                        "https://dummyimage.com/1000x900/888/fff&text=219+03",
+                        "https://dummyimage.com/1000x900/888/fff&text=219+04"
+                    ]
+                }
+            ],
+            "shipping": {
+                "deliveryTime": "1\u20132 Business Days",
+                "returns": "30-Day Free Returns"
+            },
+            "reviews": [
+                {
+                    "id": 1,
+                    "name": "James Wilson",
+                    "rating": 5,
+                    "comment": "Beautiful quality and very practical for everyday use."
+                }
+            ],
+            "relatedProducts": [
+                220,
+                222
+            ]
+        },
+        {
+            "id": 220,
+            "slug": "noir-utility-backpack",
+            "name": "Noir Utility Backpack",
+            "brand": "Nova Studio",
+            "category": "men",
+            "subCategory": "bags",
+            "type": null,
+            "price": 460,
+            "discountPrice": 410,
+            "currency": "GBP",
+            "rating": 4.2,
+            "reviewCount": 85,
+            "badge": "New",
+            "stockStatus": "In Stock",
+            "sku": "MA-TEST-220",
+            "shortDescription": "Contemporary bags design crafted for everyday luxury.",
+            "description": {
+                "title": "Description",
+                "text": "The Noir Utility Backpack combines refined materials, practical details, and a contemporary silhouette."
+            },
+            "sizes": [
+                {
+                    "id": 1,
+                    "label": "One Size",
+                    "value": "os"
+                }
+            ],
+            "defaultVariant": 1,
+            "variants": [
+                {
+                    "id": 1,
+                    "color": "Sage Green",
+                    "colorFilter": "sage-green",
+                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=220+01",
+                    "images": [
+                        "https://dummyimage.com/1000x900/555/fff&text=220+01",
+                        "https://dummyimage.com/1000x900/555/fff&text=220+02"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "color": "Burgundy",
+                    "colorFilter": "burgundy",
+                    "thumbnail": "https://dummyimage.com/440x600/888/fff&text=220+02",
+                    "images": [
+                        "https://dummyimage.com/1000x900/888/fff&text=220+03",
+                        "https://dummyimage.com/1000x900/888/fff&text=220+04"
+                    ]
+                }
+            ],
+            "shipping": {
+                "deliveryTime": "3\u20135 Business Days",
+                "returns": "30-Day Free Returns"
+            },
+            "reviews": [
+                {
+                    "id": 1,
+                    "name": "Olivia Martin",
+                    "rating": 4,
+                    "comment": "Beautiful quality and very practical for everyday use."
+                }
+            ],
+            "relatedProducts": [
+                221,
+                223
+            ]
+        },
+        {
+            "id": 221,
+            "slug": "oliver-tailored-coat",
+            "name": "Oliver Tailored Coat",
+            "brand": "Aura Atelier",
+            "category": "men",
+            "subCategory": "clothes",
+            "type": null,
+            "price": 1250,
+            "discountPrice": 1175,
+            "currency": "GBP",
+            "rating": 4.9,
+            "reviewCount": 98,
+            "badge": "Trending",
+            "stockStatus": "Low Stock",
+            "sku": "MA-TEST-221",
+            "shortDescription": "Contemporary clothes design crafted for everyday luxury.",
+            "description": {
+                "title": "Description",
+                "text": "The Oliver Tailored Coat combines refined materials, practical details, and a contemporary silhouette."
+            },
+            "sizes": [
+                {
+                    "id": 1,
+                    "label": "Small",
+                    "value": "sm"
+                },
+                {
+                    "id": 2,
+                    "label": "Medium",
+                    "value": "m"
+                },
+                {
+                    "id": 3,
+                    "label": "Large",
+                    "value": "l"
+                }
+            ],
+            "defaultVariant": 1,
+            "variants": [
+                {
+                    "id": 1,
+                    "color": "Burgundy",
+                    "colorFilter": "burgundy",
+                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=221+01",
+                    "images": [
+                        "https://dummyimage.com/1000x900/555/fff&text=221+01",
+                        "https://dummyimage.com/1000x900/555/fff&text=221+02"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "color": "Midnight Blue",
+                    "colorFilter": "midnight-blue",
+                    "thumbnail": "https://dummyimage.com/440x600/888/fff&text=221+02",
+                    "images": [
+                        "https://dummyimage.com/1000x900/888/fff&text=221+03",
+                        "https://dummyimage.com/1000x900/888/fff&text=221+04"
+                    ]
+                }
+            ],
+            "shipping": {
+                "deliveryTime": "Complimentary Express Delivery",
+                "returns": "30-Day Free Returns"
+            },
+            "reviews": [
+                {
+                    "id": 1,
+                    "name": "Daniel Smith",
+                    "rating": 5,
+                    "comment": "Beautiful quality and very practical for everyday use."
+                }
+            ],
+            "relatedProducts": [
+                222,
+                224
+            ]
+        },
+        {
+            "id": 222,
+            "slug": "ethan-wool-overshirt",
+            "name": "Ethan Wool Overshirt",
+            "brand": "Maison Aura",
+            "category": "men",
+            "subCategory": "clothes",
+            "type": null,
+            "price": 690,
+            "discountPrice": null,
+            "currency": "GBP",
+            "rating": 4.7,
+            "reviewCount": 111,
+            "badge": "Iconic",
+            "stockStatus": "In Stock",
+            "sku": "MA-TEST-222",
+            "shortDescription": "Contemporary clothes design crafted for everyday luxury.",
+            "description": {
+                "title": "Description",
+                "text": "The Ethan Wool Overshirt combines refined materials, practical details, and a contemporary silhouette."
+            },
+            "sizes": [
+                {
+                    "id": 1,
+                    "label": "Small",
+                    "value": "sm"
+                },
+                {
+                    "id": 2,
+                    "label": "Medium",
+                    "value": "m"
+                },
+                {
+                    "id": 3,
+                    "label": "Large",
+                    "value": "l"
+                }
+            ],
+            "defaultVariant": 1,
+            "variants": [
+                {
+                    "id": 1,
+                    "color": "Midnight Blue",
+                    "colorFilter": "midnight-blue",
+                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=222+01",
+                    "images": [
+                        "https://dummyimage.com/1000x900/555/fff&text=222+01",
+                        "https://dummyimage.com/1000x900/555/fff&text=222+02"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "color": "Stone",
+                    "colorFilter": "stone",
+                    "thumbnail": "https://dummyimage.com/440x600/888/fff&text=222+02",
+                    "images": [
+                        "https://dummyimage.com/1000x900/888/fff&text=222+03",
+                        "https://dummyimage.com/1000x900/888/fff&text=222+04"
+                    ]
+                }
+            ],
+            "shipping": {
+                "deliveryTime": "1\u20132 Business Days",
+                "returns": "30-Day Free Returns"
+            },
+            "reviews": [
+                {
+                    "id": 1,
+                    "name": "Sophie Brown",
+                    "rating": 4,
+                    "comment": "Beautiful quality and very practical for everyday use."
+                }
+            ],
+            "relatedProducts": [
+                223,
+                225
+            ]
+        },
+        {
+            "id": 223,
+            "slug": "theo-relaxed-trousers",
+            "name": "Theo Relaxed Trousers",
+            "brand": "Nova Studio",
+            "category": "men",
+            "subCategory": "clothes",
+            "type": null,
+            "price": 340,
+            "discountPrice": 215,
+            "currency": "GBP",
+            "rating": 4.5,
+            "reviewCount": 124,
+            "badge": "Limited Edition",
+            "stockStatus": "In Stock",
+            "sku": "MA-TEST-223",
+            "shortDescription": "Contemporary clothes design crafted for everyday luxury.",
+            "description": {
+                "title": "Description",
+                "text": "The Theo Relaxed Trousers combines refined materials, practical details, and a contemporary silhouette."
+            },
+            "sizes": [
+                {
+                    "id": 1,
+                    "label": "Small",
+                    "value": "sm"
+                },
+                {
+                    "id": 2,
+                    "label": "Medium",
+                    "value": "m"
+                },
+                {
+                    "id": 3,
+                    "label": "Large",
+                    "value": "l"
+                }
+            ],
+            "defaultVariant": 1,
+            "variants": [
+                {
+                    "id": 1,
+                    "color": "Stone",
+                    "colorFilter": "stone",
+                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=223+01",
+                    "images": [
+                        "https://dummyimage.com/1000x900/555/fff&text=223+01",
+                        "https://dummyimage.com/1000x900/555/fff&text=223+02"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "color": "Soft Pink",
+                    "colorFilter": "soft-pink",
+                    "thumbnail": "https://dummyimage.com/440x600/888/fff&text=223+02",
+                    "images": [
+                        "https://dummyimage.com/1000x900/888/fff&text=223+03",
+                        "https://dummyimage.com/1000x900/888/fff&text=223+04"
+                    ]
+                }
+            ],
+            "shipping": {
+                "deliveryTime": "3\u20135 Business Days",
+                "returns": "30-Day Free Returns"
+            },
+            "reviews": [
+                {
+                    "id": 1,
+                    "name": "James Wilson",
+                    "rating": 5,
+                    "comment": "Beautiful quality and very practical for everyday use."
+                }
+            ],
+            "relatedProducts": [
+                224,
+                201
+            ]
+        },
+        {
+            "id": 224,
+            "slug": "james-classic-shirt",
+            "name": "James Classic Shirt",
+            "brand": "Aura Atelier",
+            "category": "men",
+            "subCategory": "clothes",
+            "type": null,
+            "price": 220,
+            "discountPrice": 170,
+            "currency": "GBP",
+            "rating": 4.3,
+            "reviewCount": 16,
+            "badge": null,
+            "stockStatus": "Low Stock",
+            "sku": "MA-TEST-224",
+            "shortDescription": "Contemporary clothes design crafted for everyday luxury.",
+            "description": {
+                "title": "Description",
+                "text": "The James Classic Shirt combines refined materials, practical details, and a contemporary silhouette."
+            },
+            "sizes": [
+                {
+                    "id": 1,
+                    "label": "Small",
+                    "value": "sm"
+                },
+                {
+                    "id": 2,
+                    "label": "Medium",
+                    "value": "m"
+                },
+                {
+                    "id": 3,
+                    "label": "Large",
+                    "value": "l"
+                }
+            ],
+            "defaultVariant": 1,
+            "variants": [
+                {
+                    "id": 1,
+                    "color": "Soft Pink",
+                    "colorFilter": "soft-pink",
+                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=224+01",
+                    "images": [
+                        "https://dummyimage.com/1000x900/555/fff&text=224+01",
+                        "https://dummyimage.com/1000x900/555/fff&text=224+02"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "color": "Obsidian Black",
+                    "colorFilter": "obsidian-black",
+                    "thumbnail": "https://dummyimage.com/440x600/888/fff&text=224+02",
+                    "images": [
+                        "https://dummyimage.com/1000x900/888/fff&text=224+03",
+                        "https://dummyimage.com/1000x900/888/fff&text=224+04"
+                    ]
+                }
+            ],
+            "shipping": {
+                "deliveryTime": "Complimentary Express Delivery",
+                "returns": "30-Day Free Returns"
+            },
+            "reviews": [
+                {
+                    "id": 1,
+                    "name": "Olivia Martin",
+                    "rating": 4,
+                    "comment": "Beautiful quality and very practical for everyday use."
+                }
+            ],
+            "relatedProducts": [
+                225,
+                202
+            ]
+        },
+        {
+            "id": 225,
+            "slug": "arthur-merino-knit",
+            "name": "Arthur Merino Knit",
+            "brand": "Maison Aura",
+            "category": "men",
+            "subCategory": "clothes",
+            "type": null,
+            "price": 475,
+            "discountPrice": null,
+            "currency": "GBP",
+            "rating": 4.1,
+            "reviewCount": 29,
+            "badge": "New",
+            "stockStatus": "In Stock",
+            "sku": "MA-TEST-225",
+            "shortDescription": "Contemporary clothes design crafted for everyday luxury.",
+            "description": {
+                "title": "Description",
+                "text": "The Arthur Merino Knit combines refined materials, practical details, and a contemporary silhouette."
+            },
+            "sizes": [
+                {
+                    "id": 1,
+                    "label": "Small",
+                    "value": "sm"
+                },
+                {
+                    "id": 2,
+                    "label": "Medium",
+                    "value": "m"
+                },
+                {
+                    "id": 3,
+                    "label": "Large",
+                    "value": "l"
+                }
+            ],
+            "defaultVariant": 1,
+            "variants": [
+                {
+                    "id": 1,
+                    "color": "Obsidian Black",
+                    "colorFilter": "obsidian-black",
+                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=225+01",
+                    "images": [
+                        "https://dummyimage.com/1000x900/555/fff&text=225+01",
+                        "https://dummyimage.com/1000x900/555/fff&text=225+02"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "color": "Ivory",
+                    "colorFilter": "ivory",
+                    "thumbnail": "https://dummyimage.com/440x600/888/fff&text=225+02",
+                    "images": [
+                        "https://dummyimage.com/1000x900/888/fff&text=225+03",
+                        "https://dummyimage.com/1000x900/888/fff&text=225+04"
+                    ]
+                }
+            ],
+            "shipping": {
+                "deliveryTime": "1\u20132 Business Days",
+                "returns": "30-Day Free Returns"
+            },
+            "reviews": [
+                {
+                    "id": 1,
+                    "name": "Daniel Smith",
+                    "rating": 5,
+                    "comment": "Beautiful quality and very practical for everyday use."
                 }
             ],
             "relatedProducts": [
                 201,
-                204
+                203
             ]
         }
     ]

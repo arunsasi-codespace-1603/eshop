@@ -50,6 +50,7 @@ const ProductSubNavigation = ({
                 <div className="container-fluid">
                     <div className="navbar-category__container">
                         <Swiper
+                            style={{ width: "100%" }}
                             onSwiper={(swiper) => {
                                 swiperRef.current = swiper;
                             }}

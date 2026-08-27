@@ -1,11 +1,16 @@
-import { useRef, useState } from "react";
 import "./VideoBanner.scss";
 
+// React Core
+import { useRef, useState } from "react";
+import { Link } from "react-router";
+// Icons
 import { Pause, Play, VolumeMute, VolumeUp } from "react-bootstrap-icons";
 const VideoBanner = ({
     sourceFile,
     videoSubTitle,
-    videoTitle }) => {
+    videoTitle,
+    linkTo
+}) => {
     const [isMuted, setIsMuted] = useState(true);
     const [isPlaying, setIsPlaying] = useState(false);
     const videoElement = useRef();
@@ -47,7 +52,9 @@ const VideoBanner = ({
                     <h2 className="video-banner__title">
                         {videoTitle}
                     </h2>
-                    <button className="btn-borderless">Discover new collections</button>
+                    <Link to={linkTo}>
+                        <button className="btn-borderless">Discover new collections</button>
+                    </Link>
                 </div>
             </div>
 

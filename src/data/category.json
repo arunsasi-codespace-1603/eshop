@@ -5,6 +5,7 @@
             "name": "Women",
             "slug": "women",
             "pageType": "editorial",
+            "thumbnail": "https://dummyimage.com/440x600/9e4bb3/fff&text=Women",
             "children": [
                 {
                     "id": "women-bags",
@@ -74,17 +75,20 @@
             "name": "Men",
             "slug": "men",
             "pageType": "editorial",
+            "thumbnail": "https://dummyimage.com/440x600/9e4bb3/fff&text=Men",
             "children": [
                 {
                     "id": "men-bags",
                     "name": "Bags",
                     "slug": "bags",
+                    "bannerImage": "https://dummyimage.com/1320x300/9e4bb3/fff&text=Bags",
                     "pageType": "listing"
                 },
                 {
                     "id": "men-clothes",
                     "name": "Clothes",
                     "slug": "clothes",
+                    "bannerImage": "https://dummyimage.com/1320x300/1a4ee3/fff&text=Clothes",
                     "pageType": "listing"
                 }
             ]
@@ -94,7 +98,7 @@
             "name": "Gifting",
             "slug": "gifting",
             "pageType": "editorial",
-            "bannerImage": "https://dummyimage.com/1320x300/000/fff",
+            "thumbnail": "https://dummyimage.com/440x600/000/fff",
             "children": [
                 {
                     "id": "gifting-for-her",

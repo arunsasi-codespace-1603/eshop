@@ -15,8 +15,19 @@
                     "id": "women-bags",
                     "name": "Bags",
                     "slug": "bags",
-                    "path": "/products/women/bags",
                     "children": [
+                        {
+                            "id": "women-bags-view-all",
+                            "name": "View All",
+                            "slug": "view-all",
+                            "path": "/products/women/bags"
+                        },
+                        {
+                            "id": "women-bags-crossbody-bags",
+                            "name": "Crossbody Bags",
+                            "slug": "crossbody-bags",
+                            "path": "/products/women/bags/crossbody-bags"
+                        },
                         {
                             "id": "women-bags-handbags",
                             "name": "Handbags",
@@ -24,30 +35,75 @@
                             "path": "/products/women/bags/handbags"
                         },
                         {
-                            "id": "women-bags-crossbody",
-                            "name": "Crossbody Bags",
-                            "slug": "crossbody-bags",
-                            "path": "/products/women/bags/crossbody-bags"
+                            "id": "women-bags-shoulder-bags",
+                            "name": "Shoulder Bags",
+                            "slug": "shoulder-bags",
+                            "path": "/products/women/bags/shoulder-bags"
                         }
                     ]
-                },
-                {
-                    "id": "women-accessories",
-                    "name": "Women Accessories",
-                    "slug": "women-accessories",
-                    "path": "/products/women/accessories"
                 },
                 {
                     "id": "women-clothes",
                     "name": "Clothes",
                     "slug": "clothes",
-                    "path": "/products/women/clothes"
+                    "children": [
+                        {
+                            "id": "clothes",
+                            "name": "View All",
+                            "slug": "clothes",
+                            "path": "/products/women/clothes"
+                        },
+                        {
+                            "id": "women-clothes-dresses",
+                            "name": "Dresses",
+                            "slug": "dresses",
+                            "path": "/products/women/clothes/dresses"
+                        },
+                        {
+                            "id": "women-clothes-jackets",
+                            "name": "Jackets",
+                            "slug": "jackets",
+                            "path": "/products/women/clothes/jackets"
+                        }
+                    ]
                 },
                 {
-                    "id": "women-perfume",
-                    "name": "Perfume",
-                    "slug": "perfume",
-                    "path": "/products/women/perfume"
+                    "id": "women-accessories",
+                    "name": "Accessories",
+                    "slug": "accessories",
+                    "children": [
+                        {
+                            "id": "accessories",
+                            "name": "View All",
+                            "slug": "accessories",
+                            "path": "/products/women/accessories"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "men",
+            "name": "Men",
+            "slug": "men",
+            "children": [
+                {
+                    "id": "men-view-all",
+                    "name": "View All",
+                    "slug": "view-all",
+                    "path": "/products/men"
+                },
+                {
+                    "id": "men-bags",
+                    "name": "Bags",
+                    "slug": "bags",
+                    "path": "/products/men/bags"
+                },
+                {
+                    "id": "men-clothes",
+                    "name": "Clothes",
+                    "slug": "clothes",
+                    "path": "/products/men/clothes"
                 }
             ]
         },

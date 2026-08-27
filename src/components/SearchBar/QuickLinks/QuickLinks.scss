@@ -1,0 +1,21 @@
+@use "../../../styles/utils/abstract/mixins" as mix;
+@use "../../../styles/utils/abstract/variable" as var;
+
+
+.quick-links {
+    &__header {
+        font-size: var.$font-size-lg;
+        margin-bottom: var.$spacing-md;
+        color: var.$gray-600;
+        font-weight: 500;
+    }
+
+    &__items {
+        font-size: var.$font-size-md;
+
+    }
+
+    &__link {
+        padding: var.$spacing-sm 0;
+    }
+}

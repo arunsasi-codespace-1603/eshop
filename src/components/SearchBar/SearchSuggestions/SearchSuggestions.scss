@@ -1,0 +1,30 @@
+@use "../../../styles/utils/abstract/mixins" as mix;
+@use "../../../styles/utils/abstract/variable" as var;
+
+.result-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: var.$spacing-md;
+
+    .label {
+        color: var.$gray-400;
+    }
+}
+
+.result-grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+    &__column {
+        width: calc(50% - 0.25rem);
+    }
+
+    @include mix.respond(md) {
+        &__column {
+            width: calc(25% - 0.375rem);
+        }
+    }
+}

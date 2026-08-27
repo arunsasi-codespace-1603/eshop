@@ -14,9 +14,9 @@
 
 .cta-filter {
     position: sticky;
-    z-index: 999;
     bottom: 1rem;
     left: 50%;
     transform: translateX(-50%);
-    padding: 0.8rem 2rem;
+    padding: var.$spacing-sm var.$spacing-lg;
+    z-index: var.$z-index-backdrop;
 }

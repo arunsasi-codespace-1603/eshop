@@ -6,7 +6,7 @@
 
     &__image {
         width: 100%;
-        display: var.$display-block;
+        display: block;
 
         img {
             width: 100%;
@@ -16,7 +16,7 @@
     }
 
     &__content {
-        display: var.$display-block;
+        display: block;
         text-align: center;
         padding: var.$spacing-sm 0 var.$spacing-md;
         font-weight: 300;
@@ -25,15 +25,15 @@
 
     &__link {
         text-decoration: none;
-        display: var.$display-inline;
+        display: inline;
         position: relative;
         color: var.$color-primary;
 
         &::before {
-            position: var.$position-absolute;
+            position: absolute;
             width: 100%;
             height: 1px;
-            background: var.$color-primary;
+            background: var.$gray-600;
             top: 100%;
             left: 0;
             content: '';
@@ -44,6 +44,8 @@
         }
 
         &:hover {
+            color: var.$gray-600;
+
             &::before {
                 transform-origin: 0% 50%;
                 transform: scale3d(1, 1, 1);
