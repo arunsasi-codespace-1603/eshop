@@ -1,6 +1,23 @@
 @use "../../../styles/utils/abstract/mixins" as mix;
 @use "../../../styles//utils/abstract/variable" as var;
 
+.button-wishlist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var.$spacing-xl;
+    height: var.$spacing-xl;
+    padding: var.$spacing-sm;
+    font-size: var.$font-size-md;
+    background-color: var.$white;
+    position: absolute;
+    top: var.$spacing-md;
+    right: var.$spacing-md;
+    border-radius: var.$radius-xs;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
 .product-card {
     width: 100%;
     margin-bottom: var.$spacing-md;
@@ -31,19 +48,11 @@
             font-size: 1rem;
         }
     }
-}
 
-.button-wishlist {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: var.$spacing-xl;
-    height: var.$spacing-xl;
-    padding: var.$spacing-sm;
-    font-size: var.$font-size-md;
-    background-color: var.$white;
-    position: absolute;
-    top: var.$spacing-md;
-    right: var.$spacing-md;
-    border-radius: var.$radius-xs;
+    &:hover {
+        .button-wishlist {
+            opacity: 1;
+        }
+    }
+
 }

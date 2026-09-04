@@ -1,0 +1,8 @@
+@use "../../styles/utils/abstract/mixins" as mix;
+@use "../../styles/utils/abstract/variable" as var;
+
+.hm-categories {
+    @include mix.respond(md) {
+        padding: 5rem 0;
+    }
+}

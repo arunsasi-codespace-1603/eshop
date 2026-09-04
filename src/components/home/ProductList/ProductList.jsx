@@ -11,7 +11,6 @@ const ProductList = ({
     products = [],
     discoverLink
 }) => {
-    console.log(subCategoryName)
 
     if (products.length === 0) {
         return <EmptyState />

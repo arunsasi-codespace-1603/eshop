@@ -6,9 +6,9 @@
             "slug": "women",
             "children": [
                 {
-                    "id": "view-all",
-                    "name": "View All",
-                    "slug": "view-all",
+                    "id": "collections",
+                    "name": "Collections",
+                    "slug": "collections",
                     "path": "/products/women"
                 },
                 {

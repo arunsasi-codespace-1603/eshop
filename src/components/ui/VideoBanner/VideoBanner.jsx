@@ -58,17 +58,21 @@ const VideoBanner = ({
                 </div>
             </div>
 
-            <div className="button-controls left">
-                <button className="btn button-play" onClick={() => playPauseVideo()} >
-                    {isPlaying ? <Play /> : <Pause />}
-                </button>
-            </div>
-            <div className="button-controls right">
-                <button className="btn button-mute" onClick={() => { toggleMuteVideo() }}>
-                    {isMuted ? <VolumeMute /> : <VolumeUp />}
-                </button>
-            </div>
-        </div>
+            {(sourceFile) &&
+                <>
+                    <div className="button-controls left">
+                        <button className="btn button-play" onClick={() => playPauseVideo()} >
+                            {isPlaying ? <Play /> : <Pause />}
+                        </button>
+                    </div>
+                    <div className="button-controls right">
+                        <button className="btn button-mute" onClick={() => { toggleMuteVideo() }}>
+                            {isMuted ? <VolumeMute /> : <VolumeUp />}
+                        </button>
+                    </div>
+                </>
+            }
+        </div >
     )
 }
 export default VideoBanner

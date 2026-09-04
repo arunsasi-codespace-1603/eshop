@@ -2,16 +2,19 @@ import "./CategoryCard.scss";
 
 import { Link } from "react-router-dom";
 
-const CategoryCard = ({ categoryData }) => {
+const CategoryCard = ({
+    mainCategory,
+    category
+}) => {
     const {
         name,
         slug,
         thumbnail
-    } = categoryData;
+    } = category;
 
     return (
         <div className="categ-card">
-            <Link to={`/products/${slug}`}>
+            <Link to={`/products/${mainCategory}/${slug}`}>
                 <div className="categ-card__image">
                     <img
                         src={thumbnail}
