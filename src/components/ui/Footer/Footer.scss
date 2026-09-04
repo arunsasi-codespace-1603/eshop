@@ -1,24 +1,31 @@
-@import "../../../styles/utils/abstract/mixins";
+@use "../../../styles/utils/abstract/mixins" as mix;
+@use "../../../styles/utils/abstract/variable" as var;
 
 .footer {
-    background-color: tan;
     width: 100%;
+    border-top: 1px solid var.$gray-300;
 
     &__container {
         width: 100%;
         display: flex;
         flex-direction: column;
-        border-top: 1px solid red;
-        border-bottom: 1px solid red;
-        padding: 2.5rem 0;
+    }
+
+    &__logo {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: var.$spacing-md 0;
     }
 
     &__column {
-        background-color: yellow;
         padding: 0rem;
     }
 
-    @include respond(lg) {
+    @include mix.respond(lg) {
+        padding: var.$spacing-xxl 0;
+
         &__container {
             flex-direction: row;
         }
@@ -37,22 +44,59 @@
 .footer-categ {
     display: block;
 
+    @include mix.respond-max(lg) {
+        border-top: 1px solid var.$gray-200;
 
-    &__header {
-        font-size: 0.875rem;
-        padding-bottom: 1.5rem;
-    }
+        &__header {
+            color: var.$gray-600;
+            padding: var.$spacing-md 0;
+            position: relative;
 
-    @include respond-max(lg) {
+            .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 2.5rem;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
         &__body {
-            display: block;
-            height: 0;
+            display: grid;
+            grid-template-rows: 0fr;
+            opacity: 0;
             visibility: hidden;
+            padding: 0 var.$spacing-md;
+            font-size: var.$font-size-sm;
+            transition:
+                grid-template-rows 0.3s ease,
+                opacity 0.3s ease,
+                visibility 0.3s ease;
+
+            >* {
+                overflow: hidden;
+            }
+
 
             &.active {
-                height: 100%;
+                grid-template-rows: 1fr;
+                opacity: 1;
                 visibility: visible;
             }
+        }
+    }
+
+    @include mix.respond(lg) {
+        &__header {
+            margin-bottom: var.$spacing-lg;
+            color: var.$gray-600;
+        }
+
+        &__body {
+            font-size: var.$font-size-md;
         }
     }
 }
@@ -63,7 +107,7 @@
     margin: 0;
 
     &__block {
-        font-size: 1rem;
+        display: block;
 
         a {
             text-decoration: underline;
@@ -71,7 +115,6 @@
     }
 
     &__item {
-        margin: 0 0 01rem;
-        font-size: 1rem;
+        margin: 0 0 1rem;
     }
 }

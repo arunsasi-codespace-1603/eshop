@@ -47,10 +47,6 @@ header {
         flex-direction: row;
     }
 
-    // &__tools-left {}
-
-    // &__tools-right {}
-
     @include mix.respond(md) {
         padding: var.$spacing-md 0;
     }
@@ -75,26 +71,35 @@ header {
 
 .navbar-holder {
     position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    background-color: var.$white;
+    inset: 0;
+
     width: 100%;
-    height: 100%;
+    height: 100dvh;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: var.$white;
+
     transform: translateX(-100%);
-    transition: transform .5s cubic-bezier(0.075, 0.82, 0.165, 1),
-        width .3s ease;
+    transition:
+        transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1),
+        width 0.3s ease;
+
     z-index: var.$z-index-max;
 
-    &__header,
-    &__body {
-        display: block;
-        width: 100%;
-    }
-
     &__header {
+        width: 100%;
         padding: var.$spacing-md;
         border-bottom: 1px solid var.$gray-200;
+        flex-shrink: 0;
+    }
+
+    &__body {
+        width: 100%;
+        flex: 1;
+        min-height: 0;
+        overflow-y: auto;
     }
 
     &.is-active {
@@ -123,6 +128,7 @@ header {
     transition: opacity .3s ease,
         visibility .3s ease;
     z-index: var.$z-index-backdrop;
+    cursor: pointer;
 
     &.is-active {
         opacity: 1;
@@ -133,12 +139,12 @@ header {
 .menu-items {
     display: block;
     margin: 0;
-    padding: 0;
+    padding: var.$spacing-md 0;
     list-style: none;
 
     &__list {
         font-size: var.$font-size-xl;
-        padding: 0;
+        padding: 0 var.$spacing-md;
     }
 
     &__link {
@@ -181,7 +187,7 @@ header {
     align-items: center;
     border-radius: 0;
     font-size: var.$font-size-lg;
-    padding: var.$spacing-md var.$spacing-xl;
+    padding: var.$spacing-md var.$spacing-md;
     background-color: var.$gray-100;
 
     .icon {
