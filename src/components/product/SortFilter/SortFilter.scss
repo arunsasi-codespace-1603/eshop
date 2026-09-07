@@ -15,7 +15,7 @@
     transform: translateX(100%);
     will-change: transform;
     transition: transform .5s cubic-bezier(0.075, 0.82, 0.165, 1), width .3s ease;
-    z-index: var.$z-index-overlay;
+    z-index: var.$z-index-max;
 
     &__header,
     &__body,
@@ -29,6 +29,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        height: var(--navbar-height);
 
         .title {
             width: 100%;
@@ -72,7 +73,7 @@
     backdrop-filter: blur(30px);
     transition: opacity .3s ease,
         visibility .3s ease;
-    z-index: var.$z-index-backdrop;
+    z-index: var.$z-index-overlay;
 
     &.active {
         opacity: 1;

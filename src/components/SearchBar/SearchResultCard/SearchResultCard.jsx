@@ -1,8 +1,11 @@
 import "./SearchResultCard.scss";
+// React core
+import { Link } from "react-router-dom";
 
-const SearchResultCard = (
-    { productInfo }
-) => {
+const SearchResultCard = ({
+    productInfo,
+    closeSearch
+}) => {
 
     //------------------------------------------------
     // Find default variable
@@ -12,18 +15,24 @@ const SearchResultCard = (
     );
 
     return (
-        <>
-            <div className="search-result-card">
-                <div className="search-result-card__image">
-                    <img src={defaultVariant.thumbnail} alt={defaultVariant.color} />
-                </div>
-                <div className="search-result-card__content">
-                    <div className="search-result-card__title">
-                        {productInfo.name}
-                    </div>
+        <Link
+            to={`/product/${productInfo.id}/${productInfo.slug}`}
+            className="search-result-card"
+            onClick={closeSearch}
+        >
+            <div className="search-result-card__image">
+                <img
+                    src={defaultVariant.thumbnail}
+                    alt={defaultVariant.color}
+                />
+            </div>
+
+            <div className="search-result-card__content">
+                <div className="search-result-card__title">
+                    {productInfo.name}
                 </div>
             </div>
-        </>
-    )
+        </Link>
+    );
 }
 export default SearchResultCard;

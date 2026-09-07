@@ -1,7 +1,8 @@
 import "./Navigation.scss";
+import logoicon from "../../../assets/logo/logo.svg"
 
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 // data
 import menubarLinks from "../../../data/menus.json";
 // Bootstrap icons
@@ -98,6 +99,7 @@ const Navigation = () => {
     // Open Searchbar
     //------------------------------------------------
     const openSearchBar = () => {
+        console.log("click")
         setIsSearchOpen(true);
     }
     //------------------------------------------------
@@ -112,7 +114,12 @@ const Navigation = () => {
                 <nav className="navbar">
                     <div className="container-fluid">
                         <div className="navbar__container">
-                            <a href="/" className="navbar__logo">Logo</a>
+                            <Link to="/" className="navbar__logo">
+                                <img
+                                    src={logoicon}
+                                    alt="45 Degree"
+                                />
+                            </Link>
                             <div className="navbar__tools-left">
                                 <button className="btn button-tools-cta" onClick={openMenu}>
                                     <List />

@@ -4,7 +4,7 @@
 header {
     position: sticky;
     top: 0;
-    z-index: var.$z-index-max;
+    z-index: var.$z-index-overlay;
 }
 
 .navbar {
@@ -32,7 +32,7 @@ header {
         left: 50%;
         transform: translateX(-50%);
         width: 100%;
-        max-width: 100px;
+        max-width: 140px;
         height: 100%;
         padding: 0 var.$spacing-md;
         display: flex;
@@ -93,6 +93,7 @@ header {
         padding: var.$spacing-md;
         border-bottom: 1px solid var.$gray-200;
         flex-shrink: 0;
+        height: var(--navbar-height);
     }
 
     &__body {

@@ -55,7 +55,7 @@
     backdrop-filter: blur(30px);
     transition: opacity .3s ease,
         visibility .3s ease;
-    z-index: var.$z-index-backdrop;
+    z-index: var.$z-index-overlay;
     cursor: pointer;
 
     &.is-active {
@@ -74,22 +74,9 @@
     &__prepend {
         position: relative;
 
-        .icon {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: var.$spacing-xxl;
-            height: 100%;
-            border: none;
-            outline: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: transparent;
-        }
-
         .input-field {
             padding-left: var.$spacing-xxl;
+            padding-right: var.$spacing-xxl;
         }
     }
 
@@ -113,3 +100,28 @@
     margin-bottom: var.$spacing-lg;
 }
 
+.btn-submit-search,
+.btn-search-icon {
+    position: absolute;
+    padding: 0;
+    font-size: var.$font-size-lg;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    height: calc(100% - 6px);
+    width: var.$spacing-xl;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+}
+
+.btn-submit-search {
+    right: 4px;
+}
+
+.btn-search-icon {
+    left: 4px;
+}

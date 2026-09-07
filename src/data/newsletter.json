@@ -1,0 +1,82 @@
+{
+    "newsletter": [
+        {
+            "id": 1,
+            "slug": "the-art-of-modern-luxury",
+            "title": "The Art of Modern Luxury",
+            "author": "Arun",
+            "tag": "Newest",
+            "posted": "20 June 2026",
+            "shortDescription": "Discover the latest inspirations, collections, and stories shaping the world of modern luxury.",
+            "details": "Explore the craftsmanship, creativity, and timeless design behind our latest collection. From refined silhouettes to carefully selected materials, every piece is created to bring a distinctive sense of character and elegance to everyday life.",
+            "thumbnail": "https://dummyimage.com/440x600/111111/ffffff&text=Modern+Luxury",
+            "bannerImage": "https://dummyimage.com/1920x1080/111111/ffffff&text=The+Art+of+Modern+Luxury",
+            "path": "/newsletter/the-art-of-modern-luxury"
+        },
+        {
+            "id": 2,
+            "slug": "behind-the-craft",
+            "title": "Behind the Craft",
+            "author": "Arun",
+            "tag": "Featured",
+            "posted": "18 June 2026",
+            "shortDescription": "A closer look at the craftsmanship and details behind our signature pieces.",
+            "details": "Great design begins with attention to detail. Discover the techniques, materials, and creative process that transform an initial idea into a beautifully finished piece.",
+            "thumbnail": "https://dummyimage.com/440x600/222222/ffffff&text=Behind+The+Craft",
+            "bannerImage": "https://dummyimage.com/1920x1080/222222/ffffff&text=Behind+The+Craft",
+            "path": "/newsletter/behind-the-craft"
+        },
+        {
+            "id": 3,
+            "slug": "new-season-edit",
+            "title": "The New Season Edit",
+            "author": "Arun",
+            "tag": "Collection",
+            "posted": "15 June 2026",
+            "shortDescription": "Meet the pieces defining our latest seasonal collection.",
+            "details": "A new season brings a fresh perspective on timeless style. Explore contemporary shapes, subtle textures, and versatile pieces designed to become part of your everyday wardrobe.",
+            "thumbnail": "https://dummyimage.com/440x600/333333/ffffff&text=New+Season",
+            "bannerImage": "https://dummyimage.com/1920x1080/333333/ffffff&text=New+Season+Edit",
+            "path": "/newsletter/new-season-edit"
+        },
+        {
+            "id": 4,
+            "slug": "timeless-accessories",
+            "title": "Timeless Accessories",
+            "author": "Arun",
+            "tag": "Style",
+            "posted": "12 June 2026",
+            "shortDescription": "Explore the accessories that bring elegance and character to every look.",
+            "details": "From refined leather goods to statement accessories, discover how carefully selected details can transform a classic wardrobe. Each piece combines functionality with a distinctive sense of style.",
+            "thumbnail": "https://dummyimage.com/440x600/444444/ffffff&text=Accessories",
+            "bannerImage": "https://dummyimage.com/1920x1080/444444/ffffff&text=Timeless+Accessories",
+            "path": "/newsletter/timeless-accessories"
+        },
+        {
+            "id": 5,
+            "slug": "journey-through-design",
+            "title": "A Journey Through Design",
+            "author": "Arun",
+            "tag": "Stories",
+            "posted": "08 June 2026",
+            "shortDescription": "Step inside the creative journey behind our most distinctive designs.",
+            "details": "Every collection begins with an idea. Follow the creative journey from the first sketches and material selection to the final details that bring each design to life.",
+            "thumbnail": "https://dummyimage.com/440x600/555555/ffffff&text=Design+Journey",
+            "bannerImage": "https://dummyimage.com/1920x1080/555555/ffffff&text=A+Journey+Through+Design",
+            "path": "/newsletter/journey-through-design"
+        },
+        {
+            "id": 6,
+            "slug": "the-new-classics",
+            "title": "The New Classics",
+            "author": "Arun",
+            "tag": "Editorial",
+            "posted": "05 June 2026",
+            "shortDescription": "Classic silhouettes meet contemporary details in our latest editorial.",
+            "details": "Discover a new interpretation of timeless fashion. Traditional silhouettes are refreshed with modern proportions, subtle textures, and thoughtful details for a contemporary expression of luxury.",
+            "thumbnail": "https://dummyimage.com/440x600/666666/ffffff&text=New+Classics",
+            "bannerImage": "https://dummyimage.com/1920x1080/666666/ffffff&text=The+New+Classics",
+            "path": "/newsletter/the-new-classics"
+        }
+    ]
+}

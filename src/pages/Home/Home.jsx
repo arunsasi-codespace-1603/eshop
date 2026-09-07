@@ -10,6 +10,7 @@ import ProductList from "../../components/home/ProductList/ProductList";
 import Footer from "../../components/ui/Footer/Footer";
 import VideoBanner from "../../components/ui/VideoBanner/VideoBanner";
 import Navigation from "../../components/ui/Navigation/Navigation";
+import Newsletter from "../../components/Newsletter/Newsletter";
 
 const Home = () => {
     const categoryList = CategoryItems.categories;
@@ -85,7 +86,7 @@ const Home = () => {
                 </section>
                 <section className="hm-banner">
                     <HeroBanner
-                        imageSrc="https://fastly.picsum.photos/id/16/2500/1667.jpg?hmac=uAkZwYc5phCRNFTrV_prJ_0rP0EdwJaZ4ctje2bY7aE" />
+                        imageSrc="https://placehold.co/1920x1080" />
                 </section>
                 <section className="hm-products">
                     <ProductList
@@ -98,7 +99,7 @@ const Home = () => {
                 </section>
                 <section className="hm-banner">
                     <HeroBanner
-                        imageSrc="https://fastly.picsum.photos/id/24/4855/1803.jpg?hmac=ICVhP1pUXDLXaTkgwDJinSUS59UWalMxf4SOIWb9Ui4" />
+                        imageSrc="https://placehold.co/1920x1080" />
                 </section>
                 <section className="hm-products">
                     <ProductList
@@ -108,6 +109,24 @@ const Home = () => {
                         products={mensBags}
                         discoverLink="/products/men/bags"
                     />
+                </section>
+                <section className="hm-banner">
+                    <HeroBanner
+                        imageSrc="https://placehold.co/1920x1080" />
+                </section>
+
+                <section className="section-content">
+                    <div className="container-fluid">
+                        <div className="section-content__header">
+                            <h3 className="section-content__title">
+                                Latest updates
+                            </h3>
+                            <div className="section-content__short-desc">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, labore?
+                            </div>
+                        </div>
+                    </div>
+                    <Newsletter />
                 </section>
             </main>
             <Footer />

@@ -1,14 +1,14 @@
 @use "../../../styles/utils/abstract/mixins" as mix;
 @use "../../../styles/utils/abstract/variable" as var;
 
-.result-footer {
+.result-header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin-top: var.$spacing-md;
+    margin-bottom: var.$spacing-md;
+    justify-content: flex-end;
 
     .label {
-        color: var.$gray-400;
+        color: var.$gray-500;
     }
 }
 

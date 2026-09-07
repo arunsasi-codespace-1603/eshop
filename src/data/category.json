@@ -13,7 +13,7 @@
                     "slug": "bags",
                     "pageType": "listing",
                     "thumbnail": "https://dummyimage.com/440x600/cbcbc9/fff",
-                    "bannerImage": "https://dummyimage.com/1320x300/9e4bb3/fff&text=Bags",
+                    "bannerImage": "https://placehold.co/1920x500",
                     "children": [
                         {
                             "id": "view-all",
@@ -47,7 +47,7 @@
                     "slug": "accessories",
                     "pageType": "listing",
                     "thumbnail": "https://dummyimage.com/440x600/cbcbc9/fff",
-                    "bannerImage": "https://dummyimage.com/1320x300/1e0d8f/fff&text=Clothes",
+                    "bannerImage": "https://placehold.co/1920x500",
                     "children": [
                         {
                             "id": "view-all",
@@ -74,7 +74,7 @@
                     "name": "Women's Wallets",
                     "slug": "wallets",
                     "thumbnail": "https://dummyimage.com/440x600/cbcbc9/fff",
-                    "bannerImage": "https://dummyimage.com/1320x300/266e0e/fff&text=Accessories",
+                    "bannerImage": "https://placehold.co/1920x500",
                     "pageType": "listing"
                 },
                 {
@@ -99,7 +99,7 @@
                     "name": "Men's Bags",
                     "slug": "bags",
                     "thumbnail": "https://dummyimage.com/440x600/cbcbc9/fff",
-                    "bannerImage": "https://dummyimage.com/1320x300/9e4bb3/fff&text=Bags",
+                    "bannerImage": "https://placehold.co/1920x500",
                     "pageType": "listing"
                 },
                 {
@@ -107,7 +107,7 @@
                     "name": "Men's Accessories",
                     "slug": "accessories",
                     "thumbnail": "https://dummyimage.com/440x600/cbcbc9/fff",
-                    "bannerImage": "https://dummyimage.com/1320x300/1a4ee3/fff&text=Clothes",
+                    "bannerImage": "https://placehold.co/1920x500",
                     "pageType": "listing"
                 },
                 {
@@ -115,7 +115,7 @@
                     "name": "Men's Wallets",
                     "slug": "wallets",
                     "thumbnail": "https://dummyimage.com/440x600/cbcbc9/fff",
-                    "bannerImage": "https://dummyimage.com/1320x300/1a4ee3/fff&text=Clothes",
+                    "bannerImage": "https://placehold.co/1920x500",
                     "pageType": "listing"
                 },
                 {
@@ -123,7 +123,7 @@
                     "name": "Men's Shoes",
                     "slug": "shoes",
                     "thumbnail": "https://dummyimage.com/440x600/cbcbc9/fff",
-                    "bannerImage": "https://dummyimage.com/1320x300/1a4ee3/fff&text=Clothes",
+                    "bannerImage": "https://placehold.co/1920x500",
                     "pageType": "listing"
                 }
             ]

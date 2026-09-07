@@ -1,10 +1,10 @@
 import "./SearchBar.scss";
 
 // React Core
-import { Link } from "react-router";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 // Icons
-import { XLg, Search } from "react-bootstrap-icons";
+import { XLg, Search, ArrowRight, ChevronRight } from "react-bootstrap-icons";
 // Componet Binding
 import SearchSuggestions from "./SearchSuggestions/SearchSuggestions";
 import QuickLinks from "./QuickLinks/QuickLinks";
@@ -15,6 +15,7 @@ const SearchBar = ({
     isActive,
     closeSearch
 }) => {
+    const navigate = useNavigate();
     const [searchQuery, setSearchQuery] = useState("");
 
     // All products
@@ -40,14 +41,17 @@ const SearchBar = ({
     }
 
     // Only show first 4 products in search overlay
-    const suggestedProducts = filteredProducts.slice(0, 4);
-    const searchResultCount = filteredProducts.length;
+    const suggestedProducts = filteredProducts;
 
     //------------------------------------------------
     // Submit form
     //------------------------------------------------
     const handleSearch = (event) => {
         event.preventDefault();
+        const query = searchQuery.trim();
+        if (!query) return;
+        handleCloseSearch();
+        navigate(`/search?q=${encodeURIComponent(query)}`);
     }
 
     //------------------------------------------------
@@ -77,13 +81,27 @@ const SearchBar = ({
                         className="form-search">
                         <div className="form-search__group mb-3">
                             <div className="form-search__prepend">
-                                <button className="icon"><Search /></button>
+                                <button
+                                    type="button"
+                                    className="btn btn-search-icon">
+                                    <Search />
+                                </button>
+
                                 <input
                                     type="text"
                                     value={searchQuery}
                                     onChange={(event) => setSearchQuery(event.target.value)}
                                     placeholder="What are you looking for..."
                                     className="form-search__input input-field" />
+
+                                {query !== "" &&
+                                    <button
+                                        type="button"
+                                        className="btn btn-submit-search"
+                                    >
+                                        <ChevronRight />
+                                    </button>
+                                }
                             </div>
                         </div>
                     </form>
@@ -99,8 +117,8 @@ const SearchBar = ({
                     {query !== "" && filteredProducts.length > 0 && (
                         <SearchSuggestions
                             products={suggestedProducts}
-                            totalCount={searchResultCount}
-                        />
+                            query={searchQuery}
+                            closeSearch={handleCloseSearch} />
                     )}
 
                     {query !== "" && filteredProducts.length === 0 && (

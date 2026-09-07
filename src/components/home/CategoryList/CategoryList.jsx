@@ -8,8 +8,6 @@ const CategoryList = ({
     categories
 }) => {
     return (
-
-
         <div className="container-fluid">
             <div className="row">
                 {categories.map((category) => (
@@ -21,8 +19,6 @@ const CategoryList = ({
                 ))}
             </div>
         </div>
-
     )
-
 }
 export default CategoryList

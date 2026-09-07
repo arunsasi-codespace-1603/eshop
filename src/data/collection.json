@@ -9,7 +9,7 @@
             "subtitle": "Continuous motion, elevated comfort",
             "description": "Celebrating the maison's travel heritage with technical silk loungewear, dual-time watchmaking, and soft Monogram luggage engineered for long-haul journeys.",
             "type": "capsule",
-            "heroImage": "/images/collections/flight-mode/hero.jpg",
+            "heroImage": "https://placehold.co/1920x1080/green/FFFFFF/png",
             "editorialImages": [
                 "/images/collections/flight-mode/campaign-01.jpg",
                 "/images/collections/flight-mode/campaign-02.jpg",
@@ -28,7 +28,7 @@
             "subtitle": "Coated canvas and natural cowhide leather",
             "description": "Designed by Georges Vuitton as a tribute to his father, the iconic interlocking LV initials and floral motifs form the cornerstone of luxury trunkmaking.",
             "type": "core",
-            "heroImage": "/images/collections/monogram-heritage/hero.jpg",
+            "heroImage": "https://placehold.co/1920x1080/offwhite/FFFFFF/png",
             "editorialImages": [
                 "/images/collections/monogram-heritage/lookbook-01.jpg",
                 "/images/collections/monogram-heritage/lookbook-02.jpg",
@@ -46,7 +46,7 @@
             "subtitle": "Named after Rue des Capucines in Paris",
             "description": "Crafted from full-grain Taurillon leather, the Capucines bag represents pure leatherworking craftsmanship with a jewel-like LV closure and structured silhouette.",
             "type": "silhouette",
-            "heroImage": "/images/collections/capucines/hero.jpg",
+            "heroImage": "https://placehold.co/1920x1080/orange/white",
             "editorialImages": [
                 "/images/collections/capucines/01.jpg",
                 "/images/collections/capucines/02.jpg",
@@ -64,7 +64,7 @@
             "subtitle": "Taïga leather meets Monogram canvas",
             "description": "A vibrant fusion of durable textured Taïga leather and tonal Monogram canvas, tailored for contemporary urban lifestyles and travel accessories.",
             "type": "core",
-            "heroImage": "/images/collections/taigarama/hero.jpg",
+            "heroImage": "https://placehold.co/1920x1080/teal/white",
             "editorialImages": [
                 "/images/collections/taigarama/01.jpg",
                 "/images/collections/taigarama/02.jpg",
@@ -82,7 +82,7 @@
             "subtitle": "Resort wear and sculpted leather accessories",
             "description": "Staged against global architectural landmarks, the Cruise collection blends futuristic drapery, embellished outerwear, and collector's edition hard-sided trunks.",
             "type": "seasonal",
-            "heroImage": "/images/collections/cruise-2026/hero.jpg",
+            "heroImage": "https://placehold.co/1920x1080/crimson/white",
             "editorialImages": [
                 "/images/collections/cruise-2026/01.jpg",
                 "/images/collections/cruise-2026/02.jpg",

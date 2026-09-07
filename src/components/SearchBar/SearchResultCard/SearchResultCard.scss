@@ -3,6 +3,7 @@
 
 .search-result-card {
     background-color: var.$white;
+    cursor: pointer;
 
     &__image {
         width: 100%;

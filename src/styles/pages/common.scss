@@ -41,6 +41,11 @@ main {
         margin-top: var.$spacing-xl;
     }
 
+    &__short-desc {
+        margin: var.$spacing-md 0;
+        color: var.$gray-500;
+    }
+
     @include mix.respond(md) {
         &__sub-title {
             font-size: var.$font-size-md;

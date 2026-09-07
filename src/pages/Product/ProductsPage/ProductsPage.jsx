@@ -14,7 +14,6 @@ import EmptyState from "../../../components/ui/EmptyState/EmptyState";
 import PageNotFound from "../../PageNotFound/PageNotFound";
 import ProductCard from "../../../components/ui/ProductCard/ProductCard";
 import SortFilter from "../../../components/product/SortFilter/SortFilter";
-import Breadcrumb from "../../../components/ui/Breadcrumb/Breadcrumb";
 
 const ProductsPage = () => {
     const {
@@ -52,15 +51,15 @@ const ProductsPage = () => {
 
     const hasActiveFilterOrSort = () => {
         return (
-            appliedFilters.colors.length > 0 ||
-            appliedFilters.sizes.length > 0 ||
-            appliedFilters.price !== "" ||
+            filterBy.colors.length > 0 ||
+            filterBy.sizes.length > 0 ||
+            filterBy.price !== "" ||
             sortBy !== "default"
         );
     };
-    // ==========================================
+    // ------------------------------------------
     // FInd Category
-    // ==========================================
+    // ------------------------------------------
     const categoryList = categoriesData.categories.find((categ) => {
         return categ.slug === category;
     });
@@ -68,9 +67,9 @@ const ProductsPage = () => {
         return <PageNotFound message="Sory Invalid Category" />
     }
 
-    // ==========================================
+    // ------------------------------------------
     // Find Subcategory
-    // ==========================================
+    // ------------------------------------------
     let subCateg = null;
     if (categoryList) {
         subCateg = categoryList.children.find((item) => {
@@ -85,9 +84,9 @@ const ProductsPage = () => {
         categoryNavigation = subCateg.children || [];
     }
 
-    // ==========================================
+    // ------------------------------------------
     // Get products by category
-    // ==========================================
+    // ------------------------------------------
     let filteredProducts = productsData.products.filter((product) => {
         return (
             product.category === category &&
@@ -96,23 +95,23 @@ const ProductsPage = () => {
         )
     });
 
-    // ==========================================
+    // ------------------------------------------
     // Open Filter Drawer
-    // ==========================================
+    // ------------------------------------------
     const openFilterDrawer = () => {
         setIsFilterOpen(true);
     }
 
-    // ==========================================
+    // ------------------------------------------
     // Close Filter Drawer
-    // ==========================================
+    // ------------------------------------------
     const closeFilterDrawer = () => {
         setIsFilterOpen(false);
     }
 
-    // ==========================================
+    // ------------------------------------------
     // Reset Filter Values
-    // ==========================================
+    // ------------------------------------------
     const resetFilter = () => {
         const emptyFilters = {
             colors: [],
@@ -121,18 +120,19 @@ const ProductsPage = () => {
         };
 
         setSortBy("default");
+        setAppliedSortBy("default");
         setFilterBy(emptyFilters);
         setAppliedFilters(emptyFilters);
     }
 
-    // ==========================================
+    // ------------------------------------------
     // Filter Products
-    // ==========================================
+    // ------------------------------------------
     // Filters products based on selected values.
     // Works with different product properties such as:
     // - Color → variants / colorFilter
     // - Size  → sizes / value
-    // ==========================================
+    // ------------------------------------------
     const filterProducts = (
         products,
         selectedValues,
@@ -172,9 +172,9 @@ const ProductsPage = () => {
         });
     };
 
-    // ==========================================
+    // ------------------------------------------
     // Filter Products by Price
-    // ==========================================
+    // ------------------------------------------
     const filterPrice = (
         products,
         selectedPrice
@@ -193,9 +193,9 @@ const ProductsPage = () => {
         })
     };
 
-    // ==========================================
+    // ------------------------------------------
     // Product Pipeline
-    // ==========================================
+    // ------------------------------------------
     // Filter Color
     filteredProducts = filterProducts(
         filteredProducts,
@@ -218,34 +218,53 @@ const ProductsPage = () => {
         appliedFilters.price
     );
 
-    // ==========================================
+    // ------------------------------------------
     // Sorting
-    // ==========================================
+    // ------------------------------------------
     switch (appliedSortBy) {
         case "newest":
-            filteredProducts.sort((a, b) => b.id - a.id);
+            filteredProducts = [...filteredProducts].sort(
+                (a, b) => b.id - a.id
+            );
             break;
+
         case "price-asc":
             filteredProducts = [...filteredProducts].sort(
                 (a, b) => a.price - b.price
             );
             break;
+
         case "price-desc":
             filteredProducts = [...filteredProducts].sort(
                 (a, b) => b.price - a.price
             );
             break;
+
         default:
             break;
     }
-    // ==========================================
+
+    // ------------------------------------------
     // Apply Filter
-    // ==========================================
+    // ------------------------------------------
     const applyFilter = () => {
         setAppliedFilters(filterBy);
         setAppliedSortBy(sortBy);
         closeFilterDrawer();
     };
+
+    // ------------------------------------------
+    // Get filter count
+    // ------------------------------------------
+    const getFilterSortCount = () => {
+        return (
+            appliedFilters.colors.length +
+            appliedFilters.sizes.length +
+            (appliedFilters.price !== "" ? 1 : 0) +
+            (appliedSortBy !== "default" ? 1 : 0)
+        );
+    };
+
     return (
         <div>
             <Navigation />
@@ -264,8 +283,7 @@ const ProductsPage = () => {
                 </section>
                 <div className="container-fluid">
                     <div className="product-quantity-block">
-                        {
-                            filteredProducts.length.toString().padStart(2, "0")} Products
+                        {filteredProducts.length.toString().padStart(2, "0")} Products
                     </div>
                 </div>
 
@@ -290,11 +308,14 @@ const ProductsPage = () => {
                         </div>
                     </div>
 
-                    {(filteredProducts.length !== 0) &&
-                        <button className="btn btn--primary cta-filter" onClick={openFilterDrawer}>
-                            <span>FIlter and Sort</span>
-                        </button>
-                    }
+
+                    <button className="btn btn--primary cta-filter" onClick={openFilterDrawer}>
+                        <span>FIlter and Sort </span>
+                        {getFilterSortCount() > 0 &&
+                            <span>({getFilterSortCount()})</span>
+                        }
+                    </button>
+
                 </section>
 
 

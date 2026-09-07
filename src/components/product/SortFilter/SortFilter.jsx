@@ -21,7 +21,6 @@ const SortFilter = ({
 }) => {
     const [activeAccordion, setActiveAccordion] = useState(null);
     const filters = filterData.filters;
-    console.log(filters)
     const toggleAccordion = (id) => {
         setActiveAccordion(prev => prev === id ? null : id);
     }

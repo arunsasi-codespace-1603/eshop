@@ -10,29 +10,34 @@ import { Heart } from "react-bootstrap-icons";
 // Component Binding
 import Navigation from "../../../components/ui/Navigation/Navigation";
 import EmptyState from "../../../components/ui/EmptyState/EmptyState";
+import MediaGallery from "../ProductDetails/ProductGallery/MediaGallery/MediaGallery";
 import Footer from "../../../components/ui/Footer/Footer";
+// Helper files
+import useIsMobile from "../../../hooks/useIsMobile";
 
 const ProductDetails = () => {
 
     const [itemSize, setItemSize] = useState(null);
     const [isSizeEmpty, setIsSizeEmpty] = useState(false);
-    // ==========================================
+    const isMobile = useIsMobile();
+
+    // ------------------------------------------
     // Fetch parameters from URL
-    // ==========================================
+    // ------------------------------------------
     const { pId, slug } = useParams();
     const productId = Number(pId);
 
-    // ==========================================
+    // ------------------------------------------
     // Fetch Product
-    // ==========================================
+    // ------------------------------------------
     const allProducts = productData.products;
     const product = allProducts.find((product) => {
         return product.id === productId;
     });
 
-    // ==========================================
+    // ------------------------------------------
     // Set default color variant
-    // ==========================================
+    // ------------------------------------------
     const defaultColorVariant = product?.variants.find(
         (variant) => variant.id === product.defaultVariant
     );
@@ -44,9 +49,9 @@ const ProductDetails = () => {
         setColorVariant(defaultColorVariant);
     }, [productId, defaultColorVariant]);
 
-    // ==========================================
+    // ------------------------------------------
     // If the product not found
-    // ==========================================
+    // ------------------------------------------
     if (!product) {
         return <EmptyState />
     }
@@ -66,18 +71,18 @@ const ProductDetails = () => {
         variants
     } = product;
 
-    // ==========================================
+    // ------------------------------------------
     // Update color varient
-    // ==========================================
+    // ------------------------------------------
     const updateColorVariant = (variantId) => {
         const selectedVariant = variants.find((variant) => {
             return variant.id === variantId
         });
         setColorVariant(selectedVariant);
     }
-    // ==========================================
+    // ------------------------------------------
     // Update size varient
-    // ==========================================
+    // ------------------------------------------
     const updateSizeVariant = (size) => {
         setItemSize(size);
         setIsSizeEmpty(false)
@@ -90,17 +95,25 @@ const ProductDetails = () => {
                 <section className="section-product-details">
                     <div className="section-product-details__wrapper">
                         <div className="section-product-details__left">
-                            <div className="media-large">
-                                {colorVariant.images.map((image, index) => (
-                                    <div
-                                        key={`${colorVariant.color}_${index}`}
-                                        className="media-large__image">
-                                        <img
-                                            src={image}
-                                            alt={`${colorVariant.color}_${index}`} />
-                                    </div>
-                                ))}
-                            </div>
+
+                            {(isMobile) &&
+                                <div className="media-small">
+                                    <MediaGallery carouselImages={colorVariant.images} />
+                                </div>
+                            }
+                            {(!isMobile) &&
+                                <div className="media-large">
+                                    {colorVariant.images.map((image, index) => (
+                                        <div
+                                            key={`${colorVariant.color}_${index}`}
+                                            className="media-large__image">
+                                            <img
+                                                src={image}
+                                                alt={`${colorVariant.color}_${index}`} />
+                                        </div>
+                                    ))}
+                                </div>
+                            }
                         </div>
 
                         <div className="section-product-details__right">

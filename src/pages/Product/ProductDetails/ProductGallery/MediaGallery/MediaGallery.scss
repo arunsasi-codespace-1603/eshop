@@ -7,12 +7,22 @@
     &__container {
         width: 100%;
         height: 100%;
-        background-color: tan;
+        background-color: var.$gray-200;
         display: block;
     }
 
     &__image {
         width: 100%;
         height: 100%;
+    }
+
+    .swiper {
+        .swiper-scrollbar {
+            height: 2px;
+        }
+
+        .swiper-scrollbar-drag {
+            background-color: var.$color-primary;
+        }
     }
 }

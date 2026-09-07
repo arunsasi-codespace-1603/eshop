@@ -1,26 +1,47 @@
 import "./SearchSuggestions.scss";
+// React Core
+import { Link } from "react-router-dom";
 // Component Binding
 import SearchResultCard from "../SearchResultCard/SearchResultCard"
 
 const SearchSuggestions = ({
     products,
-    totalCount
+    query,
+    closeSearch
 }) => {
+    const previewResults = products.slice(0, 4);
+    const totalSearchResult = products.length;
     return (
         <>
+            <div className="result-header">
+                <div className="label">
+                    {totalSearchResult.toString().padStart(2, "0")} results
+                </div>
+            </div>
             <div className="result-grid">
-                {products.map((product) => (
+                {previewResults.map((product) => (
                     <div
-                        key={product.slug}
+                        key={product.id}
                         className="result-grid__column">
-                        <SearchResultCard productInfo={product} />
+                        <SearchResultCard
+                            closeSearch={closeSearch}
+                            productInfo={product} />
                     </div>
                 ))}
             </div>
-            <div className="result-footer">
-                <div className="label">{totalCount} item(s)</div>
-                <button className="btn btn-borderless">See all products</button>
-            </div>
+            {/* <div className="result-footer">
+                <div className="label">{totalSearchResult} item(s)</div>
+                {totalSearchResult > 4 &&
+                    <Link
+                        to={`/search?q=${encodeURIComponent(query)}`}
+                        onClick={closeSearch}
+                    >
+                        <button
+                            type="button"
+                            className="btn btn-borderless">See all products</button>
+                    </Link>
+                }
+            </div> */}
 
         </>
     )

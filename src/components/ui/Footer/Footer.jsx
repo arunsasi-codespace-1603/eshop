@@ -1,4 +1,5 @@
 import "./Footer.scss";
+import logoicon from "../../../assets/logo/logo.svg"
 
 // React Core
 import { useState } from "react";
@@ -160,7 +161,10 @@ const Footer = () => {
 
                 {isMobileDevice &&
                     <div className="footer__logo">
-                        Logo
+                        <img
+                            src={logoicon}
+                            alt="45 Degree"
+                        />
                     </div>
                 }
                 <div className="footer__container">

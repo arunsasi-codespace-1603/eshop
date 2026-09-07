@@ -4,7 +4,7 @@ import { Link } from "react-router";
 import ProductCard from "../../ui/ProductCard/ProductCard"
 import EmptyState from "../../ui/EmptyState/EmptyState";
 
-const ProductList = ({
+const  ProductList = ({
     title,
     categoryName,
     subCategoryName,

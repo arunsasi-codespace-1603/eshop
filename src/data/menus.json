@@ -4,12 +4,13 @@
             "id": "women",
             "name": "Women",
             "slug": "women",
+            "gender": "women",
             "children": [
                 {
-                    "id": "collections",
+                    "id": "women-collections",
                     "name": "Collections",
-                    "slug": "collections",
-                    "path": "/products/women"
+                    "slug": "women-collections",
+                    "path": "/products/women/collections"
                 },
                 {
                     "id": "women-bags",
@@ -86,12 +87,13 @@
             "id": "men",
             "name": "Men",
             "slug": "men",
+            "gender": "men",
             "children": [
                 {
-                    "id": "men-view-all",
-                    "name": "View All",
-                    "slug": "view-all",
-                    "path": "/products/men"
+                    "id": "men-collections",
+                    "name": "Collections",
+                    "slug": "men-collections",
+                    "path": "/products/men/collections"
                 },
                 {
                     "id": "men-bags",
@@ -113,5 +115,6 @@
             "slug": "collections",
             "path": "/products/collections"
         }
-    ]
+    ],
+    "services": []
 }

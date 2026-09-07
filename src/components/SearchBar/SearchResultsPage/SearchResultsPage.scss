@@ -1,0 +1,24 @@
+@use "../../../styles/utils/abstract/mixins" as mix;
+@use "../../../styles//utils/abstract/variable" as var;
+
+.search-banner {
+    padding: 4rem 0 0rem;
+
+    &__title {
+        font-size: calc(var.$font-size-sm * 1.5);
+        text-align: center;
+        color: var.$gray-800;
+        margin-bottom: var.$spacing-md;
+    }
+
+    &__count {
+        font-size: var.$font-size-md;
+        text-align: center;
+    }
+
+    @include mix.respond(md) {
+        &__title {
+            font-size: calc(var.$font-size-sm * 2.5);
+        }
+    }
+}
