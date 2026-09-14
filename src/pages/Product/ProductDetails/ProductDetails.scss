@@ -5,6 +5,7 @@
 .section-product-details {
     background-color: var(--color-white);
     position: relative;
+    padding-bottom: 2rem;
 
     &__wrapper {
         display: flex;
@@ -202,6 +203,7 @@
     margin-right: 1rem;
     display: flex;
     align-items: center;
+    background-color: transparent;
 }
 
 .button-add-to-cart {
@@ -244,5 +246,16 @@
             font-size: 1.125rem;
 
         }
+    }
+}
+
+.related-items {
+    position: relative;
+    padding: 3rem 0;
+
+    &__title {
+        font-size: calc(var.$font-size-xl * 1.25);
+        color: var.$color-primary;
+        margin-bottom: var.$spacing-md;
     }
 }

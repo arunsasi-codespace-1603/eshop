@@ -20,3 +20,8 @@
     padding: var.$spacing-sm var.$spacing-lg;
     z-index: var.$z-index-backdrop;
 }
+
+.floating-button {
+    position: sticky;
+    bottom: 1.5rem;
+}

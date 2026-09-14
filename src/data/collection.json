@@ -10,6 +10,9 @@
             "description": "Celebrating the maison's travel heritage with technical silk loungewear, dual-time watchmaking, and soft Monogram luggage engineered for long-haul journeys.",
             "type": "capsule",
             "heroImage": "https://placehold.co/1920x1080/green/FFFFFF/png",
+            "heroBannerImage": "https://placehold.co/1920x1080/green/FFFFFF/png",
+            "tabletBannerImage": "https://placehold.co/1280x720/green/FFFFFF/png",
+            "mobileBannerImage": "https://placehold.co/768x960/green/FFFFFF/png",
             "editorialImages": [
                 "/images/collections/flight-mode/campaign-01.jpg",
                 "/images/collections/flight-mode/campaign-02.jpg",

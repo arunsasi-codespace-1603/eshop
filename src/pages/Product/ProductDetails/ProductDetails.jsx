@@ -3,28 +3,39 @@ import "./ProductDetails.scss";
 // React Core
 import { useState, useEffect } from "react";
 import { useParams } from "react-router";
+
+// Icons
+import { ChevronRight, Heart } from "react-bootstrap-icons";
+
 // Data
 import productData from "../../../data/allProducts.json";
-// Library
-import { Heart } from "react-bootstrap-icons";
-// Component Binding
-import Navigation from "../../../components/ui/Navigation/Navigation";
-import EmptyState from "../../../components/ui/EmptyState/EmptyState";
-import MediaGallery from "../ProductDetails/ProductGallery/MediaGallery/MediaGallery";
-import Footer from "../../../components/ui/Footer/Footer";
+
 // Helper files
 import useIsMobile from "../../../hooks/useIsMobile";
+
+// Component Binding
+import Navigation from "../../../components/ui/Navigation/Navigation";
+import MediaGallery from "../ProductDetails/ProductGallery/MediaGallery/MediaGallery";
+import Footer from "../../../components/ui/Footer/Footer";
+import ProductCard from "../../../components/ui/ProductCard/ProductCard";
+import SideDrawer from "../../../components/ui/SideDrawer/SideDrawer";
+import PageNotFound from "../../PageNotFound/PageNotFound";
 
 const ProductDetails = () => {
 
     const [itemSize, setItemSize] = useState(null);
-    const [isSizeEmpty, setIsSizeEmpty] = useState(false);
+    // const [isSizeEmpty, setIsSizeEmpty] = useState(false);
     const isMobile = useIsMobile();
+    const [isSideDrawerOpen, setIsSideDrawerOpen] = useState(false);
+    const [sideDrawerContent, setSideDrawerContent] = useState({
+        title: "",
+        text: ""
+    });
 
     // ------------------------------------------
     // Fetch parameters from URL
     // ------------------------------------------
-    const { pId, slug } = useParams();
+    const { pId } = useParams();
     const productId = Number(pId);
 
     // ------------------------------------------
@@ -33,6 +44,14 @@ const ProductDetails = () => {
     const allProducts = productData.products;
     const product = allProducts.find((product) => {
         return product.id === productId;
+    });
+
+    // ------------------------------------------
+    // Fetch related products
+    // ------------------------------------------
+    const { relatedProducts } = product;
+    const relatedItems = allProducts.filter((product) => {
+        return relatedProducts.includes(product.id)
     });
 
     // ------------------------------------------
@@ -50,10 +69,25 @@ const ProductDetails = () => {
     }, [productId, defaultColorVariant]);
 
     // ------------------------------------------
+    // Side Drawer for contents
+    // ------------------------------------------
+    const openSideDrawer = (data) => {
+        setSideDrawerContent(data);
+        setIsSideDrawerOpen(true);
+    }
+    const closeSideDrawer = () => {
+        console.log("click")
+        setSideDrawerContent({
+            title: "",
+            text: ""
+        });
+        setIsSideDrawerOpen(false);
+    }
+    // ------------------------------------------
     // If the product not found
     // ------------------------------------------
     if (!product) {
-        return <EmptyState />
+        return <PageNotFound />
     }
 
     const {
@@ -66,8 +100,6 @@ const ProductDetails = () => {
         shortDescription,
         description,
         sizes,
-        deliveryAndReturns,
-        defaultVariant,
         variants
     } = product;
 
@@ -85,7 +117,7 @@ const ProductDetails = () => {
     // ------------------------------------------
     const updateSizeVariant = (size) => {
         setItemSize(size);
-        setIsSizeEmpty(false)
+        // setIsSizeEmpty(false)
     }
 
     return (
@@ -171,7 +203,7 @@ const ProductDetails = () => {
                                             key={size.id}
                                             onClick={() => updateSizeVariant(size)}
                                             className={`size-variant-grid__column ${size.id === itemSize?.id ? "active" : ''}`} >
-                                            {size.value}
+                                            {size.shortLabel}
                                         </div>
                                     ))}
                                 </div>
@@ -186,11 +218,64 @@ const ProductDetails = () => {
                                     </button>
                                 </div>
 
+                                <div className="info-expandable">
+                                    <div className="info-expandable__list">
+                                        <button
+                                            onClick={() => openSideDrawer(description)}
+                                            className="btn info-expandable__button">
+                                            <span>Product Details</span>
+                                            <span className="icon"><ChevronRight /></span>
+                                        </button>
+                                    </div>
+                                    {/* <div className="info-expandable__list">
+                                        <button
+                                            onClick={() => openSideDrawer(deliveryAndReturns)}
+                                            className="btn info-expandable__button">
+                                            <span>Deliver & Return</span>
+                                            <span className="icon"><ChevronRight /></span>
+                                        </button>
+                                    </div> */}
+                                </div>
+
+
                             </div>
                         </div>
                     </div>
                 </section>
+
+                {relatedItems.length &&
+                    <section className="related-items">
+                        <div className="container-fluid">
+                            <div className="text-left">
+                                <h3 className="related-items__title">
+                                    Related Products
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div className="container-fluid">
+                            <div className="row">
+
+                                {relatedItems.map((items) => (
+                                    <div key={items.id}
+                                        className="grid-column">
+                                        <ProductCard productData={items} />
+                                    </div>
+                                ))}
+
+                            </div>
+                        </div>
+                    </section>
+                }
             </main>
+
+
+            <SideDrawer
+                isOpen={isSideDrawerOpen}
+                title={sideDrawerContent.title}
+                content={sideDrawerContent.text}
+                closeSideDrawer={closeSideDrawer} />
+
             <Footer />
         </>
     )

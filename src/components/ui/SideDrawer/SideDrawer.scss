@@ -1,16 +1,18 @@
+@use "../../../styles/utils/abstract/variable" as var;
+@use "../../../styles/utils/abstract/mixins" as mix;
+
 .side-drawer-panel {
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
-    z-index: 1090;
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 40rem;
     height: 100%;
     background-color: var(--color-white);
     transform: translateX(100%);
+    z-index: var.$z-index-max;
     will-change: transform;
     transition: transform .5s cubic-bezier(0.075, 0.82, 0.165, 1), width .3s ease;
 
@@ -47,6 +49,10 @@
     &.active {
         transform: translateX(0);
     }
+
+    @include mix.respond(lg) {
+        width: 50%;
+    }
 }
 
 .side-drawer-panel-backdrop {
@@ -61,7 +67,7 @@
     backdrop-filter: blur(30px);
     transition: opacity .3s ease,
         visibility .3s ease;
-    z-index: 1009;
+    z-index: 1400;
 
     &.active {
         opacity: 1;

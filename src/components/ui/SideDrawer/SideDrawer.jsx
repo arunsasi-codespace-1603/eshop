@@ -12,6 +12,7 @@ const SideDrawer = ({
             <aside
                 className={`side-drawer-panel ${isOpen ? "active" : ""}`}>
                 <div className="side-drawer-panel__header">
+
                     <button
                         onClick={closeSideDrawer}
                         className="btn btn--transparent button-filter-close">

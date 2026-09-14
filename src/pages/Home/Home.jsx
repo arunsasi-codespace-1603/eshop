@@ -62,7 +62,7 @@ const Home = () => {
             <main>
                 <section className="hm-hero-banner">
                     <VideoBanner
-                        sourceFile={randomCollection.editorialVideo}
+                        sourceFile={randomCollection.heroBannerVideo}
                         videoSubTitle={randomCollection.name}
                         videoTitle={randomCollection.title}
                         linkTo={randomCollection.urlPath}

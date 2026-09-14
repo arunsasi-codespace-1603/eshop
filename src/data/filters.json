@@ -1,0 +1,108 @@
+{
+    "filters": [
+        {
+            "id": "sort",
+            "label": "Sort by",
+            "type": "radio",
+            "options": [
+                {
+                    "id": "newest-first",
+                    "label": "Newest First",
+                    "value": "newest-first"
+                },
+                {
+                    "id": "price-low-to-high",
+                    "label": "Price - Low to High",
+                    "value": "price-low-to-high"
+                },
+                {
+                    "id": "price-high-to-low",
+                    "label": "Price - High to Low",
+                    "value": "price-high-to-low"
+                }
+            ]
+        },
+        {
+            "id": "colors",
+            "label": "Color",
+            "type": "checkbox",
+            "options": [
+                {
+                    "id": "obsidian-black",
+                    "label": "Obsidian Black",
+                    "title": "Obsidian Black",
+                    "value": "obsidian-black"
+                },
+                {
+                    "id": "ivory",
+                    "label": "Ivory",
+                    "value": "ivory"
+                },
+                {
+                    "id": "chocolate-brown",
+                    "label": "Chocolate Brown",
+                    "value": "chocolate-brown"
+                },
+                {
+                    "id": "red",
+                    "label": "Red",
+                    "value": "red"
+                },
+                {
+                    "id": "blue",
+                    "label": "Blue",
+                    "value": "blue"
+                }
+            ]
+        },
+        {
+            "id": "sizes",
+            "label": "Size",
+            "type": "checkbox",
+            "options": [
+                {
+                    "id": "extra-small",
+                    "shortLabel": "XS",
+                    "label": "Extra Small",
+                    "value": "extra-small"
+                },
+                {
+                    "id": "small",
+                    "shortLabel": "S",
+                    "label": "Small",
+                    "value": "small"
+                },
+                {
+                    "id": "medium",
+                    "shortLabel": "M",
+                    "label": "Medium",
+                    "value": "medium"
+                },
+                {
+                    "id": "large",
+                    "shortLabel": "L",
+                    "label": "Large",
+                    "value": "large"
+                },
+                {
+                    "id": "extra-large",
+                    "shortLabel": "XL",
+                    "label": "Extra Large",
+                    "value": "extra-large"
+                },
+                {
+                    "id": "double-xl",
+                    "shortLabel": "XXL",
+                    "label": "Double XL",
+                    "value": "double-xl"
+                },
+                {
+                    "id": "tripple-xl",
+                    "shortLabel": "XXXL",
+                    "label": "Tripple XL",
+                    "value": "tripple-xl"
+                }
+            ]
+        }
+    ]
+}

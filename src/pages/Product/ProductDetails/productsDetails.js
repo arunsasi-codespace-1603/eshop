@@ -277,6 +277,14 @@ const ProductDetails = () => {
                     </div>
                 </section>
 
+
+                <section>
+                    lorem10
+
+                </section>
+
+
+
                 {/* {(relatedProducts.lenth !== 0) &&
                     <section>
                         <div className="section-content">

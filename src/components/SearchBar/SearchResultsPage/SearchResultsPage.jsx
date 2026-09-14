@@ -3,211 +3,204 @@ import "./SearchResultsPage.scss";
 // React Core
 import { useState } from "react";
 import { useSearchParams } from "react-router-dom";
+
 // Data
 import productList from "../../../data/allProducts.json";
+
+// Utility Services
+import filterProduct from "../../../utils/filterProduct";
+import sortProduct from "../../../utils/sortProduct";
+
 // Component Binding
 import Navigation from "../../../components/ui/Navigation/Navigation";
 import Footer from "../../../components/ui/Footer/Footer";
 import SearchResultList from "../SearchResultList/SearchResultList";
-import SortFilter from "../../product/SortFilter/SortFilter";
-// Utilities
-import { filterProducts, filterPrice } from "../../../utils/productFilters";
-import EmptyState from "../../ui/EmptyState/EmptyState";
+import ProductFilters from "../../ProductFilters/ProductFilters";
+import PageNotFound from "../../../pages/PageNotFound/PageNotFound";
+import ProductNotFound from "../../../pages/ProductNotFound/ProductNotFound";
+import EmptyState from "../../../components/ui/EmptyState/EmptyState";
 
 const SearchResultsPage = () => {
-
     const [isFilterOpen, setIsFilterOpen] = useState(false);
-    const [sortBy, setSortBy] = useState("default");
-    const [appliedSortBy, setAppliedSortBy] = useState("default");
-    const [filterBy, setFilterBy] = useState({
+
+    // -----------------------------------------
+    // Filter State
+    // -----------------------------------------
+
+    const [filters, setFilters] = useState({
         colors: [],
         sizes: [],
-        price: ""
+        priceRange: ""
     });
+
     const [appliedFilters, setAppliedFilters] = useState({
         colors: [],
         sizes: [],
-        price: ""
+        priceRange: ""
     });
 
-    const hasActiveFilterOrSort = () => {
-        return (
-            filterBy.colors.length > 0 ||
-            filterBy.sizes.length > 0 ||
-            filterBy.price !== "" ||
-            sortBy !== "default"
-        );
-    };
+    const [sortOption, setSortOption] = useState({
+        value: "newest-first"
+    });
 
-    // ------------------------------------------
-    // Open Filter Drawer
-    // ------------------------------------------
-    const openFilterDrawer = () => {
-        setIsFilterOpen(true);
-    }
+    // -----------------------------------------
+    // Get Search Query
+    // -----------------------------------------
 
-    // ------------------------------------------
-    // Close Filter Drawer
-    // ------------------------------------------
-    const closeFilterDrawer = () => {
-        setIsFilterOpen(false);
-    }
-
-    // ------------------------------------------
-    // Reset Filter Values
-    // ------------------------------------------
-    const resetFilter = () => {
-        const emptyFilters = {
-            colors: [],
-            sizes: [],
-            price: ""
-        };
-
-        setSortBy("default");
-        setAppliedSortBy("default");
-        setFilterBy(emptyFilters);
-        setAppliedFilters(emptyFilters);
-    }
-
-    // ------------------------------------------
-    // Apply Filter
-    // ------------------------------------------
-    const applyFilter = () => {
-        setAppliedFilters(filterBy);
-        setAppliedSortBy(sortBy);
-        closeFilterDrawer();
-    };
-
-
-    //------------------------------------------------
-    // Get search query 
-    //------------------------------------------------
     const [searchParams] = useSearchParams();
+
     const queryString = searchParams.get("q");
     const searchQuery = queryString?.trim().toLowerCase() || "";
-    const searchWords = searchQuery
-        ? searchQuery.split(/\s+/)
-        : [];
 
-    //------------------------------------------------
-    // Find search products
-    //------------------------------------------------
+    // -----------------------------------------
+    // Invalid / Empty Search
+    // -----------------------------------------
+
+    if (!searchQuery) {
+        return <PageNotFound />;
+    }
+
+    // -----------------------------------------
+    // Search Words
+    // -----------------------------------------
+
+    const searchWords = searchQuery.split(/\s+/);
+
+    // -----------------------------------------
+    // Find Search Products
+    // -----------------------------------------
+
     const allProducts = productList.products;
+
     const searchResults = allProducts.filter((product) => {
         const productName = product.name.toLowerCase();
-        const matchesSearch = searchWords.every((word) => {
-            return productName.includes(word);
-        });
 
-        return matchesSearch;
+        return searchWords.every((word) =>
+            productName.includes(word)
+        );
     });
-    const searchResultCount = searchResults.length;
-    let filteredProducts = searchResults;
-    filteredProducts = filterProducts(
-        filteredProducts,
-        appliedFilters.colors,
-        "variants",
-        "colorFilter"
-    );
 
-    filteredProducts = filterProducts(
-        filteredProducts,
-        appliedFilters.sizes,
-        "sizes",
-        "value"
-    );
+    // -----------------------------------------
+    // No Search Results
+    // -----------------------------------------
 
-    filteredProducts = filterPrice(
-        filteredProducts,
-        appliedFilters.price
-    );
-    switch (appliedSortBy) {
-        case "newest":
-            filteredProducts = [...filteredProducts].sort(
-                (a, b) => b.id - a.id
-            );
-            break;
-
-        case "price-asc":
-            filteredProducts = [...filteredProducts].sort(
-                (a, b) => a.price - b.price
-            );
-            break;
-
-        case "price-desc":
-            filteredProducts = [...filteredProducts].sort(
-                (a, b) => b.price - a.price
-            );
-            break;
-
-        default:
-            break;
+    if (searchResults.length === 0) {
+        return <ProductNotFound />;
     }
 
-    // ------------------------------------------
-    // Get filter count
-    // ------------------------------------------
-    const getFilterSortCount = () => {
-        return (
-            appliedFilters.colors.length +
-            appliedFilters.sizes.length +
-            (appliedFilters.price !== "" ? 1 : 0) +
-            (appliedSortBy !== "default" ? 1 : 0)
-        );
+    // -----------------------------------------
+    // Apply Filters
+    // -----------------------------------------
+
+    const filteredProducts = filterProduct(
+        appliedFilters,
+        searchResults
+    );
+
+    // -----------------------------------------
+    // Apply Sort
+    // -----------------------------------------
+
+    const sortedProducts = sortProduct(
+        sortOption,
+        filteredProducts
+    );
+
+    // -----------------------------------------
+    // Filter Panel
+    // -----------------------------------------
+
+    const openFilterPanel = () => {
+        setIsFilterOpen(true);
     };
 
-    // ------------------------------------------
-    // If no products found
-    // ------------------------------------------
-    if (filteredProducts.length === 0) {
-        return <EmptyState />
-    }
+    const closeFilterPanel = () => {
+        setIsFilterOpen(false);
+    };
+
+    // -----------------------------------------
+    // Applied Filters Count
+    // -----------------------------------------
+
+    const appliedFilterCount =
+        appliedFilters.colors.length +
+        appliedFilters.sizes.length;
+
+    // -----------------------------------------
+    // Render
+    // -----------------------------------------
 
     return (
         <>
             <Navigation />
-            <main>
 
+            <main>
                 <section className="search-banner">
                     <div className="container-fluid">
                         <h2 className="search-banner__title">
                             Search for "{queryString}"
                         </h2>
+
                         <div className="search-banner__count">
-                            {filteredProducts.length.toString().padStart(2, "0")} Results
+                            {sortedProducts.length
+                                .toString()
+                                .padStart(2, "0")}{" "}
+                            Results
                         </div>
                     </div>
                 </section>
 
                 <section className="section-content">
-                    <SearchResultList products={filteredProducts} />
 
-                    <button
-                        onClick={openFilterDrawer}
-                        className="btn btn--primary cta-filter">
-                        <span>FIlter and Sort </span>
-                        {getFilterSortCount() > 0 &&
-                            <span>({getFilterSortCount()})</span>
-                        }
-                    </button>
+                    {sortedProducts.length === 0 ? (
+                        <EmptyState />
+                    ) : (
+                        <SearchResultList
+                            products={sortedProducts}
+                        />
+                    )}
+
+                    <div className="floating-button">
+                        <div className="container-fluid text-center">
+                            <button
+                                type="button"
+                                className="btn btn--primary"
+                                onClick={openFilterPanel}
+                            >
+                                <span>Filter and Sort </span>
+
+                                {appliedFilterCount > 0 && (
+                                    <span className="filter-count">
+                                        (
+                                        {String(
+                                            appliedFilterCount
+                                        ).padStart(2, "0")}
+                                        )
+                                    </span>
+                                )}
+                            </button>
+                        </div>
+                    </div>
+
                 </section>
-
-
-                <SortFilter
-                    isFilterOpen={isFilterOpen}
-                    onClose={closeFilterDrawer}
-                    sortBy={sortBy}
-                    onSortChange={setSortBy}
-                    filterBy={filterBy}
-                    onFilterChange={setFilterBy}
-                    actionReset={resetFilter}
-                    onApply={applyFilter}
-                    hasActiveFilterOrSort={hasActiveFilterOrSort}
-                />
-
             </main>
+
+            <ProductFilters
+                filters={filters}
+                setFilters={setFilters}
+                appliedFilters={appliedFilters}
+                setAppliedFilters={setAppliedFilters}
+                sortOption={sortOption}
+                setSortOption={setSortOption}
+                isFilterOpen={isFilterOpen}
+                openFilterPanel={openFilterPanel}
+                closeFilterPanel={closeFilterPanel}
+            />
+
             <Footer />
         </>
-    )
-}
+    );
+};
+
 export default SearchResultsPage;
+

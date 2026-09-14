@@ -1,0 +1,39 @@
+@use "../../styles/utils/abstract/variable" as var;
+@use "../../styles/utils/abstract/mixins" as mix;
+
+.page-not-found {
+    position: relative;
+    padding: 5rem 0;
+
+    &__container {
+        display: block;
+    }
+
+    &__caption-sm {
+        font-size: var.$font-size-lg;
+        margin-bottom: var.$spacing-lg;
+    }
+
+    &__image {
+        width: 100%;
+        display: block;
+        padding: var.$spacing-lg var.$spacing-lg;
+
+        img {
+            margin: auto;
+            display: block;
+        }
+    }
+
+    &__caption-lg {
+        font-size: calc(var.$font-size-md * 1.5);
+        margin-bottom: var.$spacing-md;
+    }
+
+    &__content {
+        font-size: var.$font-size-md;
+        margin: var.$spacing-md auto;
+        max-width: 30rem;
+        color: var.$gray-500;
+    }
+}

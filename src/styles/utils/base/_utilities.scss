@@ -1,0 +1,7 @@
+@use "../abstract/variable" as var;
+
+@each $name, $value in var.$text-align {
+    .text-#{$name} {
+        text-align: $value;
+    }
+}
