@@ -12,7 +12,7 @@
                     "name": "Women's Bags",
                     "slug": "bags",
                     "pageType": "listing",
-                    "thumbnail": "https://dummyimage.com/440x600/cbcbc9/fff",
+                    "thumbnail": "https://res.cloudinary.com/c81dqgyl/image/upload/v1789503179/womens-handbag-thumbnail.jpg",
                     "bannerImage": "https://placehold.co/1920x500",
                     "children": [
                         {
