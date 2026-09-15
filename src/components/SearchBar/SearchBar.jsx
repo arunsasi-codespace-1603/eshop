@@ -4,7 +4,7 @@ import "./SearchBar.scss";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 // Icons
-import { XLg, Search, ArrowRight, ChevronRight } from "react-bootstrap-icons";
+import { XLg, Search, ChevronRight } from "react-bootstrap-icons";
 // Componet Binding
 import SearchSuggestions from "./SearchSuggestions/SearchSuggestions";
 import QuickLinks from "./QuickLinks/QuickLinks";

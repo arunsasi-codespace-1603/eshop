@@ -2,7 +2,6 @@ import "./ProductCard.scss";
 import { Link } from "react-router-dom";
 import slugify from "../slugify/slugify";
 import { Heart } from "react-bootstrap-icons";
-import EmptyState from "../EmptyState/EmptyState";
 
 const ProductCard = ({ productData }) => {
     const slugName = slugify(productData.name);

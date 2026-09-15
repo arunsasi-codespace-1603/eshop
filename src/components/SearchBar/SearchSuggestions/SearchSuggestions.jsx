@@ -1,6 +1,5 @@
 import "./SearchSuggestions.scss";
-// React Core
-import { Link } from "react-router-dom";
+
 // Component Binding
 import SearchResultCard from "../SearchResultCard/SearchResultCard"
 
@@ -29,20 +28,6 @@ const SearchSuggestions = ({
                     </div>
                 ))}
             </div>
-            {/* <div className="result-footer">
-                <div className="label">{totalSearchResult} item(s)</div>
-                {totalSearchResult > 4 &&
-                    <Link
-                        to={`/search?q=${encodeURIComponent(query)}`}
-                        onClick={closeSearch}
-                    >
-                        <button
-                            type="button"
-                            className="btn btn-borderless">See all products</button>
-                    </Link>
-                }
-            </div> */}
-
         </>
     )
 }

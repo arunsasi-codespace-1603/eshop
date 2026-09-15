@@ -1,48 +1,66 @@
 import "./ProductSubNavigation.scss";
-import "swiper/css";
-// Core React Files
-import { useEffect, useRef } from "react";
+// React Core
 import { useNavigate, useParams } from "react-router";
+import { useEffect, useRef } from "react";
+// Data
+import categoriesList from "../../../data/category.json";
+
 // Plugins
+import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
+
+
 const ProductSubNavigation = ({
     category,
     subCategory,
-    navigation
 }) => {
     const navigateTo = useNavigate();
     const { type } = useParams();
     const swiperRef = useRef(null);
-    //------------------------------------------------
-    // Navigation Function
-    //------------------------------------------------
-    const pageNavigation = (menu) => {
-        if (menu.slug === "view-all") {
-            navigateTo(`/products/${category}/${subCategory}`);
-            return;
+    const categories = categoriesList.categories;
+
+    const categoryData = categories.find((categoryItem) => {
+        return categoryItem.slug === category;
+    });
+
+    const subCategoryData = categoryData?.children.find((subCategoryItem) => {
+        return subCategoryItem.slug === subCategory;
+    });
+
+    const navigationItems = subCategoryData?.children ?? [];
+
+    //-----------------------------------------
+    // Navigate to sub pages
+    //-----------------------------------------
+    const handleNavigation = (item) => {
+        let path = "";
+        if (item.slug === "view-all") {
+            path = `/products/${category}/${subCategory}/`;
+        } else {
+            path = `/products/${category}/${subCategory}/${item.slug}`;
         }
-        const path = `/products/${category}/${subCategory}/${menu.slug}`;
         navigateTo(path);
     }
+
     //------------------------------------------------
-    // Scroll active item into view
+    // Scroll active menu into view
     //------------------------------------------------
     useEffect(() => {
         if (!swiperRef.current) {
             return;
         }
 
-        const activeIndex = navigation.findIndex((menu) => {
+        const activeIndex = navigationItems.findIndex((item) => {
             return type
-                ? menu.slug === type
-                : menu.slug === "view-all";
+                ? item.slug === type
+                : item.slug === "view-all";
         });
 
         if (activeIndex !== -1) {
             swiperRef.current.slideTo(activeIndex);
         }
 
-    }, [type, navigation]);
+    }, [type, navigationItems]);
 
     return (
         <>
@@ -57,17 +75,17 @@ const ProductSubNavigation = ({
                             slidesPerView="auto"
                             spaceBetween={5}
                             freeMode={true}>
-                            {navigation.map((menu) => {
+                            {navigationItems.map((item) => {
                                 const isActive =
-                                    menu.slug === type ||
-                                    (menu.slug === "view-all" && !type);
-
+                                    item.slug === type ||
+                                    (item.slug === "view-all" && !type);
                                 return (
-                                    <SwiperSlide key={menu.slug} style={{ width: "auto" }}>
+                                    <SwiperSlide key={item.slug} style={{ width: "auto" }}>
                                         <button
-                                            onClick={() => pageNavigation(menu)}
+                                            type="button"
+                                            onClick={() => handleNavigation(item)}
                                             className={`btn btn--transparent category-nav-link ${isActive ? "is-active" : ""}`}>
-                                            {menu.name}
+                                            {item.name}
                                         </button>
                                     </SwiperSlide>
                                 )

@@ -49,7 +49,7 @@ const ProductDetails = () => {
     // ------------------------------------------
     // Fetch related products
     // ------------------------------------------
-    const { relatedProducts } = product;
+    const relatedProducts = product?.relatedProducts ?? [];
     const relatedItems = allProducts.filter((product) => {
         return relatedProducts.includes(product.id)
     });
@@ -72,7 +72,10 @@ const ProductDetails = () => {
     // Side Drawer for contents
     // ------------------------------------------
     const openSideDrawer = (data) => {
-        setSideDrawerContent(data);
+        setSideDrawerContent({
+            title: data.title,
+            text: data.text
+        });
         setIsSideDrawerOpen(true);
     }
     const closeSideDrawer = () => {
@@ -268,7 +271,6 @@ const ProductDetails = () => {
                     </section>
                 }
             </main>
-
 
             <SideDrawer
                 isOpen={isSideDrawerOpen}

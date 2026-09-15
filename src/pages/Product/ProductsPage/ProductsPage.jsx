@@ -17,11 +17,12 @@ import Footer from "../../../components/ui/Footer/Footer";
 import ProductCard from "../../../components/ui/ProductCard/ProductCard";
 import ProductFilters from "../../../components/ProductFilters/ProductFilters";
 import PageNotFound from "../../PageNotFound/PageNotFound";
+import ProductNotFound from "../../ProductNotFound/ProductNotFound"
 import EmptyState from "../../../components/ui/EmptyState/EmptyState";
+import ProductSubNavigation from "../../../components/product/ProductSubNavigation/ProductSubNavigation";
 
 const ProductsPage = () => {
-    const { category, subCategory } = useParams();
-
+    const { category, subCategory, type } = useParams();
     const allProducts = productsList.products;
 
     //-----------------------------------------
@@ -72,14 +73,22 @@ const ProductsPage = () => {
     if (productsByCategory.length === 0) {
         return <PageNotFound />;
     }
+    //-----------------------------------------
+    // Products by type
+    //-----------------------------------------
+
+    const productsByType = type
+        ? productsByCategory.filter((product) => {
+            return product.type === type;
+        })
+        : productsByCategory;
 
     //-----------------------------------------
     // Apply Filters
     //-----------------------------------------
-
     const filteredProducts = filterProduct(
         appliedFilters,
-        productsByCategory
+        productsByType
     );
 
     //-----------------------------------------
@@ -122,24 +131,33 @@ const ProductsPage = () => {
             <Navigation />
 
             <main>
+
+                <ProductSubNavigation
+                    category={category}
+                    subCategory={subCategory} />
+
+                {sortedProducts.length === 0 && (
+                    <section className="section-content">
+                        <div className="container-fluid">
+                            <EmptyState />
+                        </div>
+                    </section>
+                )}
+
                 <section className="section-content">
                     <div className="container-fluid">
                         <div className="row">
 
-                            {sortedProducts.length === 0 ? (
-                                <EmptyState />
-                            ) : (
-                                sortedProducts.map((product) => (
-                                    <div
-                                        key={product.id}
-                                        className="grid-column"
-                                    >
-                                        <ProductCard
-                                            productData={product}
-                                        />
-                                    </div>
-                                ))
-                            )}
+                            {sortedProducts.map((product) => (
+                                <div
+                                    key={product.id}
+                                    className="grid-column"
+                                >
+                                    <ProductCard
+                                        productData={product}
+                                    />
+                                </div>
+                            ))}
 
                         </div>
                     </div>
@@ -152,7 +170,7 @@ const ProductsPage = () => {
                                 onClick={openFilterPanel}
                             >
                                 <span>
-                                    Filter and Sort
+                                    Filter and Sort 
                                 </span>
 
                                 {appliedFilterCount > 0 && (
@@ -169,7 +187,7 @@ const ProductsPage = () => {
                         </div>
                     </div>
                 </section>
-            </main>
+            </main >
 
             <ProductFilters
                 filters={filters}

@@ -19,7 +19,7 @@
                 "/images/collections/flight-mode/campaign-03.jpg",
                 "/images/collections/flight-mode/campaign-04.jpg"
             ],
-            "heroBannerVideo": "/videos/collections/flight-mode/hero.mp4",
+            "heroBannerVideo": "https://res.cloudinary.com/c81dqgyl/video/upload/8322527-uhd_4096_2160_25fps.mp4",
             "urlPath": "/women/collections/flight-mode"
         },
         {
@@ -37,7 +37,7 @@
                 "/images/collections/monogram-heritage/lookbook-02.jpg",
                 "/images/collections/monogram-heritage/lookbook-03.jpg"
             ],
-            "heroBannerVideo": "/videos/collections/monogram-heritage/hero.mp4",
+            "heroBannerVideo": "https://res.cloudinary.com/c81dqgyl/video/upload/8322527-uhd_4096_2160_25fps.mp4",
             "urlPath": "/collections/monogram-canvas-heritage"
         },
         {
@@ -55,7 +55,7 @@
                 "/images/collections/capucines/02.jpg",
                 "/images/collections/capucines/03.jpg"
             ],
-            "heroBannerVideo": "/videos/collections/capucines/hero.mp4",
+            "heroBannerVideo": "https://res.cloudinary.com/c81dqgyl/video/upload/8322527-uhd_4096_2160_25fps.mp4",
             "urlPath": "/women/collections/capucines-leather-goods"
         },
         {
@@ -73,7 +73,7 @@
                 "/images/collections/taigarama/02.jpg",
                 "/images/collections/taigarama/03.jpg"
             ],
-            "heroBannerVideo": "/videos/collections/taigarama/hero.mp4",
+            "heroBannerVideo": "https://res.cloudinary.com/c81dqgyl/video/upload/8322527-uhd_4096_2160_25fps.mp4",
             "urlPath": "/men/collections/taigarama-leather"
         },
         {
@@ -93,7 +93,7 @@
                 "/images/collections/cruise-2026/04.jpg",
                 "/images/collections/cruise-2026/05.jpg"
             ],
-            "heroBannerVideo": "/videos/collections/cruise-2026/hero.mp4",
+            "heroBannerVideo": "https://res.cloudinary.com/c81dqgyl/video/upload/8322527-uhd_4096_2160_25fps.mp4",
             "urlPath": "/women/collections/cruise-2026"
         }
     ]

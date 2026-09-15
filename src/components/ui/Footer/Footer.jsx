@@ -142,9 +142,12 @@ const footerData = [
 
 const Footer = () => {
     const isMobileDevice = useIsMobile();
-
     const [activeAccordion, setActiveAccordion] = useState(null);
+    const date = new Date();
 
+    // ------------------------------------------
+    // Accordion Footer
+    // ------------------------------------------
     const toggleAccordion = (id) => {
         setActiveAccordion((prev) => {
             if (prev === id) {
@@ -234,6 +237,26 @@ const Footer = () => {
                         </div>
                     ))}
 
+                </div>
+            </div>
+            <div className="copy-right">
+                <div className="container-fluid">
+                    <div className="copy-right__container">
+
+                        <ul className="copy-right-menus">
+                            <li className="copy-right-menus__link">
+                                Site map
+                            </li>
+                            <li className="copy-right-menus__link">
+                                Privacy Policy
+                            </li>
+                        </ul>
+
+                        <div className="copy-right__right">
+                            &copy; 45 degrees
+                            {date.getFullYear()}. All rights reserved
+                        </div>
+                    </div>
                 </div>
             </div>
         </footer>
