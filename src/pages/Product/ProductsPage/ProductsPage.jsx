@@ -17,7 +17,6 @@ import Footer from "../../../components/ui/Footer/Footer";
 import ProductCard from "../../../components/ui/ProductCard/ProductCard";
 import ProductFilters from "../../../components/ProductFilters/ProductFilters";
 import PageNotFound from "../../PageNotFound/PageNotFound";
-import ProductNotFound from "../../ProductNotFound/ProductNotFound"
 import EmptyState from "../../../components/ui/EmptyState/EmptyState";
 import ProductSubNavigation from "../../../components/product/ProductSubNavigation/ProductSubNavigation";
 
@@ -94,7 +93,6 @@ const ProductsPage = () => {
     //-----------------------------------------
     // Apply Sort
     //-----------------------------------------
-
     const sortedProducts = sortProduct(
         sortOption,
         filteredProducts
@@ -170,7 +168,7 @@ const ProductsPage = () => {
                                 onClick={openFilterPanel}
                             >
                                 <span>
-                                    Filter and Sort 
+                                    Filter and Sort
                                 </span>
 
                                 {appliedFilterCount > 0 && (

@@ -1,7 +1,7 @@
 import "./ProductSubNavigation.scss";
 // React Core
 import { useNavigate, useParams } from "react-router";
-import { useEffect, useRef } from "react";
+import { useEffect, useMemo, useRef } from "react";
 // Data
 import categoriesList from "../../../data/category.json";
 
@@ -27,7 +27,9 @@ const ProductSubNavigation = ({
         return subCategoryItem.slug === subCategory;
     });
 
-    const navigationItems = subCategoryData?.children ?? [];
+    const navigationItems = useMemo(() => {
+        return subCategoryData?.children ?? [];
+    }, [subCategoryData]);
 
     //-----------------------------------------
     // Navigate to sub pages
