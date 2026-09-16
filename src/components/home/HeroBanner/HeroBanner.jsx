@@ -1,13 +1,21 @@
 import "./HeroBanner.scss";
 
-const HeroBanner = ({ imageSrc }) => {
+const HeroBanner = ({
+    desktopImage,
+    mobileImage,
+    altTag
+}) => {
     return (
         <div className="hero-banner">
             <picture className="hero-banner__image">
                 <source
-                    srcSet={imageSrc}
-                    media="(orientation: portrait)" />
-                <img src={imageSrc} alt="" />
+                    media="(max-width: 768px)"
+                    srcSet={mobileImage}
+                />
+                <img
+                    src={desktopImage}
+                    alt={altTag}
+                />
             </picture>
 
         </div>

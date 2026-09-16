@@ -12,7 +12,7 @@
                     "name": "Women's Bags",
                     "slug": "bags",
                     "pageType": "listing",
-                    "thumbnail": "https://res.cloudinary.com/c81dqgyl/image/upload/v1789503179/womens-handbag-thumbnail.jpg",
+                    "thumbnail": "https://res.cloudinary.com/c81dqgyl/image/upload/v1789588795/womens-bag-category.png",
                     "bannerImage": "https://placehold.co/1920x500",
                     "children": [
                         {
@@ -42,11 +42,11 @@
                     ]
                 },
                 {
-                    "id": "women-clothes",
-                    "name": "Women's Clothes",
-                    "slug": "clothes",
+                    "id": "women-accessories",
+                    "name": "Women's Accessories",
+                    "slug": "accessories",
                     "pageType": "listing",
-                    "thumbnail": "https://dummyimage.com/440x600/cbcbc9/fff",
+                    "thumbnail": "https://res.cloudinary.com/c81dqgyl/image/upload/v1789588794/womens-accessory-category.png",
                     "bannerImage": "https://placehold.co/1920x500",
                     "children": [
                         {
@@ -73,7 +73,7 @@
                     "id": "women-wallets",
                     "name": "Women's Wallets",
                     "slug": "wallets",
-                    "thumbnail": "https://dummyimage.com/440x600/cbcbc9/fff",
+                    "thumbnail": "https://res.cloudinary.com/c81dqgyl/image/upload/v1789588796/womens-wallet-category.png",
                     "bannerImage": "https://placehold.co/1920x500",
                     "pageType": "listing",
                     "children": [
@@ -92,10 +92,10 @@
                     ]
                 },
                 {
-                    "id": "women-beauty",
-                    "name": "Beauty",
-                    "slug": "beauty",
-                    "thumbnail": "https://dummyimage.com/440x600/cbcbc9/fff",
+                    "id": "women-shoes",
+                    "name": "Shoes",
+                    "slug": "shoes",
+                    "thumbnail": "https://res.cloudinary.com/c81dqgyl/image/upload/v1789588796/womens-shoes-category.png",
                     "bannerImage": "https://dummyimage.com/1320x300/266e0e/fff&text=Accessories",
                     "pageType": "listing",
                     "children": [
@@ -120,7 +120,7 @@
                     "id": "men-bags",
                     "name": "Men's Bags",
                     "slug": "bags",
-                    "thumbnail": "https://dummyimage.com/440x600/cbcbc9/fff",
+                    "thumbnail": "https://res.cloudinary.com/c81dqgyl/image/upload/v1789588796/mens-bag-category.png",
                     "bannerImage": "https://placehold.co/1920x500",
                     "pageType": "listing",
                     "children": [
@@ -136,7 +136,7 @@
                     "id": "men-accessories",
                     "name": "Men's Accessories",
                     "slug": "accessories",
-                    "thumbnail": "https://dummyimage.com/440x600/cbcbc9/fff",
+                    "thumbnail": "https://res.cloudinary.com/c81dqgyl/image/upload/v1789589520/mens-accessories-categ.png",
                     "bannerImage": "https://placehold.co/1920x500",
                     "pageType": "listing",
                     "children": [
@@ -152,7 +152,7 @@
                     "id": "men-wallets",
                     "name": "Men's Wallets",
                     "slug": "wallets",
-                    "thumbnail": "https://dummyimage.com/440x600/cbcbc9/fff",
+                    "thumbnail": "https://res.cloudinary.com/c81dqgyl/image/upload/v1789588797/mens-wallet-category.png",
                     "bannerImage": "https://placehold.co/1920x500",
                     "pageType": "listing",
                     "children": [
@@ -168,7 +168,7 @@
                     "id": "men-shoes",
                     "name": "Men's Shoes",
                     "slug": "shoes",
-                    "thumbnail": "https://dummyimage.com/440x600/cbcbc9/fff",
+                    "thumbnail": "https://res.cloudinary.com/c81dqgyl/image/upload/v1789588796/mens-shoes-category.png",
                     "bannerImage": "https://placehold.co/1920x500",
                     "pageType": "listing",
                     "children": [

@@ -86,7 +86,9 @@ const Home = () => {
                 </section>
                 <section className="hm-banner">
                     <HeroBanner
-                        imageSrc="https://placehold.co/1920x1080" />
+                        desktopImage="https://res.cloudinary.com/c81dqgyl/image/upload/v1789591890/hm-baner-01-desk.jpg"
+                        mobileImage="https://res.cloudinary.com/c81dqgyl/image/upload/v1789591898/home-baner-mob-01.jpg" 
+                        altTag="Leather Bag"/>
                 </section>
                 <section className="hm-products">
                     <ProductList
@@ -99,7 +101,9 @@ const Home = () => {
                 </section>
                 <section className="hm-banner">
                     <HeroBanner
-                        imageSrc="https://placehold.co/1920x1080" />
+                        desktopImage="https://res.cloudinary.com/c81dqgyl/image/upload/v1789592422/hm-banner-02-desk.jpg"
+                        mobileImage="https://res.cloudinary.com/c81dqgyl/image/upload/v1789592417/hm-banner-02.jpg"
+                        altTag="Fashion" />
                 </section>
                 <section className="hm-products">
                     <ProductList
@@ -112,7 +116,9 @@ const Home = () => {
                 </section>
                 <section className="hm-banner">
                     <HeroBanner
-                        imageSrc="https://placehold.co/1920x1080" />
+                        desktopImage="https://res.cloudinary.com/c81dqgyl/image/upload/v1789592925/hm-banner-03-desk.jpg"
+                        mobileImage="https://res.cloudinary.com/c81dqgyl/image/upload/v1789592923/hm-banner-03.jpg"
+                        altTag="shoes" />
                 </section>
 
                 <section className="section-content">
