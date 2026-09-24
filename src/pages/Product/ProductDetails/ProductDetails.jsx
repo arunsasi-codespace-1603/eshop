@@ -1,8 +1,9 @@
 import "./ProductDetails.scss";
 
 // React Core
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { useParams } from "react-router";
+import { Link } from "react-router-dom";
 
 // Icons
 import { ChevronRight, Heart } from "react-bootstrap-icons";
@@ -13,6 +14,9 @@ import productData from "../../../data/allProducts.json";
 // Helper files
 import useIsMobile from "../../../hooks/useIsMobile";
 
+// Context
+import { CartContext } from "../../../context/CartContext";
+
 // Component Binding
 import Navigation from "../../../components/ui/Navigation/Navigation";
 import MediaGallery from "../ProductDetails/ProductGallery/MediaGallery/MediaGallery";
@@ -22,9 +26,9 @@ import SideDrawer from "../../../components/ui/SideDrawer/SideDrawer";
 import PageNotFound from "../../PageNotFound/PageNotFound";
 
 const ProductDetails = () => {
-
-    const [itemSize, setItemSize] = useState(null);
-    // const [isSizeEmpty, setIsSizeEmpty] = useState(false);
+    const { cartItems, setCartItems } = useContext(CartContext);
+    const [selectedSize, setSelectedSize] = useState(null);
+    const [isSizeEmpty, setIsSizeEmpty] = useState(false);
     const isMobile = useIsMobile();
     const [isSideDrawerOpen, setIsSideDrawerOpen] = useState(false);
     const [sideDrawerContent, setSideDrawerContent] = useState({
@@ -93,6 +97,13 @@ const ProductDetails = () => {
         return <PageNotFound />
     }
 
+    // ------------------------------------------
+    // Item in cart
+    // ------------------------------------------
+    const itemInCart = cartItems.some((cartItem) => {
+        return cartItem.productId === productId;
+    });
+
     const {
         name,
         price,
@@ -119,9 +130,42 @@ const ProductDetails = () => {
     // Update size varient
     // ------------------------------------------
     const updateSizeVariant = (size) => {
-        setItemSize(size);
-        // setIsSizeEmpty(false)
+        setSelectedSize(size);
+        setIsSizeEmpty(false)
     }
+    console.log("Cart Items", cartItems)
+    // ------------------------------------------
+    // Add to Cart
+    // ------------------------------------------
+    const addToCart = (
+        prodId,
+        colorVariant,
+        sizeVariant
+    ) => {
+
+        if (sizes.length > 0 && sizeVariant === null) {
+            // Verify that the user selected a size
+            setIsSizeEmpty(true);
+            return;
+        } else {
+            // Reset the size validation message
+            setIsSizeEmpty(false);
+
+            // Create a cart item object
+            const cartItem = {
+                productId: prodId,
+                colorVariant,
+                sizeVariant,
+                quantity: 1
+            };
+
+            // Add the item to the cart
+            setCartItems([
+                ...cartItems,
+                cartItem
+            ]);
+        }
+    };
 
     return (
         <>
@@ -189,36 +233,67 @@ const ProductDetails = () => {
                                         </div>
                                     ))}
                                 </div>
-                                <div className="product-block-variant">
-                                    <div className="label">
-                                        <span className="label__query">
-                                            Select your size:
-                                        </span>
-                                        <span className="label__result">
-                                            {(!itemSize) ? "Not selected" : itemSize?.label}
-                                        </span>
-                                    </div>
-                                </div>
 
-                                <div className="size-variant-grid">
-                                    {sizes.map((size) => (
-                                        <div
-                                            key={size.id}
-                                            onClick={() => updateSizeVariant(size)}
-                                            className={`size-variant-grid__column ${size.id === itemSize?.id ? "active" : ''}`} >
-                                            {size.shortLabel}
+                                {sizes.length > 0 && (
+                                    <div>
+                                        <div className="product-block-variant">
+                                            <div className="label">
+                                                <span className="label__query">
+                                                    Select your size:
+                                                </span>
+                                                <span className="label__result">
+                                                    {(!selectedSize) ? "Not selected" : selectedSize?.label}
+                                                </span>
+                                            </div>
                                         </div>
-                                    ))}
-                                </div>
+
+                                        <div className="size-variant-grid">
+                                            {sizes.map((size) => (
+                                                <div
+                                                    key={size.id}
+                                                    onClick={() => updateSizeVariant(size)}
+                                                    className={`size-variant-grid__column ${size.id === selectedSize?.id ? "active" : ''}`} >
+                                                    {size.shortLabel}
+                                                </div>
+                                            ))}
+                                        </div>
+
+                                        {isSizeEmpty &&
+                                            <div className="text-danger">
+                                                Please choose a size to continue
+                                            </div>
+                                        }
+                                    </div>
+                                )}
+
                                 <div className="product-block-purchase">
                                     <button
                                         className="btn button-add-to-wishlist">
                                         <Heart />
                                     </button>
-                                    <button
-                                        className="btn button-add-to-cart">
-                                        Add to Shopping Bag
-                                    </button>
+
+                                    {!itemInCart && (
+                                        <button
+                                            onClick={() => {
+                                                addToCart(
+                                                    product.id,
+                                                    colorVariant,
+                                                    selectedSize
+                                                );
+                                            }}
+                                            className="btn button-add-to-cart"
+                                        >
+                                            Add to Shopping Bag
+                                        </button>
+                                    )}
+
+                                    {itemInCart && (
+                                        <Link
+                                            to="/shopping-bag"
+                                            className="btn button-go-to-cart">
+                                            Go to Shopping Bag
+                                        </Link>
+                                    )}
                                 </div>
 
                                 <div className="info-expandable">
@@ -251,7 +326,7 @@ const ProductDetails = () => {
                         <div className="container-fluid">
                             <div className="text-left">
                                 <h3 className="related-items__title">
-                                    Related Products
+                                    You may also like
                                 </h3>
                             </div>
                         </div>

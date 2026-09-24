@@ -7,7 +7,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Scrollbar } from 'swiper/modules';
 
 const MediaGallery = ({ carouselImages, productName }) => {
-    console.log(carouselImages)
     return (
         <div className="media-gallery">
             <Swiper

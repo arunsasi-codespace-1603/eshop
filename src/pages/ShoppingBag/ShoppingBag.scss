@@ -1,0 +1,48 @@
+@use "../../styles/utils/abstract/mixins" as mix;
+@use "../../styles//utils//abstract/variable" as var;
+
+.page-shopping-bag {
+    background-color: var.$white;
+}
+
+.cart-content {
+    display: block;
+    width: 100%;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__right,
+    &__left {
+        width: 100%;
+        background-color: var.$white;
+        margin-bottom: var.$spacing-md;
+    }
+
+    &__header {
+        font-size: var.$font-size-lg;
+        margin-bottom: var.$spacing-lg;
+    }
+
+    &__body {
+        position: relative;
+    }
+
+    @include mix.respond(lg) {
+        &__container {
+            flex-direction: row;
+            gap: 2rem;
+        }
+
+        &__left {
+            width: 60%;
+
+        }
+
+        &__right {
+            width: calc(100% - (60% + 2rem));
+        }
+    }
+}

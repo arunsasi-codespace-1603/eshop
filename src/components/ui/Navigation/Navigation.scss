@@ -62,6 +62,7 @@ header {
     margin: 0 var.$spacing-xs;
     padding: var.$spacing-xs;
     font-size: var.$font-size-lg;
+    position: relative;
 
     span {
         font-size: 0.975rem;
@@ -196,4 +197,19 @@ header {
     .icon {
         margin-right: var.$spacing-md;
     }
+}
+
+.cart-item-count {
+    width: 16px;
+    height: 16px;
+    background: var.$white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    right: -6px;
+    bottom: -1px;
+    font-size: 12px;
+    z-index: 10;
 }

@@ -1,0 +1,81 @@
+@use "../../../styles/utils/abstract/mixins" as mix;
+@use "../../../styles//utils//abstract/variable" as var;
+
+
+.cart-product {
+    border: 1px solid var.$gray-200;
+    margin-bottom: var.$spacing-sm;
+
+    &__container {
+        padding: var.$spacing-sm;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    &__image {
+        width: 84px;
+        margin-right: 1rem;
+    }
+
+    &__content {
+        flex-grow: 1;
+    }
+
+    &__title {
+        margin-bottom: var.$spacing-sm;
+    }
+
+    &__price {
+        margin-bottom: var.$spacing-sm;
+    }
+
+    &__variants {
+        display: flex;
+        flex-direction: row;
+
+        .bullet {
+            margin-right: 1rem;
+        }
+    }
+
+    &__footer {
+        border-top: 1px solid var.$gray-200;
+        padding: var.$spacing-sm;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.quantity {
+    width: 150px;
+    display: flex;
+    border: 1px solid var.$gray-200;
+
+    &__input {
+        flex-grow: 1;
+        text-align: center;
+        width: calc(100% - 5rem);
+    }
+
+}
+
+.btn-counter-up {
+    width: 2rem;
+    height: 2rem;
+    padding: var.$spacing-sm;
+    background: var.$white;
+    display: flex;
+    align-items: center;
+    border-radius: 0;
+    font-size: var.$font-size-xl;
+    justify-content: center;
+}
+
+.btn-cart-remove {
+    padding: 8px;
+    margin: 0;
+    border-radius: 0;
+    background: transparent;
+}

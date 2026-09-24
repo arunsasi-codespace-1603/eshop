@@ -23,6 +23,7 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+        color: var.$white;
     }
 
     &__content {
@@ -42,6 +43,7 @@
     &__title {
         font-size: 2rem;
         margin-bottom: 1rem;
+        font-weight: 300;
     }
 }
 
@@ -51,6 +53,7 @@
     background-color: transparent;
     position: var.$position-absolute;
     bottom: var.$spacing-lg;
+    color: var.$white;
 
     &.left {
         left: var.$spacing-lg;
@@ -72,4 +75,12 @@
     color: var.$white;
     background-color: transparent;
     padding: var.$spacing-sm;
+}
+
+.color-white {
+    color: var.$white;
+
+    &::before {
+        background-color: var.$white;
+    }
 }

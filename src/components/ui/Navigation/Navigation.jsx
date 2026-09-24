@@ -1,7 +1,7 @@
 import "./Navigation.scss";
 import logoicon from "../../../assets/logo/logo.svg"
 
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 // data
 import menubarLinks from "../../../data/menus.json";
@@ -19,6 +19,9 @@ import {
 import useIsMobile from "../../../hooks/useIsMobile";
 import SearchBar from "../../../components/SearchBar/SearchBar";
 
+// Context
+import { CartContext } from "../../../context/CartContext";
+
 
 // For menu items
 const menus = menubarLinks.navigation;
@@ -30,7 +33,10 @@ const Navigation = () => {
     const [currentMenu, setCurrentMenu] = useState(menus);
     const [prevMenu, setPrevMenu] = useState([]);
     const [menuLabel, setMenuLabel] = useState("");
-
+    const { cartItems } = useContext(CartContext);
+    let cartCount = 0;
+    cartCount = cartItems.length;
+    console.log(cartItems)
     // Side menubar open/close status
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -142,7 +148,12 @@ const Navigation = () => {
                                     <button className="btn button-tools-cta"><Heart /></button>
                                 )}
                                 <button className="btn button-tools-cta"><Person /></button>
-                                <button className="btn button-tools-cta"><Bag /></button>
+                                <Link to="/shopping-bag">
+                                    <button className="btn button-tools-cta">
+                                        <Bag />
+                                        <div className="cart-item-count">{cartCount}</div>
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                     </div>

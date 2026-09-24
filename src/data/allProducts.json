@@ -21,58 +21,27 @@
                 "title": "Description",
                 "text": "The Luna Structured Tote combines refined materials, practical details, and a contemporary silhouette."
             },
-            "sizes": [
-                {
-                    "id": "extra-small",
-                    "shortLabel": "XS",
-                    "label": "Extra Small",
-                    "value": "extra-small"
-                },
-                {
-                    "id": "small",
-                    "shortLabel": "S",
-                    "label": "Small",
-                    "value": "small"
-                },
-                {
-                    "id": "medium",
-                    "shortLabel": "M",
-                    "label": "Medium",
-                    "value": "medium"
-                },
-                {
-                    "id": "large",
-                    "shortLabel": "L",
-                    "label": "Large",
-                    "value": "large"
-                },
-                {
-                    "id": "extra-large",
-                    "shortLabel": "XL",
-                    "label": "Extra Large",
-                    "value": "extra-large"
-                }
-            ],
+            "sizes": [],
             "defaultVariant": 1,
             "variants": [
                 {
                     "id": 1,
-                    "color": "Obsidian Black",
-                    "colorFilter": "obsidian-black",
-                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=201+01",
+                    "color": "Greige",
+                    "colorFilter": "greige",
+                    "thumbnail": "https://res.cloudinary.com/c81dqgyl/image/upload/v1790191502/women-handbag-01.jpg",
                     "images": [
-                        "https://dummyimage.com/1000x900/555/fff&text=201+01",
-                        "https://dummyimage.com/1000x900/555/fff&text=201+02"
+                        "https://res.cloudinary.com/c81dqgyl/image/upload/v1790191502/women-handbag-01.jpg",
+                        "https://res.cloudinary.com/c81dqgyl/image/upload/v1790191837/women-handbag-01-side.jpg"
                     ]
                 },
                 {
                     "id": 2,
-                    "color": "Ivory",
-                    "colorFilter": "ivory",
-                    "thumbnail": "https://dummyimage.com/440x600/888/fff&text=201+02",
+                    "color": "Deep Black",
+                    "colorFilter": "deep-black",
+                    "thumbnail": "https://res.cloudinary.com/c81dqgyl/image/upload/v1790192072/woman-handbag-black-01.jpg",
                     "images": [
-                        "https://dummyimage.com/1000x900/888/fff&text=201+03",
-                        "https://dummyimage.com/1000x900/888/fff&text=201+04"
+                        "https://res.cloudinary.com/c81dqgyl/image/upload/v1790192072/woman-handbag-black-01.jpg",
+                        "https://res.cloudinary.com/c81dqgyl/image/upload/v1790192099/woman-handbag-black-02.jpg"
                     ]
                 }
             ],
@@ -140,22 +109,22 @@
             "variants": [
                 {
                     "id": 1,
-                    "color": "Ivory",
-                    "colorFilter": "ivory",
-                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=202+01",
+                    "color": "Burgundy",
+                    "colorFilter": "burgundy",
+                    "thumbnail": "https://res.cloudinary.com/c81dqgyl/image/upload/v1790192535/mini-handbag-01.jpg",
                     "images": [
-                        "https://dummyimage.com/1000x900/555/fff&text=202+01",
-                        "https://dummyimage.com/1000x900/555/fff&text=202+02"
+                        "https://res.cloudinary.com/c81dqgyl/image/upload/v1790192535/mini-handbag-01.jpg",
+                        "https://res.cloudinary.com/c81dqgyl/image/upload/v1790192660/mini-handbag-1-1.jpg"
                     ]
                 },
                 {
                     "id": 2,
-                    "color": "Chocolate Brown",
-                    "colorFilter": "chocolate-brown",
-                    "thumbnail": "https://dummyimage.com/440x600/888/fff&text=202+02",
+                    "color": "Citrus",
+                    "colorFilter": "citrus",
+                    "thumbnail": "https://res.cloudinary.com/c81dqgyl/image/upload/v1790192823/min-hadbag-2.jpg",
                     "images": [
-                        "https://dummyimage.com/1000x900/888/fff&text=202+03",
-                        "https://dummyimage.com/1000x900/888/fff&text=202+04"
+                        "https://res.cloudinary.com/c81dqgyl/image/upload/v1790192823/min-hadbag-2.jpg",
+                        "https://res.cloudinary.com/c81dqgyl/image/upload/v1790192896/315dce45-4ca4-4c84-881e-deb28e89fc65.png"
                     ]
                 }
             ],
@@ -229,22 +198,22 @@
             "variants": [
                 {
                     "id": 1,
-                    "color": "Chocolate Brown",
-                    "colorFilter": "chocolate-brown",
-                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=203+01",
+                    "color": "Creamy White",
+                    "colorFilter": "creamy-white",
+                    "thumbnail": "https://res.cloudinary.com/c81dqgyl/image/upload/v1790193133/f9b248f9-7a9c-41ea-bec2-13581ea491f8.png",
                     "images": [
-                        "https://dummyimage.com/1000x900/555/fff&text=203+01",
-                        "https://dummyimage.com/1000x900/555/fff&text=203+02"
+                        "https://res.cloudinary.com/c81dqgyl/image/upload/v1790193133/f9b248f9-7a9c-41ea-bec2-13581ea491f8.png",
+                        "https://res.cloudinary.com/c81dqgyl/image/upload/v1790193183/3bddcd52-af98-484d-b208-ec8f27259377.png"
                     ]
                 },
                 {
                     "id": 2,
-                    "color": "Sage Green",
-                    "colorFilter": "sage-green",
-                    "thumbnail": "https://dummyimage.com/440x600/888/fff&text=203+02",
+                    "color": "Chestnut",
+                    "colorFilter": "chestnut",
+                    "thumbnail": "https://res.cloudinary.com/c81dqgyl/image/upload/v1790193367/6729d466-adbd-41f5-98a7-58022a64a8ba.png",
                     "images": [
-                        "https://dummyimage.com/1000x900/888/fff&text=203+03",
-                        "https://dummyimage.com/1000x900/888/fff&text=203+04"
+                        "https://res.cloudinary.com/c81dqgyl/image/upload/v1790193367/6729d466-adbd-41f5-98a7-58022a64a8ba.png",
+                        "https://res.cloudinary.com/c81dqgyl/image/upload/v1790193469/3fd7361b-3991-4bb6-8960-1bc682987a0f.png"
                     ]
                 }
             ],
@@ -300,22 +269,22 @@
             "variants": [
                 {
                     "id": 1,
-                    "color": "Sage Green",
-                    "colorFilter": "sage-green",
-                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=204+01",
+                    "color": "Ultra Red",
+                    "colorFilter": "ultra-red",
+                    "thumbnail": "https://res.cloudinary.com/c81dqgyl/image/upload/v1790193622/8f2e06c7-0a79-4d40-8c24-a3ef81abdba0.png",
                     "images": [
-                        "https://dummyimage.com/1000x900/555/fff&text=204+01",
-                        "https://dummyimage.com/1000x900/555/fff&text=204+02"
+                        "https://res.cloudinary.com/c81dqgyl/image/upload/v1790193622/8f2e06c7-0a79-4d40-8c24-a3ef81abdba0.png",
+                        "https://res.cloudinary.com/c81dqgyl/image/upload/v1790193713/781b9c98-0890-4bbe-a8ef-89467b0a416b.png"
                     ]
                 },
                 {
                     "id": 2,
-                    "color": "Burgundy",
-                    "colorFilter": "burgundy",
-                    "thumbnail": "https://dummyimage.com/440x600/888/fff&text=204+02",
+                    "color": "Black",
+                    "colorFilter": "black",
+                    "thumbnail": "https://res.cloudinary.com/c81dqgyl/image/upload/v1790193841/6d9680b5-17df-4011-9346-01f033f9ac71.png",
                     "images": [
-                        "https://dummyimage.com/1000x900/888/fff&text=204+03",
-                        "https://dummyimage.com/1000x900/888/fff&text=204+04"
+                        "https://res.cloudinary.com/c81dqgyl/image/upload/v1790193841/6d9680b5-17df-4011-9346-01f033f9ac71.png",
+                        "https://res.cloudinary.com/c81dqgyl/image/upload/v1790193803/18937040-ddfa-42bc-9e71-cb771e500b91.png"
                     ]
                 }
             ],
@@ -1354,34 +1323,27 @@
                 "title": "Description",
                 "text": "The Atlas Travel Bag combines refined materials, practical details, and a contemporary silhouette."
             },
-            "sizes": [
-                {
-                    "id": "one-size",
-                    "shortLabel": "OS",
-                    "label": "One Size",
-                    "value": "one-size"
-                }
-            ],
+            "sizes": [],
             "defaultVariant": 1,
             "variants": [
                 {
                     "id": 1,
-                    "color": "Ivory",
-                    "colorFilter": "ivory",
-                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=218+01",
+                    "color": "Chestnut",
+                    "colorFilter": "chestnut",
+                    "thumbnail": "https://res.cloudinary.com/c81dqgyl/image/upload/v1790194269/027607cd-9594-48f9-8b6e-4e87ed4afb01.png",
                     "images": [
-                        "https://dummyimage.com/1000x900/555/fff&text=218+01",
-                        "https://dummyimage.com/1000x900/555/fff&text=218+02"
+                        "https://res.cloudinary.com/c81dqgyl/image/upload/v1790194269/027607cd-9594-48f9-8b6e-4e87ed4afb01.png",
+                        "https://res.cloudinary.com/c81dqgyl/image/upload/v1790194344/8f8be0b2-046d-4729-bab5-16b3943b2afd.png"
                     ]
                 },
                 {
                     "id": 2,
-                    "color": "Chocolate Brown",
-                    "colorFilter": "chocolate-brown",
-                    "thumbnail": "https://dummyimage.com/440x600/888/fff&text=218+02",
+                    "color": "Blue",
+                    "colorFilter": "blue",
+                    "thumbnail": "https://res.cloudinary.com/c81dqgyl/image/upload/v1790194583/362bc538-67f2-4261-930c-020eebf500ae.png",
                     "images": [
-                        "https://dummyimage.com/1000x900/888/fff&text=218+03",
-                        "https://dummyimage.com/1000x900/888/fff&text=218+04"
+                        "https://res.cloudinary.com/c81dqgyl/image/upload/v1790194583/362bc538-67f2-4261-930c-020eebf500ae.png",
+                        "https://res.cloudinary.com/c81dqgyl/image/upload/v1790194419/d17b2486-0f27-4583-a8b0-59503798f3d8.png"
                     ]
                 }
             ],
@@ -1437,22 +1399,22 @@
             "variants": [
                 {
                     "id": 1,
-                    "color": "Chocolate Brown",
-                    "colorFilter": "chocolate-brown",
-                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=219+01",
+                    "color": "Burgundy",
+                    "colorFilter": "burgundy",
+                    "thumbnail": "https://res.cloudinary.com/c81dqgyl/image/upload/v1790196466/cde51ae5-0ac4-4de3-b47c-c6dc569454fc.png",
                     "images": [
-                        "https://dummyimage.com/1000x900/555/fff&text=219+01",
-                        "https://dummyimage.com/1000x900/555/fff&text=219+02"
+                        "https://res.cloudinary.com/c81dqgyl/image/upload/v1790196466/cde51ae5-0ac4-4de3-b47c-c6dc569454fc.png",
+                        "https://res.cloudinary.com/c81dqgyl/image/upload/v1790196570/ce14cb5b-a4bb-49ba-b4b8-ba636c2deeaa.png"
                     ]
                 },
                 {
                     "id": 2,
                     "color": "Sage Green",
                     "colorFilter": "sage-green",
-                    "thumbnail": "https://dummyimage.com/440x600/888/fff&text=219+02",
+                    "thumbnail": "https://res.cloudinary.com/c81dqgyl/image/upload/v1790196675/6491b7df-5d92-4fd6-a987-3bcd8f3e2f1f.png",
                     "images": [
-                        "https://dummyimage.com/1000x900/888/fff&text=219+03",
-                        "https://dummyimage.com/1000x900/888/fff&text=219+04"
+                        "https://res.cloudinary.com/c81dqgyl/image/upload/v1790196675/6491b7df-5d92-4fd6-a987-3bcd8f3e2f1f.png",
+                        "https://res.cloudinary.com/c81dqgyl/image/upload/v1790196623/3b286d4d-8583-4d36-907b-29aba835156b.png"
                     ]
                 }
             ],
@@ -1508,22 +1470,22 @@
             "variants": [
                 {
                     "id": 1,
-                    "color": "Sage Green",
-                    "colorFilter": "sage-green",
-                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=220+01",
+                    "color": "Night Blue",
+                    "colorFilter": "night-blue",
+                    "thumbnail": "https://res.cloudinary.com/c81dqgyl/image/upload/v1790195799/a3cb34bf-ccdb-438d-8b65-72e1c94c50ff.png",
                     "images": [
-                        "https://dummyimage.com/1000x900/555/fff&text=220+01",
-                        "https://dummyimage.com/1000x900/555/fff&text=220+02"
+                        "https://res.cloudinary.com/c81dqgyl/image/upload/v1790195799/a3cb34bf-ccdb-438d-8b65-72e1c94c50ff.png",
+                        "https://res.cloudinary.com/c81dqgyl/image/upload/v1790195854/6245548f-396e-4ff6-a41e-f65b782e0dda.png"
                     ]
                 },
                 {
                     "id": 2,
-                    "color": "Burgundy",
-                    "colorFilter": "burgundy",
-                    "thumbnail": "https://dummyimage.com/440x600/888/fff&text=220+02",
+                    "color": "Green",
+                    "colorFilter": "green",
+                    "thumbnail": "https://res.cloudinary.com/c81dqgyl/image/upload/v1790196013/c1f77a31-f239-4ed5-8aae-b58fecb9ce28.png",
                     "images": [
-                        "https://dummyimage.com/1000x900/888/fff&text=220+03",
-                        "https://dummyimage.com/1000x900/888/fff&text=220+04"
+                        "https://res.cloudinary.com/c81dqgyl/image/upload/v1790196013/c1f77a31-f239-4ed5-8aae-b58fecb9ce28.png",
+                        "https://res.cloudinary.com/c81dqgyl/image/upload/v1790195958/9a6153a9-b451-4a21-a90e-2f28da5c65c9.png"
                     ]
                 }
             ],
@@ -2551,12 +2513,12 @@
             "variants": [
                 {
                     "id": 1,
-                    "color": "Obsidian Black",
-                    "colorFilter": "obsidian-black",
-                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=235+01",
+                    "color": "Olive Green",
+                    "colorFilter": "olive-green",
+                    "thumbnail": "https://res.cloudinary.com/c81dqgyl/image/upload/v1790196221/bba01435-5d33-4b6f-98ed-85fd1606b47f.png",
                     "images": [
-                        "https://dummyimage.com/1000x900/555/fff&text=235+01",
-                        "https://dummyimage.com/1000x900/555/fff&text=235+02"
+                        "https://res.cloudinary.com/c81dqgyl/image/upload/v1790196221/bba01435-5d33-4b6f-98ed-85fd1606b47f.png",
+                        "https://res.cloudinary.com/c81dqgyl/image/upload/v1790196332/aec10487-ef71-4529-8b8d-4431e96db60e.png"
                     ]
                 }
             ],
@@ -2642,8 +2604,8 @@
         },
         {
             "id": 237,
-            "slug": "james-wool-scarf",
-            "name": "James Wool Scarf",
+            "slug": "45-degrees-socks",
+            "name": "45 Degrees° Socks",
             "brand": "Nova Studio",
             "category": "men",
             "subCategory": "accessories",
@@ -2659,7 +2621,7 @@
             "shortDescription": "Contemporary accessories design crafted for everyday luxury.",
             "description": {
                 "title": "Description",
-                "text": "The James Wool Scarf combines refined materials, practical details, and a contemporary silhouette."
+                "text": "The cotton socks combines refined materials, practical details, and a contemporary silhouette."
             },
             "sizes": [
                 {
@@ -2673,12 +2635,11 @@
             "variants": [
                 {
                     "id": 1,
-                    "color": "Obsidian Black",
-                    "colorFilter": "obsidian-black",
-                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=237+01",
+                    "color": "White",
+                    "colorFilter": "white",
+                    "thumbnail": "https://res.cloudinary.com/c81dqgyl/image/upload/v1790198511/b368301d-f247-4d89-a04c-8d202aba35ae.png",
                     "images": [
-                        "https://dummyimage.com/1000x900/555/fff&text=237+01",
-                        "https://dummyimage.com/1000x900/555/fff&text=237+02"
+                        "https://res.cloudinary.com/c81dqgyl/image/upload/v1790198511/b368301d-f247-4d89-a04c-8d202aba35ae.png"
                     ]
                 }
             ],
@@ -2703,8 +2664,8 @@
         },
         {
             "id": 238,
-            "slug": "henry-classic-watch",
-            "name": "Henry Classic Watch",
+            "slug": "henry-premium-belt",
+            "name": "Henry Premium Leather Belt",
             "brand": "Aura Atelier",
             "category": "men",
             "subCategory": "accessories",
@@ -2720,7 +2681,7 @@
             "shortDescription": "Contemporary accessories design crafted for everyday luxury.",
             "description": {
                 "title": "Description",
-                "text": "The Henry Classic Watch combines refined materials, practical details, and a contemporary silhouette."
+                "text": "The Henry Premium Leather Belt combines refined materials, practical details, and a contemporary silhouette."
             },
             "sizes": [
                 {
@@ -2734,12 +2695,11 @@
             "variants": [
                 {
                     "id": 1,
-                    "color": "Obsidian Black",
-                    "colorFilter": "obsidian-black",
-                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=238+01",
+                    "color": "Brown",
+                    "colorFilter": "brown",
+                    "thumbnail": "https://res.cloudinary.com/c81dqgyl/image/upload/v1790197784/b9822adc-c2c5-4a1b-92ae-ee2aae99d025.png",
                     "images": [
-                        "https://dummyimage.com/1000x900/555/fff&text=238+01",
-                        "https://dummyimage.com/1000x900/555/fff&text=238+02"
+                        "https://res.cloudinary.com/c81dqgyl/image/upload/v1790197784/b9822adc-c2c5-4a1b-92ae-ee2aae99d025.png"
                     ]
                 }
             ],
@@ -2795,12 +2755,12 @@
             "variants": [
                 {
                     "id": 1,
-                    "color": "Obsidian Black",
-                    "colorFilter": "obsidian-black",
-                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=239+01",
+                    "color": "Black",
+                    "colorFilter": "black",
+                    "thumbnail": "https://res.cloudinary.com/c81dqgyl/image/upload/v1790197554/c6c7f6da-05ce-4fb7-be6b-eff3fd172d94.png",
                     "images": [
-                        "https://dummyimage.com/1000x900/555/fff&text=239+01",
-                        "https://dummyimage.com/1000x900/555/fff&text=239+02"
+                        "https://res.cloudinary.com/c81dqgyl/image/upload/v1790197554/c6c7f6da-05ce-4fb7-be6b-eff3fd172d94.png",
+                        "https://res.cloudinary.com/c81dqgyl/image/upload/v1790197577/0bd5c676-c99f-4337-bb9d-1e150fedbad2.png"
                     ]
                 }
             ],

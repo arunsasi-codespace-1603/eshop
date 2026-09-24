@@ -53,7 +53,7 @@ const VideoBanner = ({
                         {videoTitle}
                     </h2>
                     <Link to={linkTo}>
-                        <button className="btn-borderless">Discover new collections</button>
+                        <button className="btn btn-borderless color-white">Discover new collections</button>
                     </Link>
                 </div>
             </div>
