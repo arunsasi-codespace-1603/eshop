@@ -85,26 +85,7 @@
                 "title": "Description",
                 "text": "The Celeste Mini Handbag combines refined materials, practical details, and a contemporary silhouette."
             },
-            "sizes": [
-                {
-                    "id": "small",
-                    "shortLabel": "S",
-                    "label": "Small",
-                    "value": "small"
-                },
-                {
-                    "id": "medium",
-                    "shortLabel": "M",
-                    "label": "Medium",
-                    "value": "medium"
-                },
-                {
-                    "id": "large",
-                    "shortLabel": "L",
-                    "label": "Large",
-                    "value": "large"
-                }
-            ],
+            "sizes": [],
             "defaultVariant": 1,
             "variants": [
                 {
@@ -168,32 +149,7 @@
                 "title": "Description",
                 "text": "The Aria Leather Shoulder Bag combines refined materials, practical details, and a contemporary silhouette."
             },
-            "sizes": [
-                {
-                    "id": "small",
-                    "shortLabel": "S",
-                    "label": "Small",
-                    "value": "small"
-                },
-                {
-                    "id": "medium",
-                    "shortLabel": "M",
-                    "label": "Medium",
-                    "value": "medium"
-                },
-                {
-                    "id": "large",
-                    "shortLabel": "L",
-                    "label": "Large",
-                    "value": "large"
-                },
-                {
-                    "id": "extra-large",
-                    "shortLabel": "XL",
-                    "label": "Extra Large",
-                    "value": "extra-large"
-                }
-            ],
+            "sizes": [],
             "defaultVariant": 1,
             "variants": [
                 {
@@ -328,34 +284,27 @@
                 "title": "Description",
                 "text": "The Elara Evening Bag combines refined materials, practical details, and a contemporary silhouette."
             },
-            "sizes": [
-                {
-                    "id": "one-size",
-                    "shortLabel": "OS",
-                    "label": "One Size",
-                    "value": "one-size"
-                }
-            ],
+            "sizes": [],
             "defaultVariant": 1,
             "variants": [
                 {
                     "id": 1,
-                    "color": "Burgundy",
-                    "colorFilter": "burgundy",
-                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=205+01",
+                    "color": "Black",
+                    "colorFilter": "black",
+                    "thumbnail": "https://res.cloudinary.com/c81dqgyl/image/upload/v1790263173/580ec82c-fea9-45d7-8f3d-6deb150cff85.png",
                     "images": [
-                        "https://dummyimage.com/1000x900/555/fff&text=205+01",
-                        "https://dummyimage.com/1000x900/555/fff&text=205+02"
+                        "https://res.cloudinary.com/c81dqgyl/image/upload/v1790263173/580ec82c-fea9-45d7-8f3d-6deb150cff85.png",
+                        "https://res.cloudinary.com/c81dqgyl/image/upload/v1790263388/b6ab965f-a16d-4830-811c-9c5c5a376d83.png"
                     ]
                 },
                 {
                     "id": 2,
-                    "color": "Midnight Blue",
-                    "colorFilter": "midnight-blue",
-                    "thumbnail": "https://dummyimage.com/440x600/888/fff&text=205+02",
+                    "color": "Ivory",
+                    "colorFilter": "ivory",
+                    "thumbnail": "https://res.cloudinary.com/c81dqgyl/image/upload/v1790263423/5bce2394-6475-46cb-961b-c75e73fdf4b3.png",
                     "images": [
-                        "https://dummyimage.com/1000x900/888/fff&text=205+03",
-                        "https://dummyimage.com/1000x900/888/fff&text=205+04"
+                        "https://res.cloudinary.com/c81dqgyl/image/upload/v1790263423/5bce2394-6475-46cb-961b-c75e73fdf4b3.png",
+                        "https://res.cloudinary.com/c81dqgyl/image/upload/v1790263465/ded20783-5333-4feb-8615-a7120b0583a9.png"
                     ]
                 }
             ],
@@ -413,7 +362,7 @@
                     "id": 1,
                     "color": "Midnight Blue",
                     "colorFilter": "midnight-blue",
-                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=206+01",
+                    "thumbnail": "https://dummyimage.com/1200x1500/555/fff&text=206+01",
                     "images": [
                         "https://dummyimage.com/1000x900/555/fff&text=206+01",
                         "https://dummyimage.com/1000x900/555/fff&text=206+02"
@@ -423,7 +372,7 @@
                     "id": 2,
                     "color": "Stone",
                     "colorFilter": "stone",
-                    "thumbnail": "https://dummyimage.com/440x600/888/fff&text=206+02",
+                    "thumbnail": "https://dummyimage.com/1200x1500/888/fff&text=206+02",
                     "images": [
                         "https://dummyimage.com/1000x900/888/fff&text=206+03",
                         "https://dummyimage.com/1000x900/888/fff&text=206+04"
@@ -484,7 +433,7 @@
                     "id": 1,
                     "color": "Stone",
                     "colorFilter": "stone",
-                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=207+01",
+                    "thumbnail": "https://dummyimage.com/1200x1500/555/fff&text=207+01",
                     "images": [
                         "https://dummyimage.com/1000x900/555/fff&text=207+01",
                         "https://dummyimage.com/1000x900/555/fff&text=207+02"
@@ -494,7 +443,7 @@
                     "id": 2,
                     "color": "Soft Pink",
                     "colorFilter": "soft-pink",
-                    "thumbnail": "https://dummyimage.com/440x600/888/fff&text=207+02",
+                    "thumbnail": "https://dummyimage.com/1200x1500/888/fff&text=207+02",
                     "images": [
                         "https://dummyimage.com/1000x900/888/fff&text=207+03",
                         "https://dummyimage.com/1000x900/888/fff&text=207+04"
@@ -555,7 +504,7 @@
                     "id": 1,
                     "color": "Black",
                     "colorFilter": "black",
-                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=208+01",
+                    "thumbnail": "https://dummyimage.com/1200x1500/555/fff&text=208+01",
                     "images": [
                         "https://dummyimage.com/1000x900/555/fff&text=208+01",
                         "https://dummyimage.com/1000x900/555/fff&text=208+02"
@@ -565,7 +514,7 @@
                     "id": 2,
                     "color": "Obsidian Black",
                     "colorFilter": "obsidian-black",
-                    "thumbnail": "https://dummyimage.com/440x600/888/fff&text=208+02",
+                    "thumbnail": "https://dummyimage.com/1200x1500/888/fff&text=208+02",
                     "images": [
                         "https://dummyimage.com/1000x900/888/fff&text=208+03",
                         "https://dummyimage.com/1000x900/888/fff&text=208+04"
@@ -638,7 +587,7 @@
                     "id": 1,
                     "color": "Obsidian Black",
                     "colorFilter": "obsidian-black",
-                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=209+01",
+                    "thumbnail": "https://dummyimage.com/1200x1500/555/fff&text=209+01",
                     "images": [
                         "https://dummyimage.com/1000x900/555/fff&text=209+01",
                         "https://dummyimage.com/1000x900/555/fff&text=209+02"
@@ -648,7 +597,7 @@
                     "id": 2,
                     "color": "Ivory",
                     "colorFilter": "ivory",
-                    "thumbnail": "https://dummyimage.com/440x600/888/fff&text=209+02",
+                    "thumbnail": "https://dummyimage.com/1200x1500/888/fff&text=209+02",
                     "images": [
                         "https://dummyimage.com/1000x900/888/fff&text=209+03",
                         "https://dummyimage.com/1000x900/888/fff&text=209+04"
@@ -721,7 +670,7 @@
                     "id": 1,
                     "color": "Ivory",
                     "colorFilter": "ivory",
-                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=210+01",
+                    "thumbnail": "https://dummyimage.com/1200x1500/555/fff&text=210+01",
                     "images": [
                         "https://dummyimage.com/1000x900/555/fff&text=210+01",
                         "https://dummyimage.com/1000x900/555/fff&text=210+02"
@@ -731,7 +680,7 @@
                     "id": 2,
                     "color": "Chocolate Brown",
                     "colorFilter": "chocolate-brown",
-                    "thumbnail": "https://dummyimage.com/440x600/888/fff&text=210+02",
+                    "thumbnail": "https://dummyimage.com/1200x1500/888/fff&text=210+02",
                     "images": [
                         "https://dummyimage.com/1000x900/888/fff&text=210+03",
                         "https://dummyimage.com/1000x900/888/fff&text=210+04"
@@ -804,7 +753,7 @@
                     "id": 1,
                     "color": "Chocolate Brown",
                     "colorFilter": "chocolate-brown",
-                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=211+01",
+                    "thumbnail": "https://dummyimage.com/1200x1500/555/fff&text=211+01",
                     "images": [
                         "https://dummyimage.com/1000x900/555/fff&text=211+01",
                         "https://dummyimage.com/1000x900/555/fff&text=211+02"
@@ -814,7 +763,7 @@
                     "id": 2,
                     "color": "Sage Green",
                     "colorFilter": "sage-green",
-                    "thumbnail": "https://dummyimage.com/440x600/888/fff&text=211+02",
+                    "thumbnail": "https://dummyimage.com/1200x1500/888/fff&text=211+02",
                     "images": [
                         "https://dummyimage.com/1000x900/888/fff&text=211+03",
                         "https://dummyimage.com/1000x900/888/fff&text=211+04"
@@ -887,7 +836,7 @@
                     "id": 1,
                     "color": "Sage Green",
                     "colorFilter": "sage-green",
-                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=212+01",
+                    "thumbnail": "https://dummyimage.com/1200x1500/555/fff&text=212+01",
                     "images": [
                         "https://dummyimage.com/1000x900/555/fff&text=212+01",
                         "https://dummyimage.com/1000x900/555/fff&text=212+02"
@@ -897,7 +846,7 @@
                     "id": 2,
                     "color": "Burgundy",
                     "colorFilter": "burgundy",
-                    "thumbnail": "https://dummyimage.com/440x600/888/fff&text=212+02",
+                    "thumbnail": "https://dummyimage.com/1200x1500/888/fff&text=212+02",
                     "images": [
                         "https://dummyimage.com/1000x900/888/fff&text=212+03",
                         "https://dummyimage.com/1000x900/888/fff&text=212+04"
@@ -970,7 +919,7 @@
                     "id": 1,
                     "color": "Burgundy",
                     "colorFilter": "burgundy",
-                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=213+01",
+                    "thumbnail": "https://dummyimage.com/1200x1500/555/fff&text=213+01",
                     "images": [
                         "https://dummyimage.com/1000x900/555/fff&text=213+01",
                         "https://dummyimage.com/1000x900/555/fff&text=213+02"
@@ -980,7 +929,7 @@
                     "id": 2,
                     "color": "Midnight Blue",
                     "colorFilter": "midnight-blue",
-                    "thumbnail": "https://dummyimage.com/440x600/888/fff&text=213+02",
+                    "thumbnail": "https://dummyimage.com/1200x1500/888/fff&text=213+02",
                     "images": [
                         "https://dummyimage.com/1000x900/888/fff&text=213+03",
                         "https://dummyimage.com/1000x900/888/fff&text=213+04"
@@ -1053,7 +1002,7 @@
                     "id": 1,
                     "color": "Midnight Blue",
                     "colorFilter": "midnight-blue",
-                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=214+01",
+                    "thumbnail": "https://dummyimage.com/1200x1500/555/fff&text=214+01",
                     "images": [
                         "https://dummyimage.com/1000x900/555/fff&text=214+01",
                         "https://dummyimage.com/1000x900/555/fff&text=214+02"
@@ -1063,7 +1012,7 @@
                     "id": 2,
                     "color": "Stone",
                     "colorFilter": "stone",
-                    "thumbnail": "https://dummyimage.com/440x600/888/fff&text=214+02",
+                    "thumbnail": "https://dummyimage.com/1200x1500/888/fff&text=214+02",
                     "images": [
                         "https://dummyimage.com/1000x900/888/fff&text=214+03",
                         "https://dummyimage.com/1000x900/888/fff&text=214+04"
@@ -1124,7 +1073,7 @@
                     "id": 1,
                     "color": "Stone",
                     "colorFilter": "stone",
-                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=215+01",
+                    "thumbnail": "https://dummyimage.com/1200x1500/555/fff&text=215+01",
                     "images": [
                         "https://dummyimage.com/1000x900/555/fff&text=215+01",
                         "https://dummyimage.com/1000x900/555/fff&text=215+02"
@@ -1134,7 +1083,7 @@
                     "id": 2,
                     "color": "Soft Pink",
                     "colorFilter": "soft-pink",
-                    "thumbnail": "https://dummyimage.com/440x600/888/fff&text=215+02",
+                    "thumbnail": "https://dummyimage.com/1200x1500/888/fff&text=215+02",
                     "images": [
                         "https://dummyimage.com/1000x900/888/fff&text=215+03",
                         "https://dummyimage.com/1000x900/888/fff&text=215+04"
@@ -1195,7 +1144,7 @@
                     "id": 1,
                     "color": "Soft Pink",
                     "colorFilter": "soft-pink",
-                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=216+01",
+                    "thumbnail": "https://dummyimage.com/1200x1500/555/fff&text=216+01",
                     "images": [
                         "https://dummyimage.com/1000x900/555/fff&text=216+01",
                         "https://dummyimage.com/1000x900/555/fff&text=216+02"
@@ -1205,7 +1154,7 @@
                     "id": 2,
                     "color": "Obsidian Black",
                     "colorFilter": "obsidian-black",
-                    "thumbnail": "https://dummyimage.com/440x600/888/fff&text=216+02",
+                    "thumbnail": "https://dummyimage.com/1200x1500/888/fff&text=216+02",
                     "images": [
                         "https://dummyimage.com/1000x900/888/fff&text=216+03",
                         "https://dummyimage.com/1000x900/888/fff&text=216+04"
@@ -1266,7 +1215,7 @@
                     "id": 1,
                     "color": "Obsidian Black",
                     "colorFilter": "obsidian-black",
-                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=217+01",
+                    "thumbnail": "https://dummyimage.com/1200x1500/555/fff&text=217+01",
                     "images": [
                         "https://dummyimage.com/1000x900/555/fff&text=217+01",
                         "https://dummyimage.com/1000x900/555/fff&text=217+02"
@@ -1276,7 +1225,7 @@
                     "id": 2,
                     "color": "Ivory",
                     "colorFilter": "ivory",
-                    "thumbnail": "https://dummyimage.com/440x600/888/fff&text=217+02",
+                    "thumbnail": "https://dummyimage.com/1200x1500/888/fff&text=217+02",
                     "images": [
                         "https://dummyimage.com/1000x900/888/fff&text=217+03",
                         "https://dummyimage.com/1000x900/888/fff&text=217+04"
@@ -1529,33 +1478,14 @@
                 "title": "Description",
                 "text": "The Oliver Tailored Coat combines refined materials, practical details, and a contemporary silhouette."
             },
-            "sizes": [
-                {
-                    "id": "small",
-                    "shortLabel": "S",
-                    "label": "Small",
-                    "value": "small"
-                },
-                {
-                    "id": "medium",
-                    "shortLabel": "M",
-                    "label": "Medium",
-                    "value": "medium"
-                },
-                {
-                    "id": "large",
-                    "shortLabel": "L",
-                    "label": "Large",
-                    "value": "large"
-                }
-            ],
+            "sizes": [],
             "defaultVariant": 1,
             "variants": [
-                {
+                { 
                     "id": 1,
                     "color": "Burgundy",
                     "colorFilter": "burgundy",
-                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=221+01",
+                    "thumbnail": "https://dummyimage.com/1200x1500/555/fff&text=221+01",
                     "images": [
                         "https://dummyimage.com/1000x900/555/fff&text=221+01",
                         "https://dummyimage.com/1000x900/555/fff&text=221+02"
@@ -1565,7 +1495,7 @@
                     "id": 2,
                     "color": "Midnight Blue",
                     "colorFilter": "midnight-blue",
-                    "thumbnail": "https://dummyimage.com/440x600/888/fff&text=221+02",
+                    "thumbnail": "https://dummyimage.com/1200x1500/888/fff&text=221+02",
                     "images": [
                         "https://dummyimage.com/1000x900/888/fff&text=221+03",
                         "https://dummyimage.com/1000x900/888/fff&text=221+04"
@@ -1638,7 +1568,7 @@
                     "id": 1,
                     "color": "Midnight Blue",
                     "colorFilter": "midnight-blue",
-                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=222+01",
+                    "thumbnail": "https://dummyimage.com/1200x1500/555/fff&text=222+01",
                     "images": [
                         "https://dummyimage.com/1000x900/555/fff&text=222+01",
                         "https://dummyimage.com/1000x900/555/fff&text=222+02"
@@ -1648,7 +1578,7 @@
                     "id": 2,
                     "color": "Stone",
                     "colorFilter": "stone",
-                    "thumbnail": "https://dummyimage.com/440x600/888/fff&text=222+02",
+                    "thumbnail": "https://dummyimage.com/1200x1500/888/fff&text=222+02",
                     "images": [
                         "https://dummyimage.com/1000x900/888/fff&text=222+03",
                         "https://dummyimage.com/1000x900/888/fff&text=222+04"
@@ -1721,7 +1651,7 @@
                     "id": 1,
                     "color": "Stone",
                     "colorFilter": "stone",
-                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=223+01",
+                    "thumbnail": "https://dummyimage.com/1200x1500/555/fff&text=223+01",
                     "images": [
                         "https://dummyimage.com/1000x900/555/fff&text=223+01",
                         "https://dummyimage.com/1000x900/555/fff&text=223+02"
@@ -1731,7 +1661,7 @@
                     "id": 2,
                     "color": "Black",
                     "colorFilter": "black",
-                    "thumbnail": "https://dummyimage.com/440x600/888/fff&text=223+02",
+                    "thumbnail": "https://dummyimage.com/1200x1500/888/fff&text=223+02",
                     "images": [
                         "https://dummyimage.com/1000x900/888/fff&text=223+03",
                         "https://dummyimage.com/1000x900/888/fff&text=223+04"
@@ -1804,7 +1734,7 @@
                     "id": 1,
                     "color": "Soft Pink",
                     "colorFilter": "soft-pink",
-                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=224+01",
+                    "thumbnail": "https://dummyimage.com/1200x1500/555/fff&text=224+01",
                     "images": [
                         "https://dummyimage.com/1000x900/555/fff&text=224+01",
                         "https://dummyimage.com/1000x900/555/fff&text=224+02"
@@ -1814,7 +1744,7 @@
                     "id": 2,
                     "color": "Obsidian Black",
                     "colorFilter": "obsidian-black",
-                    "thumbnail": "https://dummyimage.com/440x600/888/fff&text=224+02",
+                    "thumbnail": "https://dummyimage.com/1200x1500/888/fff&text=224+02",
                     "images": [
                         "https://dummyimage.com/1000x900/888/fff&text=224+03",
                         "https://dummyimage.com/1000x900/888/fff&text=224+04"
@@ -1887,7 +1817,7 @@
                     "id": 1,
                     "color": "Obsidian Black",
                     "colorFilter": "obsidian-black",
-                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=225+01",
+                    "thumbnail": "https://dummyimage.com/1200x1500/555/fff&text=225+01",
                     "images": [
                         "https://dummyimage.com/1000x900/555/fff&text=225+01",
                         "https://dummyimage.com/1000x900/555/fff&text=225+02"
@@ -1897,7 +1827,7 @@
                     "id": 2,
                     "color": "Ivory",
                     "colorFilter": "ivory",
-                    "thumbnail": "https://dummyimage.com/440x600/888/fff&text=225+02",
+                    "thumbnail": "https://dummyimage.com/1200x1500/888/fff&text=225+02",
                     "images": [
                         "https://dummyimage.com/1000x900/888/fff&text=225+03",
                         "https://dummyimage.com/1000x900/888/fff&text=225+04"
@@ -1958,7 +1888,7 @@
                     "id": 1,
                     "color": "Obsidian Black",
                     "colorFilter": "obsidian-black",
-                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=226+01",
+                    "thumbnail": "https://dummyimage.com/1200x1500/555/fff&text=226+01",
                     "images": [
                         "https://dummyimage.com/1000x900/555/fff&text=226+01",
                         "https://dummyimage.com/1000x900/555/fff&text=226+02"
@@ -2019,7 +1949,7 @@
                     "id": 1,
                     "color": "Obsidian Black",
                     "colorFilter": "obsidian-black",
-                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=227+01",
+                    "thumbnail": "https://dummyimage.com/1200x1500/555/fff&text=227+01",
                     "images": [
                         "https://dummyimage.com/1000x900/555/fff&text=227+01",
                         "https://dummyimage.com/1000x900/555/fff&text=227+02"
@@ -2080,7 +2010,7 @@
                     "id": 1,
                     "color": "Obsidian Black",
                     "colorFilter": "obsidian-black",
-                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=228+01",
+                    "thumbnail": "https://dummyimage.com/1200x1500/555/fff&text=228+01",
                     "images": [
                         "https://dummyimage.com/1000x900/555/fff&text=228+01",
                         "https://dummyimage.com/1000x900/555/fff&text=228+02"
@@ -2141,7 +2071,7 @@
                     "id": 1,
                     "color": "Obsidian Black",
                     "colorFilter": "obsidian-black",
-                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=229+01",
+                    "thumbnail": "https://dummyimage.com/1200x1500/555/fff&text=229+01",
                     "images": [
                         "https://dummyimage.com/1000x900/555/fff&text=229+01",
                         "https://dummyimage.com/1000x900/555/fff&text=229+02"
@@ -2202,7 +2132,7 @@
                     "id": 1,
                     "color": "Obsidian Black",
                     "colorFilter": "obsidian-black",
-                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=230+01",
+                    "thumbnail": "https://dummyimage.com/1200x1500/555/fff&text=230+01",
                     "images": [
                         "https://dummyimage.com/1000x900/555/fff&text=230+01",
                         "https://dummyimage.com/1000x900/555/fff&text=230+02"
@@ -2263,7 +2193,7 @@
                     "id": 1,
                     "color": "Obsidian Black",
                     "colorFilter": "obsidian-black",
-                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=231+01",
+                    "thumbnail": "https://dummyimage.com/1200x1500/555/fff&text=231+01",
                     "images": [
                         "https://dummyimage.com/1000x900/555/fff&text=231+01",
                         "https://dummyimage.com/1000x900/555/fff&text=231+02"
@@ -2323,7 +2253,7 @@
                     "id": 1,
                     "color": "Obsidian Black",
                     "colorFilter": "obsidian-black",
-                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=232+01",
+                    "thumbnail": "https://dummyimage.com/1200x1500/555/fff&text=232+01",
                     "images": [
                         "https://dummyimage.com/1000x900/555/fff&text=232+01",
                         "https://dummyimage.com/1000x900/555/fff&text=232+02"
@@ -2383,7 +2313,7 @@
                     "id": 1,
                     "color": "Obsidian Black",
                     "colorFilter": "obsidian-black",
-                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=233+01",
+                    "thumbnail": "https://dummyimage.com/1200x1500/555/fff&text=233+01",
                     "images": [
                         "https://dummyimage.com/1000x900/555/fff&text=233+01",
                         "https://dummyimage.com/1000x900/555/fff&text=233+02"
@@ -2443,7 +2373,7 @@
                     "id": 1,
                     "color": "Obsidian Black",
                     "colorFilter": "obsidian-black",
-                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=234+01",
+                    "thumbnail": "https://dummyimage.com/1200x1500/555/fff&text=234+01",
                     "images": [
                         "https://dummyimage.com/1000x900/555/fff&text=234+01",
                         "https://dummyimage.com/1000x900/555/fff&text=234+02"
@@ -2576,7 +2506,7 @@
                     "id": 1,
                     "color": "Obsidian Black",
                     "colorFilter": "obsidian-black",
-                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=236+01",
+                    "thumbnail": "https://dummyimage.com/1200x1500/555/fff&text=236+01",
                     "images": [
                         "https://dummyimage.com/1000x900/555/fff&text=236+01",
                         "https://dummyimage.com/1000x900/555/fff&text=236+02"
@@ -2818,7 +2748,7 @@
                     "id": 1,
                     "color": "Obsidian Black",
                     "colorFilter": "obsidian-black",
-                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=240+01",
+                    "thumbnail": "https://dummyimage.com/1200x1500/555/fff&text=240+01",
                     "images": [
                         "https://dummyimage.com/1000x900/555/fff&text=240+01",
                         "https://dummyimage.com/1000x900/555/fff&text=240+02"
@@ -2879,7 +2809,7 @@
                     "id": 1,
                     "color": "Obsidian Black",
                     "colorFilter": "obsidian-black",
-                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=241+01",
+                    "thumbnail": "https://dummyimage.com/1200x1500/555/fff&text=241+01",
                     "images": [
                         "https://dummyimage.com/1000x900/555/fff&text=241+01",
                         "https://dummyimage.com/1000x900/555/fff&text=241+02"
@@ -2940,7 +2870,7 @@
                     "id": 1,
                     "color": "Obsidian Black",
                     "colorFilter": "obsidian-black",
-                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=242+01",
+                    "thumbnail": "https://dummyimage.com/1200x1500/555/fff&text=242+01",
                     "images": [
                         "https://dummyimage.com/1000x900/555/fff&text=242+01",
                         "https://dummyimage.com/1000x900/555/fff&text=242+02"
@@ -3001,7 +2931,7 @@
                     "id": 1,
                     "color": "Obsidian Black",
                     "colorFilter": "obsidian-black",
-                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=243+01",
+                    "thumbnail": "https://dummyimage.com/1200x1500/555/fff&text=243+01",
                     "images": [
                         "https://dummyimage.com/1000x900/555/fff&text=243+01",
                         "https://dummyimage.com/1000x900/555/fff&text=243+02"
@@ -3074,7 +3004,7 @@
                     "id": 1,
                     "color": "Obsidian Black",
                     "colorFilter": "obsidian-black",
-                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=244+01",
+                    "thumbnail": "https://dummyimage.com/1200x1500/555/fff&text=244+01",
                     "images": [
                         "https://dummyimage.com/1000x900/555/fff&text=244+01",
                         "https://dummyimage.com/1000x900/555/fff&text=244+02"
@@ -3147,7 +3077,7 @@
                     "id": 1,
                     "color": "Obsidian Black",
                     "colorFilter": "obsidian-black",
-                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=245+01",
+                    "thumbnail": "https://dummyimage.com/1200x1500/555/fff&text=245+01",
                     "images": [
                         "https://dummyimage.com/1000x900/555/fff&text=245+01",
                         "https://dummyimage.com/1000x900/555/fff&text=245+02"
@@ -3220,7 +3150,7 @@
                     "id": 1,
                     "color": "Obsidian Black",
                     "colorFilter": "obsidian-black",
-                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=246+01",
+                    "thumbnail": "https://dummyimage.com/1200x1500/555/fff&text=246+01",
                     "images": [
                         "https://dummyimage.com/1000x900/555/fff&text=246+01",
                         "https://dummyimage.com/1000x900/555/fff&text=246+02"
@@ -3293,7 +3223,7 @@
                     "id": 1,
                     "color": "Obsidian Black",
                     "colorFilter": "obsidian-black",
-                    "thumbnail": "https://dummyimage.com/440x600/555/fff&text=247+01",
+                    "thumbnail": "https://dummyimage.com/1200x1500/555/fff&text=247+01",
                     "images": [
                         "https://dummyimage.com/1000x900/555/fff&text=247+01",
                         "https://dummyimage.com/1000x900/555/fff&text=247+02"

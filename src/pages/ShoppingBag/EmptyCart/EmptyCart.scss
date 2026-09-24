@@ -1,0 +1,29 @@
+@use "../../../styles/utils/abstract/mixins" as mix;
+@use "../../../styles//utils//abstract/variable" as var;
+
+
+.empty-cart {
+    padding: calc(var.$spacing-lg * 5) 0;
+
+    &__icon {
+        width: var.$spacing-xxl;
+        height: var.$spacing-xxl;
+        margin: 1% auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: var.$spacing-xl;
+    }
+
+    &__title {
+        font-size: var.$spacing-lg;
+        color: var.$color-primary;
+        margin-bottom: var.$spacing-md;
+    }
+
+    &__desc {
+        font-size: var.$font-size-md;
+        color: var.$gray-500;
+        margin-bottom: var.$spacing-md;
+    }
+}

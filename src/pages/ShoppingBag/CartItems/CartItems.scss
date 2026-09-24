@@ -14,7 +14,7 @@
     }
 
     &__image {
-        width: 84px;
+        width: 74px;
         margin-right: 1rem;
     }
 
@@ -33,10 +33,6 @@
     &__variants {
         display: flex;
         flex-direction: row;
-
-        .bullet {
-            margin-right: 1rem;
-        }
     }
 
     &__footer {
@@ -46,6 +42,27 @@
         align-items: center;
         justify-content: space-between;
     }
+
+    @include mix.respond(lg) {
+        &__image {
+            width: 104px;
+            margin-right: 1rem;
+        }
+    }
+}
+
+.points {
+    margin-right: 0.5rem;
+    font-size: var.$font-size-sm;
+
+    span {
+        padding: 0 var.$spacing-sm;
+        color: var.$gray-600;
+    }
+
+    @include mix.respond(lg) {
+        font-size: var.$font-size-md;
+    }
 }
 
 .quantity {
@@ -54,8 +71,11 @@
     border: 1px solid var.$gray-200;
 
     &__input {
+        display: flex;
         flex-grow: 1;
         text-align: center;
+        justify-content: center;
+        align-items: center;
         width: calc(100% - 5rem);
     }
 

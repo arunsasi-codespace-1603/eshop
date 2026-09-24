@@ -14,7 +14,7 @@ import productData from "../../../data/allProducts.json";
 // Helper files
 import useIsMobile from "../../../hooks/useIsMobile";
 
-// Context
+// Shared data
 import { CartContext } from "../../../context/CartContext";
 
 // Component Binding
@@ -101,7 +101,11 @@ const ProductDetails = () => {
     // Item in cart
     // ------------------------------------------
     const itemInCart = cartItems.some((cartItem) => {
-        return cartItem.productId === productId;
+        return (
+            cartItem.productId === productId &&
+            cartItem.colorVariant.id === colorVariant.id &&
+            cartItem.sizeVariant?.id === selectedSize?.id
+        );
     });
 
     const {
@@ -126,6 +130,7 @@ const ProductDetails = () => {
         });
         setColorVariant(selectedVariant);
     }
+
     // ------------------------------------------
     // Update size varient
     // ------------------------------------------
@@ -133,7 +138,7 @@ const ProductDetails = () => {
         setSelectedSize(size);
         setIsSizeEmpty(false)
     }
-    console.log("Cart Items", cartItems)
+
     // ------------------------------------------
     // Add to Cart
     // ------------------------------------------
@@ -153,6 +158,7 @@ const ProductDetails = () => {
 
             // Create a cart item object
             const cartItem = {
+                cartItemId: `${prodId}-${colorVariant.id}-${sizeVariant?.id ?? "no-size"}`,
                 productId: prodId,
                 colorVariant,
                 sizeVariant,

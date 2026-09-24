@@ -3,7 +3,7 @@
 
 .footer {
     width: 100%;
-    border-top: 1px solid var.$gray-300;
+    border-top: 1px solid var.$gray-200;
 
     &__container {
         width: 100%;
@@ -158,6 +158,10 @@
         justify-content: space-between;
         flex-wrap: wrap;
     }
+
+    &__right {
+        margin-bottom: var.$spacing-sm;
+    }
 }
 
 .copy-right-menus {
@@ -166,6 +170,8 @@
 
 
     &__link {
+        margin-bottom: var.$spacing-sm;
+
         &:not(:last-child) {
             margin-right: 1rem;
         }

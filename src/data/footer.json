@@ -1,0 +1,101 @@
+{
+    "menus": [
+        {
+            "id": 1,
+            "title": "Help",
+            "items": [
+                {
+                    "type": "text",
+                    "content": "For assistance contact us on +44 000 000 0000"
+                },
+                {
+                    "type": "link",
+                    "label": "FAQ",
+                    "href": "/faq"
+                },
+                {
+                    "type": "link",
+                    "label": "Stores",
+                    "href": "/stores"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Services",
+            "items": [
+                {
+                    "type": "link",
+                    "label": "Repairs",
+                    "href": "/repairs"
+                },
+                {
+                    "type": "link",
+                    "label": "Personalisation",
+                    "href": "/personalisation"
+                },
+                {
+                    "type": "link",
+                    "label": "Art of Gifting",
+                    "href": "/gifting"
+                },
+                {
+                    "type": "link",
+                    "label": "Download App",
+                    "href": "/app"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "title": "About Company",
+            "items": [
+                {
+                    "type": "link",
+                    "label": "Company",
+                    "href": "/company"
+                },
+                {
+                    "type": "link",
+                    "label": "What we do",
+                    "href": "/what-we-do"
+                },
+                {
+                    "type": "link",
+                    "label": "Careers",
+                    "href": "/careers"
+                },
+                {
+                    "type": "link",
+                    "label": "Latest News",
+                    "href": "/latest-news"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Connect",
+            "items": [
+                {
+                    "type": "text",
+                    "content": "Sign up for emails and receive the latest news from the Maison, including exclusive online pre-launches and new collections."
+                },
+                {
+                    "type": "link",
+                    "label": "Instagram",
+                    "href": "/insta"
+                },
+                {
+                    "type": "link",
+                    "label": "Facebook",
+                    "href": "/fb"
+                },
+                {
+                    "type": "link",
+                    "label": "X",
+                    "href": "/x"
+                }
+            ]
+        }
+    ]
+}

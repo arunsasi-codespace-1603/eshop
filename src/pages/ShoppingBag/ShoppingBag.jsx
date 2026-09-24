@@ -1,30 +1,48 @@
 import "./ShoppingBag.scss";
 // React Core
 import { useContext } from "react";
+import { Link } from "react-router-dom";
 
 // Context
 import { CartContext } from "../../context/CartContext";
 
 // Data
 import productsList from "../../data/allProducts.json";
+
+// Icons
+import { CheckLg } from "react-bootstrap-icons";
+
 // Component Binding
 import Navigation from "../../components/ui/Navigation/Navigation";
 import Footer from "../../components/ui/Footer/Footer";
 import CartItems from "./CartItems/CartItems";
-
-
+import EmptyCart from "./EmptyCart/EmptyCart";
 
 const ShoppingBag = () => {
     const { cartItems } = useContext(CartContext);
     const allProducts = productsList.products;
 
-    const cartProducts = allProducts.filter((product) => {
-        return cartItems.some((cartItem) => {
-            return cartItem.productId === product.id;
-        });
-    });
+    // ------------------------------------------
+    // Fetch cart quantity
+    // ------------------------------------------
+    const cartQuantity = cartItems.reduce((total, item) => {
+        return total + item.quantity;
+    }, 0);
 
-    console.log("Cart Products", cartProducts);
+    // ------------------------------------------
+    // Fetch cart total price
+    // ------------------------------------------
+    const cartTotal = cartItems.reduce((total, cartItem) => {
+        const product = allProducts.find((product) => {
+            return product.id === cartItem.productId;
+        });
+
+        if (!product) {
+            return total;
+        }
+
+        return total + (product.price * cartItem.quantity);
+    }, 0);
 
     return (
         <>
@@ -32,71 +50,78 @@ const ShoppingBag = () => {
             <main>
                 <section className="section-content page-shopping-bag">
                     <div className="container">
-                        <div className="cart-content">
-                            <div className="cart-content__container">
-                                <div className="cart-content__left">
-                                    <div className="cart-content__header">
-                                        Shopping Basket
+
+                        {cartItems.length === 0 &&
+                            <EmptyCart />
+                        }
+
+                        {cartItems.length > 0 &&
+
+                            <div className="cart-content">
+                                <div className="cart-content__container">
+                                    <div className="cart-content__left">
+                                        <div className="cart-content__header">
+                                            Shopping Basket
+                                        </div>
+                                        <div className="cart-content__body">
+                                            {cartItems.map((cartItem) => {
+                                                const selectedProduct = allProducts.find((product) => {
+                                                    return product.id === cartItem.productId
+                                                });
+                                                return (
+                                                    <CartItems
+                                                        key={cartItem.cartItemId}
+                                                        cartItem={cartItem}
+                                                        product={selectedProduct} />
+                                                )
+                                            })}
+                                        </div>
                                     </div>
-                                    <div className="cart-content__body">
-                                        {cartProducts.map((product) => {
-                                            const cartItem = cartItems.find((cartItem) => {
-                                                return cartItem.productId === product.id;
-                                            });
-                                            return (
-                                                <CartItems product={cartItem} key={product.id} />
-                                            )
-                                        })}
+
+                                    <div className="cart-content__right">
+                                        <div className="cart-summary">
+                                            <div className="cart-summary__header">
+                                                Shopping Summary
+                                            </div>
+                                            <div className="cart-summary__body">
+                                                <div className="delivery-content text-success">
+                                                    <div className="delivery-content__icon">
+                                                        <CheckLg />
+                                                    </div>
+                                                    <div className="delivery-content__text">
+                                                        Your order qualifies for FREE Delivery. Delivery Details
+                                                        Select this option at checkout.
+                                                    </div>
+                                                </div>
+                                                <div className="price-break">
+                                                    <div className="price-break__column text-left">
+                                                        Subtotal ({cartQuantity}):
+                                                    </div>
+                                                    <div className="price-break__column text-right">
+                                                        £{cartTotal}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="cart-summary__footer">
+                                                <button className="btn btn-primary cta-proceed-to-checkout">
+                                                    Proceed to checkout
+                                                </button>
+
+                                                <Link to="/"
+                                                    className="cta-continue-shopping">
+                                                    Continue Shopping
+                                                </Link>
+                                            </div>
+                                        </div>
                                     </div>
+
                                 </div>
-
-
-                                {/* <div className="cart-content__right">
-                                    <div className="cart-content__header">
-                                        Shopping Summary
-                                    </div>
-                                    <div className="cart-content__body">
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, cumque.
-                                    </div>
-                                </div> */}
-
                             </div>
-                        </div>
+                        }
 
-
-
-                        {/* {cartProducts.map((product) => {
-
-                            const cartItem = cartItems.find((cartItem) => {
-                                return cartItem.productId === product.id;
-                            });
-
-                            return (
-                                <CartItems product={product} />
-                                // <div key={product.id}>
-
-                                //     <h2>{product.name}</h2>
-
-                                //     <p>£{product.price}</p>
-
-                                //     <p>
-                                //         Color: {cartItem.colorVariant.color}
-                                //     </p>
-
-                                //     <p>
-                                //         Size: {cartItem.sizeVariant?.label}
-                                //     </p>
-
-                                //     <p>
-                                //         Quantity: {cartItem.quantity}
-                                //     </p>
-
-                                // </div>
-                            );
-                        })} */}
                     </div>
                 </section>
-            </main>
+            </main >
             <Footer />
         </>
     )

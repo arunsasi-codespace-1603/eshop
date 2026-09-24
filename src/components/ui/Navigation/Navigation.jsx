@@ -34,9 +34,10 @@ const Navigation = () => {
     const [prevMenu, setPrevMenu] = useState([]);
     const [menuLabel, setMenuLabel] = useState("");
     const { cartItems } = useContext(CartContext);
-    let cartCount = 0;
-    cartCount = cartItems.length;
-    console.log(cartItems)
+
+    const cartQuantity = cartItems.reduce((total, item) => {
+        return total + item.quantity;
+    }, 0);
     // Side menubar open/close status
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -105,7 +106,6 @@ const Navigation = () => {
     // Open Searchbar
     //------------------------------------------------
     const openSearchBar = () => {
-        console.log("click")
         setIsSearchOpen(true);
     }
     //------------------------------------------------
@@ -114,6 +114,7 @@ const Navigation = () => {
     const closeSearchBar = () => {
         setIsSearchOpen(false);
     }
+
     return (
         <>
             <header>
@@ -151,7 +152,9 @@ const Navigation = () => {
                                 <Link to="/shopping-bag">
                                     <button className="btn button-tools-cta">
                                         <Bag />
-                                        <div className="cart-item-count">{cartCount}</div>
+                                        <div className="cart-item-count">
+                                            {cartQuantity}
+                                        </div>
                                     </button>
                                 </Link>
                             </div>
