@@ -6,6 +6,7 @@ import About from "../pages/About/About"
 import ProductsPage from "../pages/Product/ProductsPage/ProductsPage"
 import ProductDetails from "../pages/Product/ProductDetails/ProductDetails";
 import CollectionList from "../components/Collection/CollectionList/CollectionList";
+import CollectionCard from "../components/Collection/CollectionCard/CollectionCard";
 import SearchResultsPage from "../components/SearchBar/SearchResultsPage/SearchResultsPage";
 import ScrollRestoration from "../components/ui/ScrollRestoration/ScrollRestoration";
 import ShoppingBag from "../pages/ShoppingBag/ShoppingBag";
@@ -25,7 +26,10 @@ const AppRoutes = () => {
                     path="/product/:pId/:slug"
                     element={<ProductDetails />} />
                 <Route
-                    path="/products/:gender/collections"
+                    path="/:gender/collections"
+                    element={<CollectionCard />} />
+                <Route
+                    path="/:gender/collections/:collectionName"
                     element={<CollectionList />} />
                 <Route
                     path="/products/:category/:subCategory"

@@ -6,6 +6,7 @@
             "name": "Luna Structured Tote",
             "brand": "Maison Aura",
             "category": "women",
+            "collection": "womens-essentials",
             "subCategory": "bags",
             "type": "handbags",
             "price": 420,
@@ -70,6 +71,7 @@
             "name": "Celeste Mini Handbag",
             "brand": "Nova Studio",
             "category": "women",
+            "collection": "womens-essentials",
             "subCategory": "bags",
             "type": "handbags",
             "price": 680,
@@ -134,6 +136,7 @@
             "name": "Aria Leather Shoulder Bag",
             "brand": "Aura Atelier",
             "category": "women",
+            "collection": "womens-essentials",
             "subCategory": "bags",
             "type": "shoulder-bags",
             "price": 925,
@@ -198,6 +201,7 @@
             "name": "Sienna Crossbody",
             "brand": "Maison Aura",
             "category": "women",
+            "collection": "womens-essentials",
             "subCategory": "bags",
             "type": "crossbody-bags",
             "price": 275,
@@ -1481,7 +1485,7 @@
             "sizes": [],
             "defaultVariant": 1,
             "variants": [
-                { 
+                {
                     "id": 1,
                     "color": "Burgundy",
                     "colorFilter": "burgundy",

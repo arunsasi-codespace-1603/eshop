@@ -49,10 +49,10 @@ const Footer = () => {
                 }
                 <div className="footer__container">
 
-                    {footerData.map((section) => (
+                    {footerData.map((section,index) => (
                         <div
                             className="footer__column"
-                            key={section.id}
+                            key={`${section.id}_${index}`}
                         >
                             <div className="footer-categ">
 
@@ -90,7 +90,7 @@ const Footer = () => {
                                         {section.items.map((item, index) => (
                                             <li
                                                 className="categ-list__item"
-                                                key={index}
+                                                key={`${item}_${index}`}
                                             >
                                                 {item.type === "link" ? (
                                                     <a

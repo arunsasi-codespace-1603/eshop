@@ -1,3 +1,4 @@
+@use "sass:map";
 @use "../../styles/utils/abstract/variable" as var;
 @use "../../styles/utils/abstract/mixins" as mix;
 
@@ -15,13 +16,19 @@
     }
 
     &__image {
-        width: 100%;
+        width: 5rem;
+        height: 5rem;
         display: block;
-        padding: var.$spacing-lg var.$spacing-lg;
+        margin: auto;
+        font-size: calc(var.$font-size-lg * 2.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var.$gray-100;
+        margin-bottom: var.$spacing-md;
 
-        img {
-            margin: auto;
-            display: block;
+        svg {
+            fill: map.get(var.$text-colors, warning);
         }
     }
 

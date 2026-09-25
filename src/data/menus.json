@@ -10,7 +10,7 @@
                     "id": "women-collections",
                     "name": "Collections",
                     "slug": "women-collections",
-                    "path": "/products/women/collections"
+                    "path": "/women/collections"
                 },
                 {
                     "id": "women-bags",
@@ -93,7 +93,7 @@
                     "id": "men-collections",
                     "name": "Collections",
                     "slug": "men-collections",
-                    "path": "/products/men/collections"
+                    "path": "/men/collections"
                 },
                 {
                     "id": "men-bags",
@@ -108,12 +108,6 @@
                     "path": "/products/men/clothes"
                 }
             ]
-        },
-        {
-            "id": "collections",
-            "name": "Collections",
-            "slug": "collections",
-            "path": "/products/collections"
         }
     ],
     "services": []

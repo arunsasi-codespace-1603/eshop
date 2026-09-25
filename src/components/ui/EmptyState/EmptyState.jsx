@@ -1,3 +1,4 @@
+import { BagX } from "react-bootstrap-icons";
 import "./EmptyState.scss";
 
 const EmptyState = () => {
@@ -7,7 +8,7 @@ const EmptyState = () => {
                 <div className="empty-state__container">
 
                     <div className="empty-state__illustration">
-                        <img src="https://dummyimage.com/600x400/000/fff" alt="illustration" />
+                        <BagX />
                     </div>
                     <h3 className="empty-state__title">No products match your filters.</h3>
 

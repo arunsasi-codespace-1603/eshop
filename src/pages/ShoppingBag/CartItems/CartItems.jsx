@@ -8,6 +8,7 @@ import { CartContext } from "../../../context/CartContext";
 
 // Icons
 import { Plus, Dash } from "react-bootstrap-icons";
+import { Link } from "react-router";
 
 const CartItems = ({ product, cartItem }) => {
     const { cartItems, setCartItems } = useContext(CartContext);
@@ -71,14 +72,25 @@ const CartItems = ({ product, cartItem }) => {
             <div className="cart-product">
                 <div className="cart-product__container">
                     <div className="cart-product__image">
-                        <img src={cartItem.colorVariant?.thumbnail} alt={product.name} />
+                        <Link to={`/product/${product.id}/${product.slug}`}>
+                            <img src={cartItem.colorVariant?.thumbnail} alt={product.name} />
+                        </Link>
                     </div>
                     <div className="cart-product__content">
                         <h4 className="cart-product__title">
                             {product.name}
                         </h4>
-                        <div className="cart-product__price">
-                            £{product.price}
+
+                        <div className="cart-product__group">
+                            <div className="cart-product__price">
+                                £{product.price}
+                            </div>
+                            {cartItem.sizeVariant && (
+                                <div className="points">
+                                    Size:
+                                    <span>{cartItem.sizeVariant.label}</span>
+                                </div>
+                            )}
                         </div>
                         <div className="cart-product__variants">
                             <div className="points">
@@ -87,12 +99,6 @@ const CartItems = ({ product, cartItem }) => {
                                     {cartItem.colorVariant.color}
                                 </span>
                             </div>
-                            {cartItem.sizeVariant && (
-                                <div className="points">
-                                    Size:
-                                    <span>{cartItem.sizeVariant.label}</span>
-                                </div>
-                            )}
                         </div>
                     </div>
                 </div>

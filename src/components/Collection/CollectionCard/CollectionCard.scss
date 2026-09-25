@@ -1,35 +1,54 @@
 @use "../../../styles/utils/abstract/mixins" as mix;
 @use "../../../styles/utils/abstract/variable" as var;
 
+.collection-grid {
+    width: 100%;
+    // background-color: pink;
+
+    // @include mix.respond(md) {
+    //     width: calc(100% / 2);
+    // }
+}
+
 .collection-card {
-    display: block;
+    background-color: var.$white;
+    margin-bottom: var.$gutter-base;
     position: relative;
 
-    &__image {
+    &__overlay {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
         width: 100%;
         height: 100%;
-        display: block;
+        background-color: rgba(0, 0, 0, 0.2);
+        display: flex;
+        align-items: end;
+        justify-content: center;
+        padding: var.$spacing-xl;
     }
 
     &__content {
-        position: absolute;
-        bottom: 0;
-        left: 50%;
         width: 100%;
-        transform: translateX(-50%);
-        max-width: 50rem;
-        background-color: transparent;
-        padding: var.$spacing-xl;
         text-align: center;
-
+        color: rgba(255, 255, 255, 0.8)
     }
 
     &__title {
-        font-size: var.$font-size-lg;
-        margin-bottom: var.$spacing-sm;
+        font-size: calc(var.$font-size-sm * 2);
+        font-weight: 400;
+        margin-bottom: var.$spacing-md;
+        line-height: normal;
     }
 
     &__subtitle {
+        font-size: var.$font-size-md;
         margin-bottom: var.$spacing-md;
+    }
+
+    &__image {
+        display: block;
+        width: 100%;
     }
 }

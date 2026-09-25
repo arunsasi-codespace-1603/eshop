@@ -1,100 +1,46 @@
 {
     "collections": [
         {
-            "id": "flight-mode-women",
+            "id": "womens-essentials",
             "gender": "women",
-            "slug": "flight-mode",
-            "name": "Flight Mode",
-            "title": "Art of Travel",
-            "subtitle": "Continuous motion, elevated comfort",
-            "description": "Celebrating the maison's travel heritage with technical silk loungewear, dual-time watchmaking, and soft Monogram luggage engineered for long-haul journeys.",
+            "slug": "womens-essentials",
+            "name": "Women’s Essentials",
+            "title": "The Essentials",
+            "subtitle": "Timeless pieces for every day",
+            "description": "Discover a refined selection of women’s essentials, designed to bring effortless style to every wardrobe. From versatile everyday pieces to timeless accessories, each item is chosen for its balance of quality, functionality, and contemporary elegance.",
             "type": "capsule",
-            "heroImage": "https://placehold.co/1920x1080/green/FFFFFF/png",
-            "heroBannerImage": "https://placehold.co/1920x1080/green/FFFFFF/png",
-            "tabletBannerImage": "https://placehold.co/1280x720/green/FFFFFF/png",
-            "mobileBannerImage": "https://placehold.co/768x960/green/FFFFFF/png",
-            "editorialImages": [
-                "/images/collections/flight-mode/campaign-01.jpg",
-                "/images/collections/flight-mode/campaign-02.jpg",
-                "/images/collections/flight-mode/campaign-03.jpg",
-                "/images/collections/flight-mode/campaign-04.jpg"
-            ],
+            "heroBannerImage": "https://res.cloudinary.com/c81dqgyl/image/upload/v1790273422/womens-collection-11.jpg",
+            "mobileBannerImage": "https://res.cloudinary.com/c81dqgyl/image/upload/v1790272274/collection-01.jpg",
             "heroBannerVideo": "https://res.cloudinary.com/c81dqgyl/video/upload/8322527-uhd_4096_2160_25fps.mp4",
-            "urlPath": "/women/collections/flight-mode"
+            "urlPath": "/women/collections/womens-essentials"
         },
         {
-            "id": "monogram-heritage-unisex",
-            "gender": "unisex",
-            "slug": "monogram-canvas-heritage",
-            "name": "Monogram Signature",
-            "title": "An Icon Since 1896",
-            "subtitle": "Coated canvas and natural cowhide leather",
-            "description": "Designed by Georges Vuitton as a tribute to his father, the iconic interlocking LV initials and floral motifs form the cornerstone of luxury trunkmaking.",
-            "type": "core",
-            "heroImage": "https://placehold.co/1920x1080/offwhite/FFFFFF/png",
-            "editorialImages": [
-                "/images/collections/monogram-heritage/lookbook-01.jpg",
-                "/images/collections/monogram-heritage/lookbook-02.jpg",
-                "/images/collections/monogram-heritage/lookbook-03.jpg"
-            ],
-            "heroBannerVideo": "https://res.cloudinary.com/c81dqgyl/video/upload/8322527-uhd_4096_2160_25fps.mp4",
-            "urlPath": "/collections/monogram-canvas-heritage"
-        },
-        {
-            "id": "capucines-women",
-            "gender": "women",
-            "slug": "capucines-leather-goods",
-            "name": "The Capucines",
-            "title": "Savoir-Faire Architecture",
-            "subtitle": "Named after Rue des Capucines in Paris",
-            "description": "Crafted from full-grain Taurillon leather, the Capucines bag represents pure leatherworking craftsmanship with a jewel-like LV closure and structured silhouette.",
-            "type": "silhouette",
-            "heroImage": "https://placehold.co/1920x1080/orange/white",
-            "editorialImages": [
-                "/images/collections/capucines/01.jpg",
-                "/images/collections/capucines/02.jpg",
-                "/images/collections/capucines/03.jpg"
-            ],
-            "heroBannerVideo": "https://res.cloudinary.com/c81dqgyl/video/upload/8322527-uhd_4096_2160_25fps.mp4",
-            "urlPath": "/women/collections/capucines-leather-goods"
-        },
-        {
-            "id": "taigarama-men",
+            "id": "mens-core-basics",
             "gender": "men",
-            "slug": "taigarama-leather",
-            "name": "Taïgarama",
-            "title": "Modern Energy",
-            "subtitle": "Taïga leather meets Monogram canvas",
-            "description": "A vibrant fusion of durable textured Taïga leather and tonal Monogram canvas, tailored for contemporary urban lifestyles and travel accessories.",
-            "type": "core",
-            "heroImage": "https://placehold.co/1920x1080/teal/white",
-            "editorialImages": [
-                "/images/collections/taigarama/01.jpg",
-                "/images/collections/taigarama/02.jpg",
-                "/images/collections/taigarama/03.jpg"
-            ],
-            "heroBannerVideo": "https://res.cloudinary.com/c81dqgyl/video/upload/8322527-uhd_4096_2160_25fps.mp4",
-            "urlPath": "/men/collections/taigarama-leather"
+            "slug": "mens-core-basics",
+            "name": "Men’s Core Basics",
+            "title": "Everyday Foundations",
+            "subtitle": "Built for comfort, styled for durability",
+            "description": "Upgrade your daily uniform with our collection of men’s core basics. Crafted from premium organic cotton and breathable fabrics, these elevated essentials offer maximum comfort and structured fits designed to last.",
+            "type": "capsule",
+            "heroBannerImage": "https://res.cloudinary.com/c81dqgyl/image/upload/v1790367575/mens-collection-03.jpg",
+            "mobileBannerImage": "https://res.cloudinary.com/c81dqgyl/image/upload/v1790367452/mens-collection.jpg",
+            "heroBannerVideo": "https://res.cloudinary.com/c81dqgyl/video/upload/v1790366018/8342824-uhd_2560_1440_25fps.mp4",
+            "urlPath": "/men/collections/mens-core-basics"
         },
         {
-            "id": "cruise-2026-women",
+            "id": "womens-summer-layering",
             "gender": "women",
-            "slug": "cruise-2026",
-            "name": "Cruise 2026 Collection",
-            "title": "Architectural Nomadism",
-            "subtitle": "Resort wear and sculpted leather accessories",
-            "description": "Staged against global architectural landmarks, the Cruise collection blends futuristic drapery, embellished outerwear, and collector's edition hard-sided trunks.",
+            "slug": "womens-summer-layering",
+            "name": "Summer Layering",
+            "title": "Cozy Modernism",
+            "subtitle": "Tactile knits and tailored outerwear",
+            "description": "Embrace the shift in seasons with rich textures, cozy merino wool, and structured coats. Designed for effortless layering, this collection blends functional warmth with clean, sophisticated silhouettes.",
             "type": "seasonal",
-            "heroImage": "https://placehold.co/1920x1080/crimson/white",
-            "editorialImages": [
-                "/images/collections/cruise-2026/01.jpg",
-                "/images/collections/cruise-2026/02.jpg",
-                "/images/collections/cruise-2026/03.jpg",
-                "/images/collections/cruise-2026/04.jpg",
-                "/images/collections/cruise-2026/05.jpg"
-            ],
-            "heroBannerVideo": "https://res.cloudinary.com/c81dqgyl/video/upload/8322527-uhd_4096_2160_25fps.mp4",
-            "urlPath": "/women/collections/cruise-2026"
+            "heroBannerImage": "https://res.cloudinary.com/c81dqgyl/image/upload/v1790363143/autumn-collection-2.jpg",
+            "mobileBannerImage": "https://res.cloudinary.com/c81dqgyl/image/upload/v1790363153/automn-collection.jpg",
+            "heroBannerVideo": "https://res.cloudinary.com/c81dqgyl/video/upload/v1790366420/8195083-uhd_3840_2160_25fps.mp4",
+            "urlPath": "/women/collections/womens-autumn-layers"
         }
     ]
 }
